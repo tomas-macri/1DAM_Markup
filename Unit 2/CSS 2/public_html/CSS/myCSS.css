@@ -1,0 +1,28 @@
+* {
+box-sizing: border-box;
+margin:0;
+padding:0;
+}
+
+div.menu{
+    background-color: lightgreen;
+}
+
+div.main{
+    background-color: purple;
+}
+
+
+
+
+div.boxes{
+    font-size: 25px;
+    background-color: lightblue;
+    float: left;
+    width: 20%;
+    height: 300px;
+    margin: 2%;
+    padding: 2em;
+    text-align: center;
+    font-weight: bold;
+}
