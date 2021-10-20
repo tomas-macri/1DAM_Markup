@@ -4,25 +4,52 @@ margin:0;
 padding:0;
 }
 
-div.menu{
+#menu{
     background-color: lightgreen;
+    width: 20%;
+    height: 400px;
+    float: left;
+    margin-right:2%;
 }
 
-div.main{
-    background-color: purple;
+#main{
+    background-color: rgb(138,43,226);
+    width: 78%;
+    height: 400px;
+    float: left;
+ 
+}
+
+#menuMainContainter{
+    width: 100%;
 }
 
 
 
-
-div.boxes{
+.boxes{
     font-size: 25px;
     background-color: lightblue;
     float: left;
-    width: 20%;
     height: 300px;
-    margin: 2%;
-    padding: 2em;
     text-align: center;
+    font-weight: bold;
+    /*width: 20%;
+    margin: 2%;
+    padding: 2em;*/
+}
+
+#box1, #box2{
+    border-style: solid;
+    width: 50%;
+}
+
+#box3, #box4{
+    width: 48%;
+    margin-left: 1%;
+}
+
+h2{
+    text-align: center;
+    font-size: 32px;
     font-weight: bold;
 }
