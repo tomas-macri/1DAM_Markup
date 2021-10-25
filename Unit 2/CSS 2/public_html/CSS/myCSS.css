@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Saira+Extra+Condensed');
+
 * {
 box-sizing: border-box;
 margin:0;
@@ -5,7 +7,7 @@ padding:0;
 }
 
 #menu{
-    background-color: lightgreen;
+    background-color: rgb(173,255,47);
     width: 20%;
     height: 400px;
     float: left;
@@ -28,7 +30,7 @@ padding:0;
 
 .boxes{
     font-size: 25px;
-    background-color: lightblue;
+    background-color: rgb(102,204,255);
     float: left;
     height: 300px;
     text-align: center;
@@ -46,10 +48,123 @@ padding:0;
 #box3, #box4{
     width: 48%;
     margin-left: 1%;
+    padding: 2%;
 }
+
+#box3Menu{
+    width: 20%;
+    float: left;
+    background-color: rgb(173,255,47);
+}
+
+#box3Article1{
+    width: 80%;
+    float: left;
+}
+
+#Article1{
+    width: 40%;
+    height: 200px;
+    padding: 1em;
+    margin-left: 4%;
+    float: left;
+    background-color: rgb(216,136,171);
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.Articles2and3{
+    background-color: rgb(216,136,171);
+    width: 50%;
+    float: left;
+    margin-left: 2%;
+}
+
+#Article2{
+    border-style: solid;
+    border-color: rgb(159,68,210);
+    height: 93px;
+    margin: 1%;
+    padding: 1%;
+    clear: both;
+}
+
+#Article3{
+    border-style: solid;
+    border-color: rgb(159,68,210);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-style: normal;
+}
+
+.texts{
+    background-color: rgb(255,255,204);
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 14px;
+    margin: 3%;
+    padding: 1%;
+}
+
 
 h2{
     text-align: center;
     font-size: 32px;
     font-weight: bold;
+    margin: 0px;
+    padding: 0px;
 }
+h5{
+    margin: 0px;
+    padding: 0px;
+    background-color: blue;
+    font-family: 'Gloria Hallelujah', cursive; 
+}
+
+#MenuList{
+    list-style-type:none;
+}
+
+li.menu{
+    background-color: rgb(255,165,0);
+    display: block;
+    padding: 0.6em;
+    margin: 1%;
+    border-style: dotted;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+/* BOX 4 */
+
+#b4subMenu{
+    width: 100%; 
+    background-color: rgb(173,255,47);
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.b4Items{
+    width: 22%;
+    margin: 1.5%;
+    float: left;
+    font-size: 16px;
+    background-color: rgb(255,165,0);
+    display: block;
+    padding: 0.6em;
+    border-style: dotted;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.b4images{
+    width: 100%;
+}
+
+#b4ImagesWithHeaders{
+    list-style-type: none;  
+    float: left;
+    width: 25%;
+    height: 20%;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
