@@ -23,7 +23,7 @@
     height: 3px;
     color: white;
     background-color: white;
-    margin-bottom: 0;
+    margin-bottom: 0%;
 }
 
 #headerUL{
@@ -46,7 +46,7 @@ li.header{
     color: white;
     font-family: Calibri, sans-serif;
     font-size: 12px;
-    margin:0;
+    margin:0%;
 }
 li.header:hover {
     background-color: hotpink;
