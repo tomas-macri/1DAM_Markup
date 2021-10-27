@@ -1,6 +1,6 @@
 /* Header */
 #menuHeader{
-    width: 100%;
+    /*width: 100%;*/
     background-image: linear-gradient(rgb(154,186,71), rgb(105,134,28));
 }
 
@@ -62,3 +62,85 @@ a.header{
 /* FIN HEADER */
 
 /*DIV PARAGRAPH + RIGHT menu*/
+
+/*PARAGRAPH DIVS*/
+
+#divParagraphAndList{
+/*width: 100%; PUEDE SER BASURA*/
+}
+
+#paragraphHTML{
+    width: 65%;
+    float: left;
+}
+
+#paragraphTitle{
+    color: rgb(91,108,66);
+    font-size: 22px;
+    font-family: Monospace, sans-serif;
+    font-weight: bold;
+    margin-left: 1%;
+}
+
+#paragraphHR{
+    border: none;
+    height: 2px;
+    color:  rgb(91,108,66);
+    background-color:  rgb(91,108,66);
+    margin-bottom: 0%;
+    margin-top: 0%;
+    margin-left: 1%;
+}
+
+#paragraphP{
+    font-size: 16px;
+    font-family: Monospace, sans-serif;
+    margin-left: 1%;
+    margin-bottom: 10%;
+}
+
+.boldP{
+    font-weight: bold; 
+}
+
+/* END OF THE PARAGRAPH*/
+
+/*BEGINNING OF THE LIST ON THE RIGHT*/
+#listOnTheRight{
+    width: 25%;
+    float: left;
+    padding: 0%;
+    margin-left: 5%;
+    margin-right: 5%; 
+    border-top-color: rgb(218,225,207);
+    border-top: solid 35px;
+    border-bottom-color: rgb(218,225,207); 
+    border-bottom: solid 35px;    
+    color: rgb(218,225,207); 
+}
+
+#listLOTR{
+  margin-top: 5%;
+}
+
+.liLOTR{
+    /*list-style-image:url('../images/check_icon.png');*/
+    margin:0%;
+    padding: 0%;
+    list-style-type: none;
+    color: rgb(65,87,9);
+    font-family: Monospace, sans-serif;
+}
+
+.hrLOTR{
+    color: rgb(122,137,83);
+    background-color: rgb(122,137,83);
+    margin: 0;
+    padding: 0;
+    width: 90%;
+}
+
+/*END OF RIGHT LIST*/
+
+/* END DIV PARAGRAPH + RIGHT menu*/
+
