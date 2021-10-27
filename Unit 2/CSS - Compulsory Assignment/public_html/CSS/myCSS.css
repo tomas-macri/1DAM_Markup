@@ -17,13 +17,14 @@
     font-family: Monospace, sans-serif;
     font-size: 14px;
     color: white;
+    font-weight: bold;
 }
 #headerLineHR{
     border: none;
     height: 3px;
     color: white;
     background-color: white;
-    margin-bottom: 0%;
+    margin-bottom: 0;
 }
 
 #headerUL{
@@ -46,7 +47,7 @@ li.header{
     color: white;
     font-family: Calibri, sans-serif;
     font-size: 12px;
-    margin:0%;
+    margin:0;
 }
 li.header:hover {
     background-color: hotpink;
@@ -54,7 +55,7 @@ li.header:hover {
 li.header:active{
     background-color: blue;
 }
-a.header{
+a.headerA{
     text-decoration: none;
     color: white;
 }
@@ -87,8 +88,8 @@ a.header{
     height: 2px;
     color:  rgb(91,108,66);
     background-color:  rgb(91,108,66);
-    margin-bottom: 0%;
-    margin-top: 0%;
+    margin-bottom: 0;
+    margin-top: 0;
     margin-left: 1%;
 }
 
@@ -97,10 +98,11 @@ a.header{
     font-family: Monospace, sans-serif;
     margin-left: 1%;
     margin-bottom: 10%;
+    line-height: 15px;
 }
 
 .boldP{
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 /* END OF THE PARAGRAPH*/
@@ -109,14 +111,14 @@ a.header{
 #listOnTheRight{
     width: 25%;
     float: left;
-    padding: 0%;
+    padding: 0;
     margin-left: 5%;
-    margin-right: 5%; 
+    margin-right: 5%;
     border-top-color: rgb(218,225,207);
     border-top: solid 35px;
-    border-bottom-color: rgb(218,225,207); 
-    border-bottom: solid 35px;    
-    color: rgb(218,225,207); 
+    border-bottom-color: rgb(218,225,207);
+    border-bottom: solid 35px;
+    color: rgb(218,225,207);
 }
 
 #listLOTR{
@@ -124,17 +126,20 @@ a.header{
 }
 
 .liLOTR{
-    /*list-style-image:url('../images/check_icon.png');*/
-    margin:0%;
-    padding: 0%;
+
+    margin:0;
+    padding: 0;
     list-style-type: none;
     color: rgb(65,87,9);
     font-family: Monospace, sans-serif;
 }
 
 .hrLOTR{
-    color: rgb(122,137,83);
+    /*
     background-color: rgb(122,137,83);
+    color: rgb(122,137,83);
+    */
+    border-color: lightgray;
     margin: 0;
     padding: 0;
     width: 90%;
@@ -144,3 +149,62 @@ a.header{
 
 /* END DIV PARAGRAPH + RIGHT menu*/
 
+/* BEGINNING OTHER THREE LISTS*/
+
+#otherThreeLists{
+    width: 50%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 0;
+    padding: 0;
+}
+
+.titleThreeLists{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(91,108,66);
+}
+
+.liThreeLists{
+    margin-left: 2%;
+    list-style-image:url('../images/check_icon.png');
+    color: rgb(91,108,66);
+    font-family: Monospace, sans-serif;
+    font-size: 15px;
+}
+
+.hrThreeLists{
+    border: 1px solid rgb(211, 229, 162);
+    padding: 0;
+    margin-left: -4%;
+    width: 100%;
+}
+
+/* END OF THREE LISTS*/
+
+/* IMAGE BELOW RIGHT SIDE LIST */
+
+#divImageBelowRightList{
+    margin-top: 0;
+    float: left;
+    width: 45%;
+    margin-bottom: 24%;
+}
+
+#imgImageBelowRightList{
+    margin-left: 80%;
+
+}
+
+/*  END IMAGE BELOW RIGHT SIDE LIST */
+
+/* FOOTER */
+
+#pageFooter{
+    float: left;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
