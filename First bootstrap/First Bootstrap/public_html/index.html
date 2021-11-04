@@ -4,40 +4,55 @@
          <title>Bootstrap 5 Example</title>
          <meta charset="utf-8">
          <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link href="myCSS/myCSS.css" rel="stylesheet">         
          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
 
    <body>
-       <h1> CSS Tutorial </h1>
+        <div class="bg-primary text-white text-center myTitle">
+            <h1>My First Bootstrap Page</h1>
+        </div>
+       
+       <nav class="navbar navbar-expand-sm bg-dark navbar-dark myNavBar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#What">What Is CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#Why">Why We Use CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#Sintax">CSS Sintax</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active " href="#Tables">Tables Summary</a>
+            </li>
+          </ul>
+      </nav>
+       <div id="What" class="fourParagraphs">
+           <h3 class="h3Titles">What is CSS?</h3>
+            <ul class="list-group">
+                <li class="list-group-item liWhat">CSS stands for Cascading Style Sheets</li>
+                <li class="list-group-item liWhat">CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                <li class="list-group-item liWhat">CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                <li class="list-group-item liWhat">External stylesheets are stored in CSS files</li>
+            </ul>
+        </div>
 
-       <div> <h3>Index</h3>
-               <ul>
-                       <li><a href="#What">What is CSS</a></li>
-                       <li><a href="#Why">Why use CSS</a></li>
-                       <li><a href="#Sintax">CSS Sintax</a></li>
-                       <li><a href="#Tables">Tables Summary</a></li>
-               </ul>
-       </div>
-       <div id="What"> <h3>What is CSS?</h3>
-               <ul>
-                       <li>CSS stands for Cascading Style Sheets</li>
-                       <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
-                       <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
-                       <li>External stylesheets are stored in CSS files</li>
-               </ul>
-       </div>
-
-       <div id="Why"> <h3>Why Use CSS?</h3>
+       <div id="Why" class="fourParagraphs"> 
+           <h3 class="h3Titles">Why Use CSS?</h3>
              CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes. 
-
-       <div id="Sintax"> <h3> CSS Syntax</h3>
-               A CSS rule-set consists of a selector and a declaration block:
-               <IMG SRC="imagenes/selector.gif">
+       </div>
+       <div id="Sintax" class="fourParagraphs"> 
+            <h3 class="h3Titles"> CSS Syntax</h3>
+            A CSS rule-set consists of a selector and a declaration block:
+            <br><IMG SRC="imagesBoot.jpg">
        </div>
 
-       <div id="Tables"> <h3>Tables summary</h3>
-               <TABLE BORDER>    
+       <div id="Tables" class="fourParagraphs"> 
+           <h3 class="h3Titles">Tables summary</h3>
+               <TABLE BORDER class="table table-dark table-hover">    
                        <TR>
                                <TD></TD>
                                <TH>TABLE</TH>
