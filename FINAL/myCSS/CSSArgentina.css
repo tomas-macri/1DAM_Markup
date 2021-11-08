@@ -1,0 +1,148 @@
+header{
+   /* background-color: dodgerblue;*/
+    background-image: radial-gradient( rgb(255,255,255), rgb(0,159,215) );
+    width: 100%;
+    float: bottom;
+    margin-right:2%;
+    margin-bottom: 0;
+    padding: 0;
+  /*  position: fixed;
+    height: 100px;                           Esto serñia para que el header se quede al scrollear*/
+}
+
+
+/* IMAGEN NP SE AJUSTA NO HACE UNA MIERDA */
+
+.imgHeader{
+    width: 10%;
+    height: auto;
+    float: left;
+}
+
+#headerTitle{
+    font-family: "Comic Sans MS", sans-serif;
+    color: goldenrod;
+    text-align: center;
+    font-size: 48px;
+    width: 100%; /* VA A HABER QUE AJUSTARLO CON LA IMAGEN A LA MISMA ALTURA */
+}
+
+
+
+/* SIDEBAR */
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: white;
+    position: fixed;
+    display: flow;
+    height: 100%;
+    overflow: auto;
+}
+
+/* item !selected form the sidebar */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/*.sidebar a.active {
+    background-color: lightskyblue;
+    color: white;
+}*/
+
+/*when hovered, an item will look like this*/
+
+.sidebar a:hover {
+    margin:0;
+    background-color: lightskyblue;
+    padding: 4%;
+    border-radius: 2px;
+    color: goldenrod;
+}
+/* This is what is next to the sidebar */
+div.content {
+    margin-left: 200px;
+    padding: 16px;
+    height: 1000px; /* possible 100% */
+}
+
+/* function to adjust the sidebar below the header when the width is less than 700px */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-top: 100px;
+        margin-left: 0;
+    }
+}
+
+/* function to adjust the sidebar below the header and only one item per row when the width is less than 400px */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+#sidebarHeader{
+    background-color: lightskyblue;
+    color: white;
+    border-radius: 2px;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+#sidebarTitle{
+    font-family: "Comic Sans MS",sans-serif;
+    font-size: 18px;
+}
+
+.itemSidebar{
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+/* END OF SIDEBAR */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ANOTHER PAGE*/
+
+/* NEWSSSSSSSSSSSSSSSSSSSSSSS*/
+
+
+/* TITLENEWS H2 */
+
+#newsTitle{
+    font-family: "Comic Sans MS",sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
