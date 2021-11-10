@@ -27,7 +27,7 @@
         <div class="container">
             <h2>Grid System</h2>
             <div class="row">
-                <div class="col-md-4 col-lg-2 col-sm-8 bg-danger"> <!--<!-- by default is 12 (col-12)-->
+                <div class="col-sm-8 col-md-4 col-lg-2 bg-danger"> <!--<!-- by default is 12 (col-12)-->
                     <h3>column 1</h3>
                     <p>Column dimensions: <br>
                     col-12: 12 gills for extra small devices.<br>
@@ -36,7 +36,7 @@
                     col-lg-2: 2 grills for large, extralarge and XXLarge devices.
                     </p>
                 </div>
-                <div class="col-md-4 col-lg-2 col-sm-2 col-12 bg-info">
+                <div class="col-12 col-sm-2 col-md-4 col-lg-2 bg-info">
                     <h3>column 2</h3>
                     <p>Column dimensions: <br>
                         col-xs-12: 12 gills for extra small devices.<br>
@@ -75,13 +75,13 @@
             <h2 class="container">Column ordering</h2>
             <h3 class="container">Order changed columns</h3>
             <div class="row">
-                <div class="col-md-12 col-lg-8 col-sm-4 col-4 col-lg-push-4 bg-danger">
+                <div class=" col-4 col-sm-4 col-md-12 col-lg-8 col-lg-push-4 bg-danger">
                     <h3>Column1</h3>
                     <p>
                         Lorem upsum defor sit arnet, ...
                     </p>
                 </div>
-                <div class="col-md-12 col-lg-4 col-sm-4 col-4 col-lg-pull-8 bg-info">
+                <div class="col-4 col-sm-4 col-md-12 col-lg-4 col-lg-pull-8 bg-info">
                     <h3>Column2</h3>
                     <p>
                         Lorem upsum defor sit arnet, ...
@@ -96,21 +96,21 @@
                 and the third when we are in a tablet resolution "md". <br>
                 NOTE: Columns that are not hidden must have values that add up to the 12 grids.</p>
             <div class="row">
-                <div class="col-md-4 col-lg-4 col-sm-6 col-8 bg-danger">
+                <div class="col-8 col-sm-6 col-md-4 col-lg-4 bg-danger">
                     <h3>Column 1</h3>
                     <p>
                         This column will remain visible for any resolution... <br>
                         Lorem upsum defor sit arnet, ...
                     </p>
                 </div>
-                <div class="col-md-4 col-lg-4 col-sm-6 bg-info"> <!--d-xs-none-->
+                <div class="col-sm-6 col-md-4 col-lg-4  bg-info"> <!--d-xs-none-->
                     <h3>Column 2</h3>
                     <p>
                         This column will be hidden for extrasmall devices... <br>
                         Lorem upsum defor sit arnet, ...
                     </p>
                 </div>
-                <div class="col-md-4 col-lg-4 col-4 bg-primary"> <!-- d-sm-none -->
+                <div class="col-4 col-md-4 col-lg-4 bg-primary"> <!-- d-sm-none -->
                     <h3>Column 3</h3>
                     <p>
                         This column will remain hidden for small-size devices... <br>
