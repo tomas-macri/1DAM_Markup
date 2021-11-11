@@ -1,0 +1,18 @@
+#formTitle{
+    margin-left: 2%;
+}
+
+#formGreyText{
+    font-size: 24px;
+    color:lightgray;
+}
+
+.formLabel{
+    font-weight: bold;
+    text-align: right;
+}
+
+.formItem{
+    margin-bottom: 2%;
+}
+
