@@ -74,9 +74,10 @@ padding:0;
 
 .Articles2and3{
     background-color: rgb(216,136,171);
-    width: 50%;
     float: left;
     margin-left: 2%;
+    width: 50%;
+
 }
 
 #Article2{
