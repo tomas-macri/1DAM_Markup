@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Css/myCSS.css">
+    </head>
+    <body>
+        <header id="myHeader" >
+            <img src="Images/Bristol-Logo.png" alt="Bristol logo" id="imgLogo">
+            <h2 class="white-text" id="titleHeader">BRISTOL</h2> 
+            <h4 id="subtitleHeader">Ceremonial county</h4>
+            <h4 class="white-text">Search</h4>
+            <input type="text" name="search"> 
+        </header>
+        <br>
+        <ul id="navBar">
+            <li class="navbarItem"> <a href="Exercise2.html">Homepage</a></li>
+            <li class="navbarItem"><a href="OtherPages/P2.html">Link to second page</a></li>
+            <li class="navbarItem"><a href="https://www.ecologistasenaccion.org/">Ecologists</a></li>
+        </ul>
+        <br>    
+        <div class="mainPage">
+            <table id="bristolTable">
+                <tr>
+                    <th colspan="3">Bristol Areas</th>
+                </tr>                
+                <tr>
+                  <th>COUNTY</th>
+                  <th>AREA</th>
+                  <th>ELECTORATE</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Bristol</td>
+                  <td>Bristol West</td>
+                  <td>84,571</td>
+                </tr>
+                <tr>
+                  <td>Bristol East</td>
+                  <td>80,999</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="mainPage">
+            
+            <form id="formPart" action="http://www.examen.local/procesa.php">
+                <h2 id="formTitle" class="formItem">Registration Form</h2>
+                <div class="formItem">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="myInText" required>
+                    <label for="name">Surname</label>
+                    <input type="text" name="name" class="myInText">
+                </div>
+                <div class="formItem">
+                    <label for="gender">Gender</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    
+                    <label for="birth">Date of birth</label>
+                    <input type="date" id="birth" name="birth">
+
+                </div>
+                <div class="formItem">
+                <label for="county">County</label>
+                <select id="county" name="county">
+                  <option value="Oxfordshire">Oxfordshire</option>
+                  <option value="Cumbria" selected>Cumbria</option>
+                  <option value="Norfolk">Norfolk</option>
+                </select>
+                </div>
+                <div class="formItem">
+                    <label for="email">Email</label>
+                    <input type="email" name="mail" placeholder="Introduce your email">
+                </div>
+                <div class="formItem">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" rows="3" placeholder="Write your comments"></textarea>
+                    <br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="saveEmail"> I agree to my email being stored and used to receive the newsletter</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="offers"> I agree to receive commercial offers</label><br>
+                </div>
+                <div class="formItem">
+                    <input type="submit" name="submit" value="Send" class="FormButtons">
+                    <input type="reset" name="reset" value="Delete" class="FormButtons">
+                </div>
+            </form>
+        </div>
+        <div class="mainPage">
+            <div id="titleAndImage">
+                <h5>Bristol Bridge</h5>
+                <img alt="Bristol Bridge" src="Images/bristol.jpg">
+            </div>
+        </div>
+        <footer id="myFooter" class="white-text">Footer</footer>
+    </body>
+</html>

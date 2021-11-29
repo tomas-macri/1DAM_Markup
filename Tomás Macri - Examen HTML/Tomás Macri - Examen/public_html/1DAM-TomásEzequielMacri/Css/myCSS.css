@@ -1,0 +1,125 @@
+/* ID */
+
+#myHeader{
+    width: 100%;
+    heigth: 200px;
+    background-image: url('../Images/Header.jpg');
+    border: dashed;
+    margin: 0;
+    padding: 0;
+}
+
+#imgLogo{
+    max-height: 80px;
+    padding-left: 10%;
+    float: left;
+}
+
+#titleHeader{
+    margin-left: 49%;
+}
+
+#subtitleHeader{
+    margin-left: 48%;
+    color: rgb(172,205,53);
+    float: left;
+    margin-right: 30%;
+      
+}
+/* END OF HEADER */ 
+
+#navBar{
+    padding: 0;
+    margin: 0;  
+    list-style-type: none;
+    width: 100%;
+}
+
+#bristolTable{
+    margin-bottom: 50%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+}
+
+#titleAndImage{
+    text-align: center;
+    width: auto;
+    display: block;
+    height: auto;
+}
+
+#formPart{
+    background-color: grey;
+    padding-left: 3%; 
+    padding-right: 3%; 
+
+}
+
+#formTitle{
+    font-weight: normal;
+    text-align: center;
+}
+
+#myFooter{
+    background-color:green;
+    text-align: center;
+    margin-top: 500px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+/* CLASSES */
+
+.white-text{
+    color: white;
+}
+
+.navbarItem{
+    background-color: green;
+    float: left;
+    border-right: 1px solid black;
+    width: 33%;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.mainPage{
+    width: 33%;
+    height: 500px;
+    float:left;
+}
+
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.formItem{
+    border-bottom: 1px solid black;
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
+.myInText{
+    width: 100px;
+}
+
+label{
+    font-weight: bold;
+}
+
+.FormButtons{
+    background-color: white;
+    margin-right: 20%;
+}
+
+li:hover{
+    background-color: red;
+}
