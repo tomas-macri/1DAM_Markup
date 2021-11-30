@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+#background{
+    border-radius: 30px;
+    background-image: url("../../images/dentistaLogo.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: white;
+    background-position: right;
+
+}
+.firstBox{
+    background-image: url("../../images/corazonDiente.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:500px;
+
+}
+#blueBox{
+    color:white;
+    background-color:rgba(173, 216, 230, 0.7);
+    font-size: 5rem;
+}
+
+.blueBeautyText{
+    color:lightblue;
+    font-size: 5rem;
+
+}
+aside{
+    opacity: 1;
+    background-color: rgba(255,255,255, 0.6);
+    line-height: 1.8;
+
+}
+
+.fontMerienda{
+    font-family: 'Merienda', cursive;
+
+}
+.fontUnica{
+    font-family: 'Unica One', cursive;
+}
+.fontRoboto{
+    font-weight: lighter;
+    color:grey;
+
+}
+
+aside h1{
+    line-height: 0.7;
+}
+
+.textUnderAside{
+    line-height: 1.8;
+
+}
+
+body {
+    margin: 0;
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 11;
+}
+
+#navbar a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+#dentalCleaning{
+    background-image: url("../../images/blanqueamientoDental.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:250px;
+    width:250px;
+}
+#dentalInsertion{
+    background-image: url("../../images/implantes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:250px;
+    width:250px;
+}
+#ortodoncy{
+    background-image: url("../../images/bracketInvisible.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:250px;
+    width:250px;
+}
+#peridoncy{
+    background-image: url("../../images/peridoncia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:250px;
+    width:250px;
+
+}
+#dentalCleaning2{
+    background-image: url("../../images/blanqueamientoDental.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:150px;
+    width:150px;
+}
+#dentalInsertion2{
+    background-image: url("../../images/implantes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:150px;
+    width:150px;
+}
+#ortodoncy2{
+    background-image: url("../../images/bracketInvisible.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:150px;
+    width:150px;
+}
+#peridoncy2{
+    background-image: url("../../images/peridoncia.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:150px;
+    width:150px;
+
+}
+.img-wrap {
+    background-size: cover;
+    position: relative;
+    height: 215px;
+    width: 257px;
+    transition:1s;
+}
+
+.img-description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: lightgray;
+    color: grey;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+
+
+.img-wrap:hover{
+    transform:  rotateY(-180deg);
+    transition: 1s;
+}
+.img-wrap:hover .img-description {
+    transform: rotateY(180deg);
+    visibility: visible;
+    opacity: 1;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+    display: none;
+}
+.zoom {
+    transition: transform .7s; 
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+        float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;  
+    }
+}

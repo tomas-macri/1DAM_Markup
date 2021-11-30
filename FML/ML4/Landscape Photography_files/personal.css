@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20 nov. 2019, 10:24:49
+    Author     : cristian
+*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Calistoga', cursive;
+
+}
+.primaryTitle{
+    background-color: #949494;
+ opacity: 0.1;
+    text-align: center;
+    height: 80px;
+    padding-top: 10px;
+    color: white; 
+   
+}
+
+
+a:hover{
+    text-decoration: none;
+}
+.imagesCarrusel{
+    width: 100%;
+    height: auto;
+  
+        
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.main{
+    margin-top: 2em;
+}
+.mainItem{
+    
+    padding-top: 1em;
+    text-align: center;
+}
+.mainItem button{
+    margin-top: 1em;
+}
+.demo{
+    margin-top: 1em;
+    
+    font-size:0.8em;
+}
+.imageMain{
+    width: 100%;
+}
+.modalMain{
+    margin-top: 13em;
+    padding-left: 3em;
+    font-size: 0.8em;
+}
+.footer{
+    background-color: #474747;
+    color: white;
+    margin-top: 2em;
+}
+.iconos{
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5em;
+}
+li{
+    list-style: none;
+    
+}
+.madridG{
+    margin-top: 1em;
+    margin-left: 1em;
+}
+.aboutUsMain{
+ margin-top: 1em;
+}
+.tableAddress{
+    margin-top: 2em;
+}
+.rights{
+    width: 10px;
+    height: 10px;
+}
+.footers a{
+    text-decoration: none;
+    color: white;
+}
+.footers{
+    padding-left: 3em;
+    padding-top: 1em;
+    font-size: 0.7em;
+    line-height : 25px;
+}
+.footers li:hover{
+    color:#C4C4C4;
+}
+
+

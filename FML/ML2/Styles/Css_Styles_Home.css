@@ -1,0 +1,147 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 nov. 2019, 23:38:10
+    Author     : emily
+*/
+
+body {
+    background-image:url("../Images/fondo.JPG");
+}
+header{
+    background: #19191A ;
+    text-align: center;
+}
+#MainTitle{
+    font-family: 'Permanent Marker';
+    font-weight: bold;
+    font-size: 600%;   
+    color: white;
+    /*color: #212F3C;*/
+
+}
+.navbar {
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+    font-size: 150%;
+    background: #19191A ;
+    opacity: 98%;
+
+}
+.nav-item a{
+    color: white;
+}
+.navbar-toggler{
+    color: white;
+    background: #212F3C;
+}
+.dropdown-menu {
+   font-family: 'Asap', sans-serif;
+    font-weight: bold;
+    background: #19191A ;
+    opacity: 98%;
+}
+.serchBottom{
+    color: white;
+    background-color: #212F3C;
+}
+#comments {
+    font-family: 'Asap', sans-serif;
+    color: white;
+    background: #19191A ;
+    opacity: 98%;
+}
+#mainContent{
+    background-color: white;
+
+}
+#botton1{
+    background-color:#212F3C ;
+    border: white 5px inset;
+    color: white;
+    font-weight: bold;
+}
+#titleContactUs{
+    font-family: 'Permanent Marker';
+    font-weight: bold;
+    text-align: center;    
+    color: white;
+}
+.footer{
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    color: white;
+    background: #19191A ;
+    opacity: 98%;
+}
+#imageFooter #copyrigth {
+    text-align: center;
+}
+h4{
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+.readMoreBotton{
+    color: white;
+    background-color: #212F3C;
+}
+.titleArticles{
+    font-family: 'Permanent Marker';
+    color: #19191A;
+    font-size: 230%;
+}
+.text{
+    font-family: 'Asap', sans-serif;
+    font-size: large;
+    text-align: justify;
+
+}
+.tableSellings{
+    border: 5px solid #212F3C;
+    border-radius: 8px;
+}
+.titleSealling{
+    font-family: 'Permanent Marker';
+    color: #19191A;
+    font-size: 300%;
+    text-align: center;
+    padding: 3%;
+}
+thead{
+    text-align: center;
+    background: #212F3C;
+    color: white;
+    font-family: 'Asap', sans-serif;
+}
+tbody{
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+}
+
+.zoom:hover {
+  -ms-transform: scale(2.5); /* IE 9 */
+  -webkit-transform: scale(2.5) rotate(9deg); /* Safari 3-8 */
+  transform: scale(2.5) rotate(9deg); 
+    
+}
+#GoTop{
+    font-family: 'Permanent Marker';
+    font-size: 150%;
+    color: white;
+    background-color: #212F3C;
+}
+.textCarousel{
+    color: white;
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+    font-size: 250%;
+    background: #19191A ;
+    opacity: 98%;
+}

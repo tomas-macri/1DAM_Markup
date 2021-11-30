@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)http://expensident.x10host.com/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>ExpensiDent</title>
+        
+        <link rel="icon" href="./ExpensiDent_files/logoDiente.png" type="image/png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./ExpensiDent_files/MyCSS.css" rel="stylesheet" type="text/css">
+        <link href="./ExpensiDent_files/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="./ExpensiDent_files/css" rel="stylesheet">
+        <link href="./ExpensiDent_files/css(1)" rel="stylesheet">
+        <link href="./ExpensiDent_files/css(2)" rel="stylesheet">
+        <script src="./ExpensiDent_files/jquery.min.js.descarga"></script>
+        <script src="./ExpensiDent_files/popper.min.js.descarga"></script>
+        <script src="./ExpensiDent_files/bootstrap.min.js.descarga"></script>
+        <link rel="stylesheet" href="./ExpensiDent_files/font-awesome.min.css">
+        <!-- this makes the whole navbar "dissappear" when scrolling down,
+        getting a fix position at the top of the page when scrolling up -->
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-300px";
+                }
+                prevScrollpos = currentScrollPos;
+            };
+        </script>
+        <!-- this makes the button to top fade out when scrolling down -->
+        <script>
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 50) {
+                        $('#back-to-top').fadeIn();
+                    } else {
+                        $('#back-to-top').fadeOut();
+                    }
+                });
+            });
+        </script>
+        <!-- this activates the tooltip over the button to top -->
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+    </head>
+    <body>
+        <header class="container-fluid bg-info" id="navbar" style="top: 0px;">
+
+            <nav class="navbar navbar-dark bg-info">
+                <a class="navbar-brand d-inline-block" href="http://expensident.x10host.com/index.html#"> 
+                    <h2>ExpensiDent</h2>
+                    <img src="./ExpensiDent_files/logoDiente.png" alt="logo" width="40">
+                </a>
+
+                <button class="navbar-toggler p-0 m-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <div>
+                        <div class="topnav">
+                            <div class="search-container">
+                                <form action="http://expensident.x10host.com/action_page.php">
+                                    <input type="text" placeholder="Search.." name="search">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class=" row">
+                            <div class="pl-3 pt-2 ">
+                                <a href="tel:+34 653 20 54 49" class="text-white fontMerienda">
+                                    <img src="./ExpensiDent_files/phone-call-icon-16.png" alt="phone" width="20" height="20"> 901 765 764 / 901 778 779 |</a>
+                                <a href="https://goo.gl/maps/QvypGbhbbWyLST9x6" target="_blank" class="text-white fontMerienda"> C/ Ibiza 50, 28009. Madrid.</a>
+                            </div>
+                            <div class="d-none d-sm-inline-block offset-xl-2 offset-lg-2 offset-md-1">
+                                <a href="https://www.facebook.com/"><img src="./ExpensiDent_files/facebookIcon.png" alt="facebookIcon" width="40" height="40"></a>
+                                <a href="https://web.whatsapp.com/"><img src="./ExpensiDent_files/whatsappIcon.png" alt="whatsappIcon" width="40" height="40"></a>
+                                <a href="https://www.instagram.com/?hl=es"><img src="./ExpensiDent_files/instagramIcon.png" alt="instagramIcon" width="40" height="40"></a>
+                                <a href="https://twitter.com/?lang=es"><img src="./ExpensiDent_files/twitterIcon.png" alt="twitterIcon" width="40" height="40"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link pr-5" href="http://expensident.x10host.com/pages/AboutUs.html">About us</a>
+                            <a class="nav-link pr-5 dropdown-toggle" href="http://expensident.x10host.com/pages/Products.html" data-toggle="dropdown">Products</a>
+                            <a class="nav-link pr-5" data-toggle="modal" data-target="#myModal" href="http://expensident.x10host.com/index.html">Contact</a>
+                            <a class="nav-link pr-5" href="http://expensident.x10host.com/pages/DataBase.html">More Info</a>
+                            <div class="dropdown ">
+                                <div class="dropdown-menu col-2 bg-info">
+                                    <a class="dropdown-item text-dark" href="http://expensident.x10host.com/pages/Products.html">Products gallery</a>
+                                    <a class="dropdown-item text-dark" href="http://expensident.x10host.com/pages/ProductsPrices.html">Products prizes</a>
+                                </div>
+                            </div>
+
+
+
+
+                        </li> 
+                    </ul>
+                </div>  
+            </nav>
+
+        </header>
+        <br>
+
+        <!--Modal form-->
+        <div class="container pr-5 fontUnica ">
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-dark text-white">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h1 class="modal-title blueBeautyText">Contact Us</h1>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="container">
+                                <h2>Form Validation</h2>
+                                <form action="mailto:sintra1999@hotmail.es" class="was-validated" id="myForm">
+                                    <div class="form-group">
+                                        <label for="name">Name:</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required="">
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">E-mail:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required="">
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="date">Date:</label>
+                                        <input type="date" class="form-control" id="date" name="date" required="">
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Please fill out this field.</div>
+                                    </div>
+                                    <div class="form-group form-check-inline">
+                                        <label class="form-check-label" for="radio1">
+                                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" required="">Male
+                                        </label>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Check this checkbox to continue.</div>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label" for="radio2">
+                                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" required="">Female
+                                        </label>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Check this checkbox to continue.</div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="comment">Comment:</label>
+                                        <textarea class="form-control" rows="5" id="comment" placeholder="Leave a comment here"></textarea>
+                                    </div>
+                                    <div class="form-group form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="remember" required=""> I have read and accept the <a href="http://expensident.x10host.com/documents/privacy-policy-template.pdf" target="_blank">privacy policy</a> and you access the storage and management of your data by this website.
+                                        </label>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Check this checkbox to continue.</div>
+                                    </div>
+                                    <button type="reset" value="reset" class="btn btn-primary mr-5">Reset</button>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid text-center ">
+            <div class="row">
+                <div class="col-sm-12" style="background-color: rgb(246,246,246);">
+                    <div class="firstBox mt-5  row align-items-center">
+                        <div class="col-sm-6 offset-sm-3" id="blueBox">
+                            <h1 class="fontUnica text-center p-5">smile <br> you are in Family </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container d-none d-md-block">
+                    <div id="background" class="mt-5">
+                        <aside class="col-md-5 col-lg-4 col-xl-3 p-4 ml-3 fontRoboto">
+                            <h5 class="pb-3">DENTAL CLINIC IN MADRID</h5>
+                            <h1 class=" fontUnica text-center blueBeautyText">smile you are in Family </h1>
+                            <p class="text-justify font-weight-light">
+                                At the <strong>ExpensiDent Dental Clinic</strong> we have a clear mission: to offer you a dental service
+                                completely and exclusive customized. We put before you a whole team
+                                doctor, specialized in the different branches of dentistry, with the firm objective
+                                to offer you the best dental treatments, based on personalized attention and
+                                honesty.
+                            </p>
+                            <p class="text-justify font-weight-light">
+                                The <strong>ExpensiDent Dental Clinic</strong> is born within the most familiar environment.
+                                With a clear idea in mind, backed by perfection and personalization, we founded
+                                our clinic, which makes a difference in every&nbsp;moment.
+                            </p>
+                        </aside>
+                    </div>
+                    <div class="text-justify font-weight-light fontRoboto textUnderAside">
+                        <p>ExpensiDent is a different dental clinic in Madrid.
+                            We are committed to constant training and offer the latest dental treatments
+                            Our goal is to make you feel at home, while we improve your health and oral aesthetics.
+                            We have incorporated the most pointers and
+                            avant-garde technological advances, in order to offer you a friendly place and
+                            nice, in which he carries out any dental process he needs.
+                            The Dental Clinic Ruiz de Gopegui is constantly growing, expanding our equipment
+                            technological and optimizing the training of the entire medical team. We offer you a
+                            Different environment, in which you will feel at home. Our team forms
+                            part of this strategy in which the protagonist of everything is you. We don't think about
+                            patients, we think of people, because we only treat people. The closeness, the
+                            personal attention and professionalism make a difference in our clinic.
+                        </p>
+                    </div>
+                </div> 
+
+                <div class="container d-block d-md-none">
+                    <div class="mt-5 row">
+                        <aside class="col-md-4 col-lg-3 p-4 fontRoboto">
+                            <h5 class="pb-3">DENTAL CLINIC IN MADRID</h5>
+                            <h1 class=" fontUnica text-center blueBeautyText">smile you are in Family </h1>
+                            <p class="text-justify font-weight-light">
+                                At the ExpensiDent Dental Clinic we have a clear mission: to offer you a dental service
+                                completely and exclusive customized. We put before you a whole team
+                                doctor, specialized in the different branches of dentistry, with the firm objective
+                                to offer you the best dental treatments, based on personalized attention and
+                                honesty.
+                            </p>
+                            <p class="text-justify font-weight-light">
+                                The ExpensiDent Dental Clinic is born within the most familiar environment.
+                                With a clear idea in mind, backed by perfection and personalization, we founded
+                                our clinic, which makes a difference in every&nbsp;moment.
+                            </p>
+                            <div class="text-justify font-weight-light fontRoboto textUnderAside">
+                                <p>ExpensiDent is a different dental clinic in Madrid.
+                                    We are committed to constant training and offer the latest dental treatments
+                                    Our goal is to make you feel at home, while we improve your health and oral aesthetics.
+                                    We have incorporated the most pointers and
+                                    avant-garde technological advances, in order to offer you a friendly place and
+                                    nice, in which he carries out any dental process he needs.
+                                    The Dental Clinic Ruiz de Gopegui is constantly growing, expanding our equipment
+                                    technological and optimizing the training of the entire medical team. We offer you a
+                                    Different environment, in which you will feel at home. Our team forms
+                                    part of this strategy in which the protagonist of everything is you. We don't think about
+                                    patients, we think of people, because we only treat people. The closeness, the
+                                    personal attention and professionalism make a difference in our clinic
+                                    Madrid dental.
+                                </p>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light text-center p-5 d-none d-md-block">
+            <h1 class="fontUnica text-center blueBeautyText mb-5">Our Treatments</h1>
+            <div class="img-wrap fontUnica d-inline-block m-3" id="dentalCleaning">
+                <div class="img-description"><h1>Teeth Whitening</h1><a href="http://expensident.x10host.com/pages/ProductsPrices.html#dentalWhiteningPrice">see our products!</a></div>
+            </div>
+            <div class="img-wrap fontUnica d-inline-block m-3" id="dentalInsertion">
+                <div class="img-description"><h1>Dental Insertion</h1><a href="http://expensident.x10host.com/pages/ProductsPrices.html#dentalInsertionPrice">see our products!</a></div>
+            </div>
+            <div class="img-wrap fontUnica d-inline-block m-3" id="ortodoncy">
+                <div class="img-description"><h1>Ortodoncy</h1><a href="http://expensident.x10host.com/pages/ProductsPrices.html#ortodoncyPrize">see our products!</a></div>
+            </div>
+            <div class="img-wrap fontUnica d-inline-block m-3" id="peridoncy">
+                <div class="img-description"><h1>Periodontics</h1><a href="http://expensident.x10host.com/pages/ProductsPrices.html#peridonticsPrize">see our products!</a></div>
+            </div>
+        </div>
+
+        <div class="bg-light text-center d-block d-md-none">
+            <h1 class="fontUnica text-center blueBeautyText m-5" style="font-size: 4rem">Our Treatments</h1>
+            <div class="img-wrap fontUnica d-inline-block mr-3 mb-3" id="dentalCleaning2">
+                <div class="img-description"><h2>Teeth Whitening</h2><a href="http://expensident.x10host.com/pages/ProductsPrices.html#dentalWhiteningPrice">see our products!</a></div>
+            </div>
+            <div class="img-wrap fontUnica d-inline-block mr-3 mb-3" id="dentalInsertion2">
+                <div class="img-description"><h2>Dental Insertion</h2><a href="http://expensident.x10host.com/pages/ProductsPrices.html#dentalInsertionPrice">see our products!</a></div>
+            </div>
+            <div class="img-wrap fontUnica d-inline-block mr-3 mb-3" id="ortodoncy2">
+                <div class="img-description"><h2>Ortodoncy</h2><a href="http://expensident.x10host.com/pages/ProductsPrices.html#ortodoncyPrize">see our products!</a></div>
+            </div>
+            <div class="img-wrap fontUnica d-inline-block mr-3 mb-3" id="peridoncy2">
+                <div class="img-description"><h3>Periodontics</h3><a href="http://expensident.x10host.com/pages/ProductsPrices.html#peridonticsPrize">see our products!</a></div>
+            </div>
+        </div>
+
+        <a id="back-to-top" href="http://expensident.x10host.com/index.html#" class="btn btn-info btn-lg back-to-top" data-toggle="tooltip" title="" role="button" data-original-title="Go to the top" style="">
+            <i class="fas">Top</i>
+        </a>
+
+        <footer class="jumbotron container-fluid mb-0 p-5 text-center fontUnica bg-dark">
+            <div class="d-block d-md-none ">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/"><img src="./ExpensiDent_files/facebookIcon.png" alt="facebookIcon" width="40" height="40"></a>
+                <a href="https://web.whatsapp.com/"><img src="./ExpensiDent_files/whatsappIcon.png" alt="whatsappIcon" width="40" height="40"></a>
+                <a href="https://www.instagram.com/?hl=es"><img src="./ExpensiDent_files/instagramIcon.png" alt="instagramIcon" width="40" height="40"></a>
+                <a href="https://twitter.com/?lang=es"><img src="./ExpensiDent_files/twitterIcon.png" alt="twitterIcon" width="40" height="40"></a>
+            </div> 
+            <p class="text-white">
+                <a href="http://expensident.x10host.com/documents/legalNotice.pdf" target="blank">Legal Notice</a> | <a href="http://expensident.x10host.com/documents/privacy-policy-template.pdf" target="blank">Privacy Policy</a> | <a href="http://expensident.x10host.com/documents/Cookie-Policy.pdf" target="blank">Cookies policy</a><br>
+                Copyright © ExpensiDent Dental Clinic – Web Design: Alberto Gonzalez
+            </p>
+        </footer>
+    
+
+</body></html>

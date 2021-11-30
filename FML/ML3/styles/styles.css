@@ -1,0 +1,199 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 nov. 2019, 15:51:11
+    Author     : Usuario
+*/
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.all{
+    background: linear-gradient(to bottom, #e3e4e5 0%, #1919e6 66%);
+}
+.header{
+    background: #343A40;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+}
+
+h1{
+    font-family: 'Sedgwick Ave Display', cursive;
+    color: white;
+}
+
+.name{
+    font-family: 'Alata', sans-serif;
+    color: black;
+}
+
+.otherContainer{
+
+    margin-top: 15px;
+}
+
+.navegador{
+
+    margin: 15%;
+}
+.card{
+    border: none;
+
+}
+.card2{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    float: left;
+    margin-top: 10px;
+}
+.card-header{
+    background: #343A40;
+    border-radius: -2px;
+}
+.card-link{
+    color: white;
+}
+
+
+.lateral-nav{
+    margin-top: 22px;
+    width: 50%;
+    float: left;
+    height: 50%;
+    background: #343A40;
+}
+
+.products{
+    width: 100%;
+    
+}
+
+footer{
+
+    position: static;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 20px; 
+    width: 100%;
+    background-color: #343A40;
+    color: white;
+    text-align: center;
+    height: 590px;
+}
+.insta{
+    text-decoration: none;
+    color: white;
+}
+.insta:hover{
+    text-decoration: none;
+}
+
+.containerAlvaro {
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.containerAlvaro:hover .image {
+    opacity: 0.3;
+}
+
+.containerAlvaro:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #343A40;
+    color: white;
+    font-size: 12px;
+    padding: 8px 16px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.what{
+    
+    color: #ffffff;
+}
+
+.what:hover{
+    color: whitesmoke;
+}
+
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "âœ”";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "âœ–";
+}
