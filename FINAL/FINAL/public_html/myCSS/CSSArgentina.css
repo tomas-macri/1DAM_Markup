@@ -1,32 +1,35 @@
-header{
-   /* background-color: dodgerblue;*/
-    background-image: radial-gradient( rgb(255,255,255), rgb(0,159,215) );
+ header{
+    background-color: lightskyblue;
     width: 100%;
     float: bottom;
     margin-right:2%;
     margin-bottom: 0;
     padding: 0;
-  /*  position: fixed;
-    height: 100px;                           Esto serñia para que el header se quede al scrollear*/
-}
+    border-bottom: 1px solid white;
+    /*position: fixed;
+    height: 100px;*/
+ }
+
 
 
 /* IMAGEN NP SE AJUSTA NO HACE UNA MIERDA */
 
-.imgHeader{
-    width: 10%;
-    height: auto;
-    float: left;
-}
 
 #headerTitle{
     font-family: "Comic Sans MS", sans-serif;
     color: goldenrod;
     text-align: center;
+    padding-top: 8%;
     font-size: 48px;
-    width: 100%; /* VA A HABER QUE AJUSTARLO CON LA IMAGEN A LA MISMA ALTURA */
+    height: 100%;                       /* ALINEAR TEXTO EN EL CENTRO DE LA PAG */
+    width: 50%; /* VA A HABER QUE AJUSTARLO CON LA IMAGEN A LA MISMA ALTURA */
 }
 
+.imgHeader{
+    float: left;
+    width: 40%;
+    margin-right: 5%;
+}
 
 
 /* SIDEBAR */
@@ -35,7 +38,6 @@ header{
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: white;
     position: fixed;
     display: flow;
     height: 100%;
@@ -50,11 +52,6 @@ header{
     text-decoration: none;
 }
 
-/*.sidebar a.active {
-    background-color: lightskyblue;
-    color: white;
-}*/
-
 /*when hovered, an item will look like this*/
 
 .sidebar a:hover {
@@ -65,7 +62,7 @@ header{
     color: goldenrod;
 }
 /* This is what is next to the sidebar */
-div.content {
+#content {
     margin-left: 200px;
     padding: 16px;
     height: 1000px; /* possible 100% */
@@ -81,7 +78,10 @@ div.content {
     .sidebar a {
         float: left;
     }
-    div.content {
+    .itemSidebar{
+        width: 25%;
+    }
+    #content {
         margin-top: 100px;
         margin-left: 0;
     }
@@ -92,6 +92,10 @@ div.content {
     .sidebar a {
         text-align: center;
         float: none;
+    }
+    .itemSidebar{
+        width: 100%;
+        text-align: center;
     }
 }
 
@@ -116,7 +120,10 @@ div.content {
 
 /* END OF SIDEBAR */
 
-
+.pageHeader{
+    width: 100%;
+    float: left;
+}
 
 
 
