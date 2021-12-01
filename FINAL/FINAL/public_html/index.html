@@ -74,60 +74,97 @@ SASS
 
     </head>
     <body>
-       <!-- <header class="pageHeader">
-            <img src="images/flagArgentina.png" alt="Argentina's flag" class="imgHeader">
-            <img src="images/logo.png" alt="Logo" class="imgHeader">
-            <h1 id="headerTitle">ARGENTINA</h1>
-        </header> -->
-
-
-        <header class="container-fluid" style="top: 0px;">
-
+        <header class="container-fluid">
             <div>
                 <a id="titleAndImageHeader" class="d-inline-block" href="./index.html#">
                     <img src="images/logo.png" alt="logo" class="imgHeader">
                     <h2 id="headerTitle">Argentina</h2>    
                 </a>
             </div>
-            
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <div class="container-fluid">
+                    <ul class="navbar-nav m-0 p-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
         </header>
-       <div class="sidebar" id="rightSidebar">
-           <div id="sidebarHeader">
-               <h3 id="sidebarTitle">MENU</h3>
+       <div id="mainPage">
+           <div class="sidebar">
+               <div id="sidebarHeader">
+                   <h3 id="sidebarTitle">MENU</h3>
+               </div>
+               <a href="#home" class="itemSidebar" >Home</a>
+               <a href="news.html" class="itemSidebar">News</a>
+               <a href="#contact" class="itemSidebar">Contact</a>
+               <a href="#about" class="itemSidebar">About</a>
            </div>
-           <a href="#home" class="itemSidebar" >Home</a>
-           <a href="news.html" class="itemSidebar">News</a>
-           <a href="#contact" class="itemSidebar">Contact</a>
-           <a href="#about" class="itemSidebar">About</a>
-       </div>
 
-        <div id="content">
-            <div class="container-fluid">
-                <img src="images/PeritoMoreno1.jpg" alt="Perito Moreno Glaciar" class="container-fluid p-0 m-0" >
-                <div class=" bg-primary bg-opacity-10 text-center">
-                    <h2>Welcome to Argentina!</h2>
-                    <h6>What do you want to see?</h6>
+            <div id="content">
+                <div class="container-fluid position-relative p-0 m-0">
+                    <img src="images/PeritoMoreno1.jpg" alt="Perito Moreno Glaciar" class="container-fluid contenedor p-0 m-0" >
+                    <div class="bg-primary bg-opacity-10 text-center centrado">
+                        <h2 class="welcome">Welcome to Argentina!</h2>
+                        <h6 class="welcome">What do you want to see?</h6>
+                    </div>
+                </div>
+
+
+                <!-- FIRST ITEM-->
+                <div class="bg-danger container-fluid align-items-end titlesFadingPages">
+                    <div class="row">
+                        <div class="text-center align-items-center mx-5 col-12 col-md-6 col-lg-4 ">
+                            <h3 class="titlesHomePage">NEWS</h3>
+                            <p class="fw-bold">Here you will see what's going on in Argentina</p>
+                        </div>
+                        <img src="images/MoonValley.jpg" alt="Moon Valley" class="d-sm-none d-md-block col-md-6 col-lg-4 offset-lg-3" >
+                    </div>
+                </div>
+                <!-- FIRST ITEM-->
+                <div class="bg-danger container-fluid align-items-end titlesFadingPages">
+                    <div class="row">
+                        <div class="text-center align-items-center mx-5 col-12 col-md-6 col-lg-4 ">
+                            <h3 class="titlesHomePage">NEWS</h3>
+                            <p class="fw-bold">Here you will see what's going on in Argentina</p>
+                        </div>
+                        <img src="images/MoonValley.jpg" alt="Moon Valley" class="d-sm-none d-md-block col-md-6 col-lg-4 offset-lg-3" >
+                    </div>
+                </div>
+                <!-- FIRST ITEM-->
+                <div class="bg-danger container-fluid align-items-end titlesFadingPages">
+                    <div class="row">
+                        <img src="images/MoonValley.jpg" alt="Moon Valley" class="d-sm-none d-md-block col-md-6 col-lg-4 " >
+                        <div class="text-center align-items-center mx-5 col-12 col-md-6 col-lg-4">
+                            <h3 class="titlesHomePage">NEWS</h3>
+                            <p class="fw-bold">Here you will see what's going on in Argentina</p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- FIRST ITEM-->
+                <div class="bg-danger container-fluid align-items-end titlesFadingPages">
+                    <div class="row">
+                        <div class="text-center align-items-center mx-5 col-12 col-md-6 col-lg-4 ">
+                            <h3 class="titlesHomePage">NEWS</h3>
+                            <p class="fw-bold">Here you will see what's going on in Argentina</p>
+                        </div>
+                        <img src="images/MoonValley.jpg" alt="Moon Valley" class="d-sm-none d-md-block col-md-6 col-lg-4 offset-lg-3" >
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <h6>Argentina beat Brazil 1-0 to win Copa America</h6>
-                <p class="col-12 col-sm-8 col-md-6 col-lg-10">
-                    Argentina’s win was a particular triumph for Barcelona striker Lionel Messi, who picked up his first ever title in a blue and white shirt after more than 10 years of club and individual honours.
-
-                    When the match ended, a tearful Messi was thrown into the air by some of his joyous teammates.
-
-                    Messi finished the tournament’s joint top goalscorer with four goals and was elected joint best player with Neymar. But he was quiet throughout and uncharacteristically missed a golden opportunity to wrap the game up with two minutes remaining.
-
-                    When the final whistle went, Argentina TV declared “Argentina Champions, Lionel Messi Champion!”
-
-                    The victory was Argentina’s 15th Copa America triumph and means they draw level with Uruguay as the all-time leading winners.
-
-                    Their win extended their sequence of undefeated matches to 20 under Lionel Scaloni and handed Brazil their first competitive defeat since they lost to Belgium in the quarter-finals of the 2018 World Cup.
-                </p>
-            </div>
-        </div>
-
+       </div>
 
 
 

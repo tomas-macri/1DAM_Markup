@@ -6,6 +6,7 @@
     margin-bottom: 0;
     padding: 0;
     border-bottom: 1px solid white;
+    top: 0px;
     /*position: fixed;
     height: 100px;*/
  }
@@ -39,17 +40,21 @@
     margin-right: 5%;
 }
 
+#mainPage{
+    width: 100%;
+}
 
 /* SIDEBAR */
 
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 10%;
     position: fixed;
-    display: flow;
     height: 100%;
-    overflow: auto;
+    float: left;
+    /*overflow: auto;
+    display: flow;*/
 }
 
 /* item !selected form the sidebar */
@@ -71,8 +76,8 @@
 }
 /* This is what is next to the sidebar */
 #content {
-    margin-left: 200px;
-    padding: 16px;
+    margin-left: 10%;
+    width: 90%;
     height: 1000px; /* possible 100% */
 }
 
@@ -128,20 +133,54 @@
 
 /* END OF SIDEBAR */
 
-.pageHeader{
+/*.pageHeader{
     width: 100%;
     float: left;
+}/*
+
+
+
+/* classes to center a text inside an image*/
+ .contenedor{
+     position: relative;
+     display: inline-block;
+     text-align: center;
+ }
+
+
+ .centrado{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%); /* kjjj */
+ }
+
+
+/* foto perito moreno cambio tamaño letra
+h2.welcome{
+   font-size: 52px;
 }
 
+h6.welcome{
+    font-size: 24px;
+}
+*/
 
 
+.titlesHomePage{
+    font-size: 88px;
+    justify-content: left;
+}
 
-
-
-
-
-
-
+ /* FADE IN */
+ .titlesFadingPages:hover {
+     opacity: 0;
+     animation: fade 2s linear;
+ }
+ @keyframes fade {
+     0% { opacity: 0 }
+     100% { opacity: 1 }
+ }
 
 
 
