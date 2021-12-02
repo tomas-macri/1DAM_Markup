@@ -149,8 +149,8 @@
 
 
  .centrado{
-     position: absolute;
-     top: 50%;
+     background-image: url("../images/PeritoMoreno1.jpg");  
+     /*top: 50%;
      left: 50%;
      transform: translate(-50%, -50%); /* kjjj */
  }
@@ -168,8 +168,10 @@ h6.welcome{
 
 
 .titlesHomePage{
-    font-size: 88px;
-    justify-content: left;
+    font-size: 72px;
+    /*justify-content: left;*/
+    text-decoration: none;
+    
 }
 
  /* FADE IN */
