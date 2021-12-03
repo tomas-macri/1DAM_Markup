@@ -7,10 +7,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     Author     : obama
 */
 
-$primaryColor: #eeffcc;
-p {
- background: $primaryColor;
-}
-h1 {
+$primaryColor: rgb(192,210,254);
+div.bgLightBlue {
  background: $primaryColor;
 }

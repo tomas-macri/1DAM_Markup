@@ -6,12 +6,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     Created on : 2 dic. 2021, 12:07:41
     Author     : obama
 */
-p {
-  background: #eeffcc;
-}
-
-h1 {
-  background: #eeffcc;
+.bgLightBlue {
+  background: #c0d2fe;
 }
 
 /*# sourceMappingURL=MyFirstSASS.css.map */

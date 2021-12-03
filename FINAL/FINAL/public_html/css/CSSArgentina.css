@@ -1,5 +1,4 @@
  header{
-    background-color: lightskyblue;
     width: 100%;
     float: bottom;
     margin-right:2%;
@@ -20,6 +19,9 @@
      white-space:nowrap;                                /*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
  }
 
+ .borderRight{
+     border-right: 1px solid white;
+ }
 
 /* IMAGEN NP SE AJUSTA NO HACE UNA MIERDA */
 
@@ -67,7 +69,7 @@
 
 /*when hovered, an item will look like this*/
 
-.linkSidebar:hover {
+.linkNavbar:hover {
     margin:0;
     border: 0;
     background-color: goldenrod;
@@ -132,8 +134,7 @@
     font-size: 18px;
 }
  */
-.linkSidebar{
-    background-color: lightskyblue;
+.linkNavbar{
     border:solid white;
     border-width:1px 1px 1px 1px;
 }
