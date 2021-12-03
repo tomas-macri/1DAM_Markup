@@ -116,35 +116,35 @@ SASS
             </div>-->
 
             <!--<img src="images/PeritoMoreno1.jpg" alt="Perito Moreno Glaciar" class="container-fluid contenedor p-0 m-0" >-->
-            <div class="bg-primary bg-opacity-10 p-5 mb-1 text-center centrado">
-                <h1 class="welcome container">Welcome to Argentina!</h1>
-                <p class="welcome container">What do you want to see?</p>
+            <div class="bg-primary p-5 mt-1 mb-1 text-center centrado">
+                    <h1 class="welcome container">Welcome to Argentina!</h1>
+                    <p class="welcome container">What do you want to see?</p>
             </div>
 
             <!-- FIRST ITEM-->
             <a href="./news.html" class="text-decoration-none text-decoration-none text-black">
-                <div class="bgLightBlue container-fluid mt-1 mb-1 ">
+                <div class="bgLightBlue container-fluid">
                     <div class="row">
                         <div class="text-center py-5 col-12 col-md-4">
                             <h3 class="titlesHomePage">NEWS</h3>
                         </div>
-                        <div class="text-center py-5 d-sm-none d-md-block col-md-4 titlesFadingPages"> <!-- IMAGENES QUE NO SE VAN????????????????????????-->
+                        <div class="text-center py-5 d-none d-md-block col-md-8 col-lg-4 titlesFadingPages"> <!-- IMAGENES QUE NO SE VAN????????????????????????-->
                             <p class="fw-bold mt-4">Here you will see what's going on in Argentina</p>
                         </div>
-                        <div class="py-5 d-sm-none d-md-block col-md-4 backImageMoonValey titlesFadingPages"></div>
+                        <div class="py-5 d-none d-lg-block col-lg-4 backImageMoonValey titlesFadingPages"></div>
                     </div>
                 </div>
             </a>
 
             <!-- SECOND ITEM-->
             <a href="./news.html" class="text-decoration-none text-decoration-none text-black">
-                <div class="bg-white container-fluid mt-1 mb-1 ">
+                <div class="bg-white container-fluid">
                     <div class="row">
                       
-                        <div class="text-center py-5 d-sm-none d-md-block col-md-4 titlesFadingPages">
+                        <div class="text-center py-5 d-sm-none d-md-block col-md-8 col-lg-4 titlesFadingPages">
                             <p class="fw-bold mt-4">Here you will see what's going on in Argentina</p>
                         </div>
-                        <div class="py-5 d-sm-none d-md-block col-md-4 backImageMoonValey titlesFadingPages"></div>
+                        <div class="py-5 d-none d-lg-block col-lg-4 backImageBariloche titlesFadingPages"></div>
                         
                         
                         <div class="text-center borderRight py-5 col-12 col-md-3 ">
@@ -156,20 +156,113 @@ SASS
 
             <!-- THIRD ITEM-->
             <a href="./news.html" class="text-decoration-none text-decoration-none text-black">
-                <div class="bgLightBlue container-fluid mt-1 mb-1">
+                <div class="bgLightBlue container-fluid mb-1">
                     <div class="row">
                         <div class="text-center py-5 col-12 col-md-4">
                             <h3 class="titlesHomePage">NEWS</h3>
                         </div>
-                        <div class="text-center py-5 d-sm-none d-md-block col-md-4 titlesFadingPages">
+                        <div class="text-center py-5 d-none d-md-block col-md-8 col-lg-4 titlesFadingPages">
                             <p class="fw-bold mt-4">Here you will see what's going on in Argentina</p>
                         </div>
-                        <div class="py-5 d-sm-none d-md-block col-md-4 backImageMoonValey titlesFadingPages"></div>
+                        <div class="py-5 d-none d-lg-block col-lg-4 backImageIguazu titlesFadingPages"></div>
                     </div>
                 </div>
             </a>
-
-          
        </div>
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/MoonValley.jpg" alt="Los Angeles" class="d-block h-auto w-auto m-auto">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Bariloche.jpg" alt="Chicago" class="d-block h-auto w-auto m-auto">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/IguazuFalls.jpg" alt="New York" class="d-block h-auto w-auto m-auto">
+                    <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>We had such a great time in LA!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/IguazuFalls2.jpg" alt="New York" class="d-block h-auto w-auto m-auto">
+                    <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>We had such a great time in LA!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="container-fluid mt-3">
+            <h3>Carousel Example</h3>
+            <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+        </div>
+        </div>
+
+
+    <!-- IMG GALLERY -->
+
+        <div class="container">
+            <h2>Image Gallery</h2>
+            <p>The .thumbnail class can be used to display an image gallery.</p>
+            <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+            <p>Click on the images to enlarge them.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="img-thumbnail">
+                        <a href="./images/Bariloche.jpg" target="_blank"> <!--_blank = in a new window  -->
+                            <img src="images/Bariloche.jpg" alt="Lights" style="width:100%">
+                            <div class="caption">
+                                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="img-thumbnail">
+                        <a href="./images/MoonValley.jpg" target="_blank">
+                            <img src="images/MoonValley.jpg" alt="Nature" style="width:100%">
+                            <div class="caption">
+                                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="img-thumbnail">
+                        <a href="./images/PeritoMoreno1.jpg" target="_blank">
+                            <img src="images/PeritoMoreno1.jpg" alt="Fjords" style="height: 200px; width:100%">
+                            <div class="caption">
+                                <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
     </body>
 </html>

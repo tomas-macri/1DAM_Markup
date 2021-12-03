@@ -1,4 +1,5 @@
- header{
+
+header{
     width: 100%;
     float: bottom;
     margin-right:2%;
@@ -197,6 +198,13 @@ h6.welcome{
      background-image: url("../images/MoonValley.jpg");
      /* SE REPITE LA IMAGEN AL HACER ZOOM OUTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT*/
  }
+.backImageBariloche{
+    background-image: url("../images/Bariloche.jpg");
+    /* SE REPITE LA IMAGEN AL HACER ZOOM OUTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT*/
+}
+.backImageIguazu{
+    background-image: url("../images/IguazuFalls.jpg");
+}
 
 
 /* ANOTHER PAGE*/
