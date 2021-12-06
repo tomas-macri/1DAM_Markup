@@ -43,7 +43,7 @@ header{
     margin-right: 5%;
 }
 
-#mainPage{
+#w-100{
     width: 100%;
 }
 
@@ -209,7 +209,49 @@ h6.welcome{
 
 /* ANOTHER PAGE*/
 
+
+/* GEOGRAPHY */
+#geographyMain{
+    background-image: url("../images/BackgroundShapes2.jpg");
+    height: 100%;
+    width: 100%;
+}
+
+.fondoNuevo{
+    background-color: rgb(216,243,254);
+}
+.pruebaBorder{
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+
+}
+
+.width-60{
+  /*  margin-left: 2.5%;
+    margin-right: 2.5%;
+    */width: 75%;
+}
+
+.width-30{
+    margin-left: 4%;
+    width: 20%;
+    margin-right: 1%;
+}
+
+
+
+
+
+
+
+
+
+
 /* NEWSSSSSSSSSSSSSSSSSSSSSSS*/
+
+
+
+
 
 
 /* TITLENEWS H2 */
