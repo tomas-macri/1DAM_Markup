@@ -12,141 +12,327 @@
     </head>
     <body>
         <header class="container-fluid bgLightBlue">
-            <div>
-                <a id="titleAndImageHeader" class="d-inline-block" href="./index.html#">
-                    <img src="images/logo.png" alt="logo" class="imgHeader">
-                    <h2 id="headerTitle" class="mx-5">Argentina</h2>
-                </a>
-                <button type="button" class="btn mx-5 h-25 top-0 end-0" data-bs-toggle="collapse" data-bs-target="#myNavbar"><img src="images/moreOptions.png" alt="moreOptions" class="w-25 h-25" ></button>
-            </div>
-            <div id="myNavbar" class="collapse">
-                <nav class="navbar navbar-expand-md mx-0 mb-0 pb-0 px-0 navbar-dark">
-                    <div class="container-fluid px-0 mx-0 row">
-                        <ul class="navbar-nav m-0 p-0 ">
-                            <li class="nav-item text-center  col-md-12 col-lg-3">
-                                <a class="nav-link linkNavbar bgLightBlue text-white" href="index.html">Active</a>
-                            </li>
-                            <li class="nav-item text-center  col-md-12 col-lg-3">
-                                <a class="nav-link linkNavbar bgLightBlue text-white" href="geography.html">Geography</a>
-                            </li>
-                            <li class="nav-item text-center  col-md-12 col-lg-3">
-                                <a class="nav-link linkNavbar bgLightBlue text-white" href="culture.html">Culture</a>
-                            </li>
-                            <li class="nav-item text-center itemSidebar col-md-12 col-lg-3">
-                                <a class="nav-link linkNavbar bgLightBlue text-white" href="#">Disabled</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <div class="w-100 fondoNuevo">
-            <div id="                      HEsAD">
-                <h2 class="text-center">Culture</h2>
-                <p>Here you will have a glimpse about the argentinian culture. There are some main topics for you:</p>
-                <ul class="list-unstyled mx-3">
-                    <li>
-                        <a href="#Food" class="text-decoration-none text-black">Food</a>
-                    </li>
-                    <li>
-                        <a href="#Football" class="text-decoration-none text-black">Football</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="Food">
-                <h3>These are some typical argentinian dishes</h3>
+        <div>
+            <a id="titleAndImageHeader" class="d-inline-block" href="./index.html#">
+                <img src="images/logo.png" alt="logo" class="imgHeader">
+                <h2 id="headerTitle" class="mx-5">Argentina</h2>
+            </a>
+            <button type="button" class="btn mx-5 h-25 top-0 end-0" data-bs-toggle="collapse" data-bs-target="#myNavbar"><img src="images/moreOptions.png" alt="moreOptions" class="w-25 h-25" ></button>
+        </div>
+        <div id="myNavbar" class="collapse">
+            <nav class="navbar navbar-expand-md mx-0 mb-0 pb-0 px-0 navbar-dark">
+                <div class="container-fluid px-0 mx-0 row">
+                    <ul class="navbar-nav m-0 p-0 ">
+                        <li class="nav-item text-center col-lg-3">
+                            <a class="nav-link linkNavbar bgLightBlue text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item text-center col-lg-3">
+                            <a class="nav-link linkNavbar bgLightBlue text-white" href="geography.html">Geography</a>
+                        </li>
+                        <li class="nav-item text-center col-lg-3">
+                            <a class="nav-link linkNavbar bgLightBlue text-white" href="culture.html">Culture</a>
+                        </li>
+                        <li class="nav-item text-center col-lg-3">
+                            <a class="nav-link linkNavbar bgLightBlue text-white" data-bs-toggle="modal" data-bs-target="#myModal" href="">Join us</a>  <!-- the href atribute is written because if not the cursor will not appear as clickable when hovering the item-->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="modal text-white" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
 
-                <div id="foodCarrousel" class="carousel slide" data-bs-ride="carousel">
-
-                    <!-- Indicators/dots -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#foodCarrousel" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#foodCarrousel" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#foodCarrousel" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#foodCarrousel" data-bs-slide-to="3"></button>
+                    <!-- Modal Header -->
+                    <div class="modal-header bgCornBlue">
+                        <h3 class="modal-title">We are looking forward to having you!</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
-                    <!-- The slideshow/carousel -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/culture/food/asado.jpg" alt="Asado" class="d-block h-auto w-auto m-auto">
-                            <div class="carousel-caption">
-                                <a href="#Asado"> <h3 class="text-decoration-none text-white">Asado</h3> </a>
+                    <!-- Modal body -->
+                    <div class="container bgCornBlue">
+                        <h4>Join our email list and discover the latest news about Argentina</h4>
+                        <form action="mailto:@hotmail.es" class="was-validated" id="myForm">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required="">
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/culture/food/milanesa.jpg" alt="Milanesa" class="d-block h-auto w-auto m-auto">
-                            <div class="carousel-caption">
-                                <a href="#Milanesa"> <h3 class="text-decoration-none text-white">Milanesa</h3> </a>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/culture/food/alfajor.jpg" alt="Alfajor" class="d-block h-auto w-auto m-auto">
-                            <div class="carousel-caption">
-                                <a href="#Alfajor"> <h3 class="text-decoration-none text-white">Alfajor</h3> </a>
+                            <div class="form-group">
+                                <label for="date">Date:</label>
+                                <input type="date" class="form-control" id="date" name="date" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
-                        </div>
+                            <div class="form-group form-check-inline">
+                                <label class="form-check-label" for="radio1">
+                                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" required="">Male
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label" for="radio2">
+                                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" required="">Female
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Suggestions:</label>
+                                <textarea class="form-control" rows="5" id="comment" placeholder="Leave your suggestions here..."></textarea>
+                            </div>
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember" required=""> I have read and accept the <a href="https://www.termsfeed.com/live/750baf27-3d59-4974-b8c8-3243f7d44812" target="_blank" class="text-black">privacy policy</a>.
+                                </label>
+                                <div class="invalid-feedback">Accept this in order to continue.</div>
+                            </div>
+                            <button type="submit" class="btn bgLinearLightBlueToWhite text-white my-3">Join us!</button>
+                            <button type="reset" value="reset" class="btn bgLinearLightBlueToWhite text-white mr-5 my-3">Clear</button>
+                        </form>
                     </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer bgCornBlue">
+                        <button type="button" class="btn bgLinearLightBlueToWhite text-white" data-bs-dismiss="modal">Close</button>
+                    </div>
+
                 </div>
-
-                    <ol>
-                        <li>
-                            <h3 id="Asado">Asado</h3>
-                            <p>golssssss</p>
-                        </li>
-                        <li>
-                            <h3 id="Milanesa">Milanesa</h3>
-                            <p>golssssss</p>
-                        </li>
-                        <li>
-                            <h3 id="Alfajor">Alfajor</h3>
-                            <p>golssssss</p>
-                        </li>
-                    </ol>
-
-                    <!-- Left and right controls/icons -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#foodCarrousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#foodCarrousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
-
-                <div class="container-fluid mt-3">
-                    <h3>Carousel Example</h3>
-                    <p>The following example shows how to create a basic carousel with indicators and controls.</p>
-                </div>
-
-            <h3> Football </h3>
-            <p>Argentina has 3 out of top 5 footballers in history: </p>
-            <ol>
-                <li>Messi</li>
-                <li>Maradona</li>
-                <li>Pelé</li>
-                <li>Cristiano Ronaldo</li>
-                <li>Di Stéfano</li>
-            </ol>
-
-            <div class="row">
-                <div class="col-md-8">
-                    <h4> MARADONA </h4>
-                    <p>
-                        Diego Maradona, in full Diego Armando Maradona, (born October 30, 1960, Lanús, Buenos Aires, Argentina—died November 25, 2020, Tigre, Buenos Aires), Argentine football (soccer) player who is generally regarded as the top footballer of the 1980s and one of the greatest of all time. Renowned for his ability to control the ball and create scoring opportunities for himself and others, he led club teams to championships in Argentina, Italy, and Spain, and he starred on the Argentine national team that won the 1986 World Cup.
-                        <br><br>
-                        Maradona displayed football talent early, and at age eight he joined Las Cebollitas (“The Little Onions”), a boys’ team that went on to win 136 consecutive games and a national championship. He signed with Argentinos Juniors at age 14 and made his first-division debut in 1976, 10 days before his 16th birthday. Only four months later he made his debut with the national team, becoming the youngest Argentine ever to do so. Although he was excluded from the 1978 World Cup-winning squad because it was felt that he was still too young, the next year he led the national under-20 team to a Junior World Cup championship.
-                        <br><br>
-                        Maradona moved to Boca Juniors in 1981 and immediately helped them gain the championship. He then moved to Europe, playing with FC Barcelona in 1982 (and winning the Spanish Cup in 1983) and then SSC Napoli (1984–91), where he enjoyed great success, raising the traditionally weak Naples side to the heights of Italian football. With Maradona the team won the league title and cup in 1987 and the league title again in 1990. Maradona’s stint with Napoli came to an end when he was arrested in Argentina for cocaine possession and received a 15-month suspension from playing football. Next he played for Sevilla in Spain and Newell’s Old Boys in Argentina. In 1995 he returned to Boca Juniors and played his last match on October 25, 1997.
-                        <br><br>
-                        Maradona’s career with the Argentine national team included World Cup appearances in 1982, 1986, 1990, and 1994. He dominated the 1986 competition in Mexico. In a 2–1 quarterfinal victory over England, he scored two of the most memorable goals in World Cup history. The first was scored with his hand (the referee mistakenly thought the ball had struck his head), a goal now remembered as the “Hand of God” goal. The second occurred after Maradona gained possession of the ball at midfield and dribbled through a pack of English defenders and past the keeper before depositing the ball in the goal. He did not finish the 1994 World Cup, because he tested positive for the drug ephedrine and was again suspended. Maradona also played on South American championship-winning teams in 1987 and 1989.
-                        <br><br>
-                        A stocky and tenacious midfielder, Maradona became a hero of the lower classes of Argentina (from which he hailed) and of southern Italy, where he led Napoli to victories over the wealthier northern clubs. He played 490 official club games during his 21-year professional career, scoring 259 goals; for Argentina he played 91 games and scored 34 goals. An Internet poll conducted by the Fédération Internationale de Football Association named Maradona the top player of the 20th century.
-                        <br><br>
-                        In 2008 Maradona was named head coach of the Argentine national team. Shortly after leading Argentina to the quarterfinals of the 2010 World Cup, he and the country’s football governing body could not agree on a contract extension, and his tenure as the team’s head coach ended. In 2011 Maradona was hired to coach the United Arab Emirates club Al Wasl. However, the team struggled, and Maradona was fired the following year. He worked for several other clubs before becoming coach of Mexico’s Dorados de Sinaloa in 2018.
-                    </p>
-                </div>
-                <img src="images/culture/football/handOfGod.jpg" class="col-md-4 zoomRotation zoom">
             </div>
         </div>
+    </header>
+        <div class="w-100 bgMainPage">
+            <div class="mx-4">
+                <div id="Culture">
+                    <h2 class="text-center">Culture</h2>
+                    <p>Here you will have a glimpse about two of the most important things about the argentinian culture:  <a href="#Food" class="text-decoration-none text-black">Food</a> and <a href="#Football" class="text-decoration-none text-black">Football</a></p>
+                </div>
+                    <h3 id="Food" class="subtitle">Food</h3>
+                    <p>
+                        Argentine cuisine is described as a cultural blending of Mediterranean influences brought by the Spanish during the colonial period and, later, by Italian and Spanish immigrants to Argentina during 19th and 20th centuries, with influences from a further cultural blending of criollos (due to Spanish colonizers) with the Indigenous peoples of Argentina (such as mate and humitas).
+
+                        Argentine annual consumption of beef has averaged 100 kg (220 lbs) per capita, approaching 180 kg (396 lbs) per capita during the 19th century; consumption averaged 67.7 kg (149 lbs) in 2007.
+
+                        Beyond asado (the Argentine barbecue), no other dish more genuinely matches the national identity. Nevertheless, the country's vast area, and its cultural diversity, have led to a local cuisine of various dishes.
+
+                        The great immigratory waves consequently imprinted a large influence in the Argentine cuisine, after all Argentina was the second country in the world with the most immigrants with 6.6 million, only second to the United States with 27 million, and ahead of other immigratory receptor countries such as Canada, Brazil, Australia, etc.
+
+                        Argentine people have a reputation for their love of eating. Social gatherings are commonly centred on sharing a meal. Invitations to have dinner at home are generally viewed as a symbol of friendship, warmth, and integration. Sunday family lunch is considered the most significant meal of the week, whose highlights often include asado or pasta.
+
+                        Another feature of Argentine cuisine is the preparation of homemade food such as french fries, patties, and pasta to celebrate a special occasion, to meet friends, or to honour someone. Homemade food is also seen as a way to show affection.
+
+                        Argentine restaurants include a great variety of cuisines, prices, and flavours. Large cities tend to host everything from high-end international cuisine, to bodegones (inexpensive traditional hidden taverns), less stylish restaurants, and bars and canteens offering a range of dishes at affordable prices.
+                    </p>
+
+                    <div id="foodCarrousel" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#foodCarrousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#foodCarrousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#foodCarrousel" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/culture/food/asado.jpg" alt="Asado" class="d-block h-auto w-auto m-auto">
+                                <div class="carousel-caption">
+                                    <a href="#Asado" class="text-decoration-none"> <h3 class="text-white">Asado</h3> </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/culture/food/milanesa.jpg" alt="Milanesa" class="d-block h-auto w-auto m-auto">
+                                <div class="carousel-caption">
+                                    <a href="#Milanesa" class="text-decoration-none"> <h3 class="text-white">Milanesa</h3> </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/culture/food/alfajor.jpg" alt="Alfajor" class="d-block h-auto w-auto m-auto">
+                                <div class="carousel-caption">
+                                    <a href="#Alfajor" class="text-decoration-none"> <h3 class="text-white">Alfajor</h3> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Left and right controls/icons -->
+                        <div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#foodCarrousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#foodCarrousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li id="Asado"><h4>Asado</h4> <!--<a data-bs-toggle="collapse" data-bs-target="#asadoP" onclick="this.className='isited'"><div class="changeOnClick">holaaaaaa</div></a>-->
+
+                            <p id="asadoP"> <!--class="collapse"-->
+                                The asado, also known as Argentina’s national dish, refers to both the dish itself and the preparation method.
+
+                                The word asado translates to roasted or barbecue, but it is so much more than that in Argentina.
+
+                                At its core, it represents Argentina’s rich culture and history and exquisite food.
+
+                                It isn’t about the steak or the meat. It is about the companionship and the joy of getting together.
+
+                                The asado tradition dates back to the 17the century when wild cattle roamed the free in pampas of Argentina.
+
+                                At the time, gauchos who lived off the land ate a lot of meat from the one resource they had in abundance.
+
+                                They slow-roasted the meat over open flames, slowly, keeping it tender, juicy and flavorful.
+
+                                While the Argentine asado of today may look different from the gaucho diet, there are certain traditions that are still upheld.
+
+                                The fire, grilling techniques, choice of meat, sides and beverages are all respected.
+
+                                And, importantly, the company and people coming together is what makes the experience.
+
+                                In Argentina, high quality meat is accessible at almost every budget. The typical Argentine grill contains much more than steak.
+
+                                First off the grill are the chorizo sausage followed by blood sausage known as morcilla. These can be served in bread and eaten as sandwiches.
+
+                                Animal organs or offals known as achuras are part of the first round of meat. Sweetbread, tripe and kidneys are served along with provoleta or provolone cheese.
+
+                                In a ritualistic manner, the asador moves to serve the meat. This may be red meat or beef, pork, chicken or lamb.
+
+                                Along with sides passed around by helpers or sous chefs, the asador will cut up large chunks of meat.
+
+                                The meat which is typically cooked with just salt is served with the most traditional condiment, chimichurri sauce.
+
+                                The most traditional cuts of meat are tira de asado or beef ribs, vacio or flank steak, bife ancho or rib eye steak.
+
+                                Popular pork pieces include morcilla blood sausage and chorizo sausages as well as costillas ribs.
+
+                                At the end of the asado, someone will call out for “un aplauso para al asador”.
+
+                                This round of applause is for the asador and their devotion to cooking over an open flame for hours on end.
+                                <br>
+                                <a href="https://arecotradicion.com/en/noticias/the-asado-the-star-of-argentinian-gastronomy/" target="_blank">Find out more...</a>
+
+                            </p>
+
+                        </li>
+                        <li>
+                            <h4 id="Milanesa">Milanesa</h4>
+                            <p>
+                                The milanesa is a South American variation of the Lombard Veal Milanese, or the Austrian Wiener schnitzel, where generic types of meat breaded cutlet preparations are known as a milanesa.
+                                The milanesa was brought to the Southern Cone by Italian immigrants during the mass emigration that created the Italian diaspora between 1860 and the 1920s. Its name probably reflects an original Milanese preparation, cotoletta alla milanese, which is similar to the Austrian Wiener schnitzel.
+                                A milanesa consists of a thin slice of beef, chicken, fish, veal, or sometimes pork. Each slice is dipped into beaten eggs, seasoned with salt, and other condiments according to the cook's taste (like parsley and garlic). Each slice is then dipped in bread crumbs (or occasionally flour) and shallow-fried in oil, one at a time. Some people prefer to use very little oil and then bake them in the oven as a healthier alternative. A similar dish is the chicken parmigiana.
+                                By adding tomato paste, mozzarella cheese, and sometimes ham, a dish called milanesa a la napolitana (Milanese in the Neapolitan style) was created. "Neapolitan" is not named for the city of Naples, but because it was first made and sold in Restaurante Napoli owned by Jorge La Grotta in Argentina in the 1940s.The dish is sometimes known as súper milanesa or suprema napolitana.
+                                Milanesas are one of the most popular dishes in Argentina and have been described as "one of the quintessential Río de la Plata dishes".They are the legacy of Italian immigrants, who introduced cotoletta alla milanese in the late 19th century and early 20th century.During that time, Argentina experienced a huge European immigration wave, with most immigrants coming from Italy. Milanesas are so ubiquitous to Argentine culture that the country even has a "Day of the Milanesa", celebrated on May 3.
+                                They are frequently served hot with fried or mashed potatoes; this dish is known as milanesa con papas fritas or milanesa con puré. In Argentina and Uruguay, it is often topped with a fried egg, known as milanesa a caballo (milanesa riding horseback), but omits the tomato sauce. They are often eaten cold as a sandwich filling, with salad. Lemon juice and sometimes mayonnaise are commonly used as seasoning.
+                                <br>
+                                <a href="https://www.gettyimages.es/fotos/milanesa" target="_blank"> See some of the milanesa's types...</a>
+                            </p>
+                        </li>
+                        <li>
+                            <h4 id="Alfajor">Alfajor</h4>
+                            <p>
+                                Alfajores are a wonderful South American dessert that features two melt-in-your-mouth cookies with dulce de leche sandwiched in between them. They are, according to the Huffington Post, “the best cookie you’ve never heard of” and they are enormously popular around the world. There are restaurant chains whose only product is these cookies, and they have recently begun to find a foothold in the rest of the world.
+                                Alfajores are basically two cookies sandwiched together by some kind of sweet filling, be it fruit jam, dulce de leche, mousse or even ice cream. Their name comes from the arabic word “alajú”, and it is, in fact, an arabic confection that entered Spain during the Moorish era (during the period of Al-Andalus) and was then adopted -and modified- by the Spanish colonies. The shape and the recipes for the cookie itself and its fillings vary greatly from one country to the other, and even from one region to the other.
+                                There are a lot of types of alfajores and each one is different depending on which part of the country are you.
+                                <br>
+                                <a href="https://www.serargentino.com/gastronomia/6-verdaderos-alfajores-argentinos" target="_blank">Find out more..</a>
+                            </p>
+                        </li>
+                    </ul>
+
+
+                <h3 id="Football" class="subtitle"> Football </h3>
+                    <ol>
+                        <li><a href="#footIntroduction" class="text-decoration-none text-black"><h5>Introduction</h5></a></li>
+                        <li><a href="#footCulture" class="text-decoration-none text-black"><h5>Culture</h5></a></li>
+                        <li><a href="#footRivalries" class="text-decoration-none text-black"><h5>Rivalries</h5></a></li>
+                        <li><a href="#Maradona" class="text-decoration-none text-black"><h5>Diego Armando Maradona</h5></a></li>
+                        <li><a href="#Messi" class="text-decoration-none text-black"><h5>Lionel Messi</h5></a></li>
+                    </ol>
+
+
+                    <h4 id="footIntroduction">Introduction</h4>
+
+                    <p>
+
+                    Football is the most popular sport in Argentina and part of the culture in the country. It is the one with the most players (2,658,811 total, 331,811 of which are registered and 2,327,000 unregistered; with 3,377 clubs and 37,161 officials, all according to FIFA) and is the most popular recreational sport, played from childhood into old age. The percentage of Argentines that declare allegiance to an Argentine football club is about 90%.
+
+                    Football was introduced to Argentina in the later half of the 19th century by the British immigrants in Buenos Aires. The first Argentine league was contested in 1891, making it the fifth-oldest recognised league of a FIFA member (after England, Scotland, Northern Ireland and the Netherlands). The Argentine Football Association (AFA) was formed in 1893 and is the eighth-oldest in the world.
+
+                    The Argentina national team is one of the eight to have won the FIFA World Cup, having done so in 1978 and 1986, and also being runner-up in 1930, 1990 and 2014. Argentina has also won the top continental tournament, the Copa América, 15 times, and the FIFA Confederations Cup in 1992. The nation's Olympic representative has won two Gold Medals (in 2004 and 2008), while the under-20 team has won a record six U-20 World Cups. At club level, Argentine teams have won the most Intercontinental Cups (9) and the most Copa Libertadores (25).
+
+                    Women's football has a national league since 1991, the Campeonato de Fútbol Femenino. In turn, the female national representative qualified for the World Cup for the first time in 2007 and won their first Campeonato Sudamericano Femenino (top continental competition) in 2006.
+
+                    In futsal, Argentina were FIFUSA/AMF Futsal World Cup champions in 1994 and 2019. They also compete in the FIFA code of futsal, where they finished champions in 2016 and fourth place in 2004. The team also won the FIFA Futsal Copa América in 2003 and 2015. Moreover, Argentina was world champion in futsal for the visually impaired in 2002 and 2006, and also won the Gold Medal at the IBSA World Blind Games 2015, a Silver Medal (2004) and two Bronze (2008 and 2016) in the Paralympic Games, three runner-up world championships (1998, 2000 and 2014), three championships of the Copa América (1999, 2005, 2017), three Silver Medals in the Parapan American Games (2007, 2011, 2015) and two runners-up of the Copa América (2009 and 2013).
+
+                    Argentina also compete in the beach football World Cup, where their best finish was third in 2001.
+                    </p>
+
+                    <h4 id="footCulture">Culture</h4>
+                    <p>
+                            Football plays an important part in the life of many Argentines. Even those supporters who usually do not attend the matches watch them on television and comment on them the next day with friends and co-workers. When the Argentina national football team plays (especially during world cup matches), streets tend to look completely deserted as everyone is watching the match. After the victories in 1978 FIFA World Cup and 1986 FIFA World Cup, streets were flooded with people celebrating the championship, making it impossible not to become part of the celebration.
+    
+                            It was in 1986 when the figure of Diego Maradona exploded, becoming an icon not only of Argentine football but of football itself. In Argentina, Maradona became something resemblant of a god admired by fans of every club (even River Plate).
+    
+                            Supporters in Argentinian football stadiums operate under a key principle known as Aguante (Endurance) which serves as a belief system that guides the behavior of those in attendance. Key values that make up aguante that scholars such as Eduardo Herrera have also claimed are central in the construction of Argentinian masculinity are courage, endurance, and fearlessness in physical confrontation. Fans can showcase these values when they are at stadiums in three significant way which are always supporting your team with your participation in chants and jumping throughout the match, attending literally every match that your team plays regardless of the circumstances, and standing your ground in the face of opposition insults or when engaged in any physical altercations at the stadium. It is under this principal of aguante that those in attendance of stadium matches in Argentina can be labeled under three broad categories which are hinchas (Fans), hinchinda militantes (militant fans), and espectadores (spectator). Those who classified as Hinchas exhibit many of the qualities under the aguante principle and often go to many of their team's matches, while hinchinda militantes who are usually found behind the goals with their team colors strictly follow what is asked of them under aguante by attending every of their team's matches regardless of the weather or performance of the team. The espectadores attend matches to enjoy the play of the game but do not weigh the principal of aguante close to heart compared the other two fan categories. Within the broad category of hinchinda militantes it is made up of la barra (supporters), la banda (the band), los pibes (the kids), and la pandilla (gang). La Barra is the central figure within the hinchinda militantes because of the critical role these subgroups of fans have in shaping the atmosphere of the stadium during matches and lead under a hierarchical structure with a capo (boss) at the top who organizes and tropes(followers) who heed the direction/instructions of the capo. The leadership of these organized subgroups of fans, which are mainly made up of men between the ages of 15–50 years old, are entirely driven by demonstrations of aguante and awarded additional benefits stemming from relationships with club executives that grant special privileges to these groups such as tickets or allowing them to bring in typically prohibited items into the stadium to stir energy and excitement for the football club during the match. The excitement and passion at stadiums are typically found to be instigated and sustained by the presence of the percussion and brass instrument brought in by barras groups. The typical percussion instruments that are brought in and played by members of the barras at stadiums are the bombo con platillo (bass drum), Brazilian surdo drums, redoblantes (snare drums), repiques, scrappers, tambourines, cowbells, and agogo bells. The brass instruments that are typically played at stadiums by outside musicians hired by barras groups are trumpets, trombones, and euphoniums. While the collective energy and synchronization incited by the music can creates a sense of unity among attendants and supporters alike, ethnomusicological scholar Eduardo Herrera also believes that it can embolden individuals to normalize discriminatory behavior that they wouldn't otherwise do if they weren't in a crowd which would explain the some of the recorded derogatory language and violent behavior found in Argentinian stadiums.
+    
+                            Argentine fans are not allowed to travel to see their teams in away matches, as they have been banned since 2013.
+    
+                            Hinchas (supporters) create an emotional ambiance in many stadiums, singing and cheering loudly all game long, but since the away' fan ban due to violence, the atmosphere in many stadia has become poorer, with goals for away teams greeted by silence and the disappearance of round trip chants between home and away fans, that provoked in each side to sing louder for show more passion.
+    
+                            Barra bravas (Argentine organized groups -like the English hooligan firms-) also create occasional problems, usually in riots after the match.
+                        </p>
+                        <!--<img src="images/culture/football/fans.jpg"  height="540" width="960">-->
+                    <h4 id="footRivalries">Rivalries</h4>
+                    <p>
+                        There are many local rivalries in Argentine football. The most important is the superderby, which is contested between Argentina's two most popular and successful teams, Buenos Aires rivals River Plate and Boca Juniors. The English newspaper The Observer put the superclásico (name in Spanish) at the top of their list of "The 50 Sporting Things You Must Do Before You Die".
+
+                        The second-most important rivalry in Argentine football is the Avellaneda derby, which is contested between Independiente and Racing, the third- and fourth-most popular and third- and fourth-most successful teams of the country (respectively), both from the city of Avellaneda (located next to Buenos Aires, into it metropolitan area). Other important derbies include the derby between Huracán and San Lorenzo de Almagro (has no particular denomination), the Rosarian derby (between Newell's Old Boys and Rosario Central), the Platense derby (between Estudiantes de La Plata and Gimnasia y Esgrima La Plata), the West derby (between Ferro Carril Oeste and Vélez Sarsfield), the derby between Atlanta and Chacarita Juniors (formerly denominated "Villa Crespo derby"), the Santafesino derby (between Colón and Unión), the North Zone derby (between Platense and Tigre), the Cordovan derby (between Belgrano and Talleres), the derby between Instituto and Racing de Córdoba (has no particular denomination) and the Tucumanian derby (between San Martín and Atlético Tucumán).
+                    </p>
+
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h4 id="Maradona"> MARADONA </h4>
+                        <p>
+                            Diego Maradona, in full Diego Armando Maradona, (born October 30, 1960, Lanús, Buenos Aires, Argentina—died November 25, 2020, Tigre, Buenos Aires), Argentine football (soccer) player who is generally regarded as the top footballer of the 1980s and one of the greatest of all time. Renowned for his ability to control the ball and create scoring opportunities for himself and others, he led club teams to championships in Argentina, Italy, and Spain, and he starred on the Argentine national team that won the 1986 World Cup.
+                            <br><br>
+                            Maradona displayed football talent early, and at age eight he joined Las Cebollitas (“The Little Onions”), a boys’ team that went on to win 136 consecutive games and a national championship. He signed with Argentinos Juniors at age 14 and made his first-division debut in 1976, 10 days before his 16th birthday. Only four months later he made his debut with the national team, becoming the youngest Argentine ever to do so. Although he was excluded from the 1978 World Cup-winning squad because it was felt that he was still too young, the next year he led the national under-20 team to a Junior World Cup championship.
+                            <br><br>
+                            Maradona moved to Boca Juniors in 1981 and immediately helped them gain the championship. He then moved to Europe, playing with FC Barcelona in 1982 (and winning the Spanish Cup in 1983) and then SSC Napoli (1984–91), where he enjoyed great success, raising the traditionally weak Naples side to the heights of Italian football. With Maradona the team won the league title and cup in 1987 and the league title again in 1990. Maradona’s stint with Napoli came to an end when he was arrested in Argentina for cocaine possession and received a 15-month suspension from playing football. Next he played for Sevilla in Spain and Newell’s Old Boys in Argentina. In 1995 he returned to Boca Juniors and played his last match on October 25, 1997.
+                            <br><br>
+                            Maradona’s career with the Argentine national team included World Cup appearances in 1982, 1986, 1990, and 1994. He dominated the 1986 competition in Mexico. In a 2–1 quarterfinal victory over England, he scored two of the most memorable goals in World Cup history. The first was scored with his hand (the referee mistakenly thought the ball had struck his head), a goal now remembered as the “Hand of God” goal. The second occurred after Maradona gained possession of the ball at midfield and dribbled through a pack of English defenders and past the keeper before depositing the ball in the goal. He did not finish the 1994 World Cup, because he tested positive for the drug ephedrine and was again suspended. Maradona also played on South American championship-winning teams in 1987 and 1989.
+                            <br><br>
+                            A stocky and tenacious midfielder, Maradona became a hero of the lower classes of Argentina (from which he hailed) and of southern Italy, where he led Napoli to victories over the wealthier northern clubs. He played 490 official club games during his 21-year professional career, scoring 259 goals; for Argentina he played 91 games and scored 34 goals. An Internet poll conducted by the Fédération Internationale de Football Association named Maradona the top player of the 20th century.
+                            <br><br>
+                            In 2008 Maradona was named head coach of the Argentine national team. Shortly after leading Argentina to the quarterfinals of the 2010 World Cup, he and the country’s football governing body could not agree on a contract extension, and his tenure as the team’s head coach ended. In 2011 Maradona was hired to coach the United Arab Emirates club Al Wasl. However, the team struggled, and Maradona was fired the following year. He worked for several other clubs before becoming coach of Mexico’s Dorados de Sinaloa in 2018.
+                        </p>
+                    </div>
+                    <img src="images/culture/football/handOfGod.jpg" class="col-lg-4 zoomRotation h-auto"> <!-- DIEGO ACHICATEEEEEEEE-->
+                </div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h4 id="Messi"> MESSI </h4>
+                        <p>
+                            Lionel Andrés Messi (born 24 June 1987), also known as Leo Messi, is an Argentine professional footballer who plays as a forward for Ligue 1 club Paris Saint-Germain and captains the Argentina national team. Often considered the best player in the world and widely regarded as one of the greatest players of all time, Messi has won a record seven Ballon d'Or awards, a record six European Golden Shoes, and in 2020 was named to the Ballon d'Or Dream Team. Until leaving the club in 2021, he had spent his entire professional career with Barcelona, where he won a club-record 35 trophies, including ten La Liga titles, seven Copa del Rey titles and four UEFA Champions Leagues. A prolific goalscorer and creative playmaker, Messi holds the records for most goals in La Liga (474), a La Liga and European league season (50), most hat-tricks in La Liga (36) and the UEFA Champions League (8), and most assists in La Liga (192), a La Liga season (21) and the Copa América (17). He also holds the record for most international goals by a South American male (80). Messi has scored over 750 senior career goals for club and country, and has the most goals by a player for a single club.
+                            <br><br>
+                            Born and raised in central Argentina, Messi relocated to Spain to join Barcelona at age 13, for whom he made his competitive debut aged 17 in October 2004. He established himself as an integral player for the club within the next three years, and in his first uninterrupted season in 2008–09 he helped Barcelona achieve the first treble in Spanish football; that year, aged 22, Messi won his first Ballon d'Or. Three successful seasons followed, with Messi winning four consecutive Ballons d'Or, making him the first player to win the award four times and in a row. During the 2011–12 season, he set the La Liga and European records for most goals scored in a single season, while establishing himself as Barcelona's all-time top scorer. The following two seasons, Messi finished second for the Ballon d'Or behind Cristiano Ronaldo (his perceived career rival), before regaining his best form during the 2014–15 campaign, becoming the all-time top scorer in La Liga and leading Barcelona to a historic second treble, after which he was awarded a fifth Ballon d'Or in 2015. Messi assumed captaincy of Barcelona in 2018, and in 2019 he won a record sixth Ballon d'Or. Out of contract, he signed for Paris Saint-Germain in August 2021.
+                            <br><br>
+                            An Argentine international, Messi is both his country's highest appearance-maker and their all-time leading goalscorer. At youth level, he won the 2005 FIFA World Youth Championship, finishing the tournament with both the Golden Ball and Golden Shoe, and an Olympic gold medal at the 2008 Summer Olympics. His style of play as a diminutive, left-footed dribbler drew comparisons with his compatriot Diego Maradona, who described Messi as his successor. After his senior debut in August 2005, Messi became the youngest Argentine to play and score in a FIFA World Cup in 2006, and reached the final of the 2007 Copa América, where he was named young player of the tournament. As the squad's captain from August 2011, he led Argentina to three consecutive finals: the 2014 FIFA World Cup, for which he won the Golden Ball, and the 2015 and 2016 Copa América, winning the Golden Ball in the 2015 edition. After announcing his international retirement in 2016, he reversed his decision and led his country to qualification for the 2018 FIFA World Cup, a third-place finish at the 2019 Copa América, and won the 2021 Copa América, while winning the Golden Ball and Golden Boot award for the latter. This achievement would see him receive a record seventh Ballon d'Or in 2021.
+                            <br><br>
+                            Messi has endorsed sportswear company Adidas since 2006. According to France Football, he was the world's highest-paid footballer for five years out of six between 2009 and 2014, and was ranked the world's highest-paid athlete by Forbes in 2019. Messi was among Time's 100 most influential people in the world in 2011 and 2012. In February 2020, he was awarded the Laureus World Sportsman of the Year, thus becoming the first footballer and the first team sport athlete to win the award. Later that year, Messi became the second footballer (and second team-sport athlete) to surpass $1 billion in career earnings.
+                        </p>
+                    </div>
+                    <iframe src="https://www.youtube.com/embed/EwROD-oN1wY" class="col-lg-4 mt-4 h-auto" allowfullscreen></iframe>
+                </div>
+            </div>
+            <footer class="bgCornBlue text-center text-white mt-1">
+                <img src="./images/logo.png" alt="Page logo"><img src="images/logoIESQuevedo.png" alt="IES Francisco de Quevedo">
+                <p>Tomás Ezequiel Macri | 1ºDAM</p>
+                <p>I.E.S. Francisco de Quevedo | December - 2021</p>
+            </footer>
+        </div>
+
     </body>
 </html>

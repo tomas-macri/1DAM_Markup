@@ -28,7 +28,6 @@ header{
 
 
 #headerTitle{
-    font-family: "Comic Sans MS", sans-serif;
     color: goldenrod;
     text-align: center;
     padding-top: 8%;
@@ -167,7 +166,7 @@ header{
  }
 
 
- .centrado{
+ .centered{
      background-image: url("../images/PeritoMoreno1.jpg");
      display: block;
  }
@@ -208,44 +207,85 @@ h6.welcome{
      background-image: url("../images/MoonValley.jpg");
      /* SE REPITE LA IMAGEN AL HACER ZOOM OUTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT*/
  }
-.backImageBariloche{
-    background-image: url("../images/Bariloche.jpg");
+.backImageFitzRoy{
+    background-image: url("../images/FitzRoy.jpg");
     /* SE REPITE LA IMAGEN AL HACER ZOOM OUTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT*/
 }
 .backImageIguazu{
     background-image: url("../images/IguazuFalls.jpg");
 }
 
+.bgLinearLightBlueToWhite{
+    background-image: radial-gradient(cornflowerblue, lightcyan);
+}
 
+.bgCornBlue{
+    background-color: cornflowerblue;
+}
+
+.bgMainPage{
+    background-color: rgb(216,243,254);;
+}
+@font-face {
+    font-family: Arcane_Nine;
+    src:  url('../fonts/Arcane_Nine.otf') format('opentype');
+}
+
+p{
+    font-family: Cambria, sans-serif;
+}
+
+h1, h2, h3, h4, nav{
+    font-family: Arcane_Nine, sans-serif;
+}
+
+
+h2{
+    font-size: 82px!important; /*the !important is used to override the value given by the browser*/
+}
+
+h3.subtitle{
+    font-size: 48px!important;
+}
+
+h3{
+    text-align: center;
+    font-size: 52px;
+    color: #06357a;
+}
+
+h4{
+    color: darkgoldenrod;
+}
+
+.list-group-item{
+    background:transparent!important;
+}
+
+/*.changeOnClick{
+    background-image: url("../images/plus.png");
+}
+
+.visited{
+    background-image: url("../images/MoonValley.jpg");
+}*/
 /* ANOTHER PAGE*/
 
 
-/* GEOGRAPHY */
+/* GEOGRAPHY
 #geographyMain{
     background-image: url("../images/BackgroundShapes2.jpg");
     height: 100%;
     width: 100%;
 }
+*/
 
-.fondoNuevo{
-    background-color: rgb(216,243,254);
-}
+
 .blackBorder_x{
     border-left: 1px solid black;
     border-right: 1px solid black;
 
 }
-
-
-h1{
-    font-family: sans-serif;
-}
-
-
-
-
-
-
 
 /* NEWSSSSSSSSSSSSSSSSSSSSSSS*/
 
@@ -254,11 +294,4 @@ h1{
 
 
 
-/* TITLENEWS H2 */
 
-#newsTitle{
-    font-family: "Comic Sans MS",sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-}

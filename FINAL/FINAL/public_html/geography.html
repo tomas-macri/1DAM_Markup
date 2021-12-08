@@ -12,475 +12,635 @@
     </head>
     <body>
         <header class="container-fluid bgLightBlue">
-            <div>
-                <a id="titleAndImageHeader" class="d-inline-block" href="./index.html#">
-                    <img src="images/logo.png" alt="logo" class="imgHeader">
-                    <h2 id="headerTitle" class="mx-5">Argentina</h2>
-                </a>
-                <button type="button" class="btn mx-5 h-25 top-0 end-0" data-bs-toggle="collapse" data-bs-target="#myNavbar"><img src="images/moreOptions.png" alt="moreOptions" class="w-25 h-25" ></button>
-            </div>
-            <div id="myNavbar" class="collapse">
-                <nav class="navbar navbar-expand-md mx-0 mb-0 pb-0 px-0 navbar-dark">
-                    <div class="container-fluid px-0 mx-0 row">
-                        <ul class="navbar-nav m-0 p-0 ">
-                            <li class="nav-item text-center  col-md-12 col-lg-3">
-                                <a class="nav-link linkNavbar bgLightBlue text-white" href="index.html">Active</a>
-                            </li>
-                            <li class="nav-item text-center  col-md-12 col-lg-3">
-                                <a class="nav-link linkNavbar bgLightBlue text-white" href="geography.html">Geography</a>
-                            </li>
-                            <li class="nav-item text-center  col-md-12 col-lg-3">
-                                <a class="nav-link linkNavbar bgLightBlue text-white" href="culture.html">Culture</a>
-                            </li>
-                            <li class="nav-item text-center itemSidebar col-md-12 col-lg-3">
-                                <a class="nav-link linkNavbar bgLightBlue text-white" href="#">Disabled</a>
-                            </li>
-                        </ul>
+        <div>
+            <a id="titleAndImageHeader" class="d-inline-block" href="./index.html#">
+                <img src="images/logo.png" alt="logo" class="imgHeader">
+                <h2 id="headerTitle" class="mx-5">Argentina</h2>
+            </a>
+            <button type="button" class="btn mx-5 h-25 top-0 end-0" data-bs-toggle="collapse" data-bs-target="#myNavbar"><img src="images/moreOptions.png" alt="moreOptions" class="w-25 h-25" ></button>
+        </div>
+        <div id="myNavbar" class="collapse">
+            <nav class="navbar navbar-expand-md mx-0 mb-0 pb-0 px-0 navbar-dark">
+                <div class="container-fluid px-0 mx-0 row">
+                    <ul class="navbar-nav m-0 p-0 ">
+                        <li class="nav-item text-center  col-md-12 col-lg-3">
+                            <a class="nav-link linkNavbar bgLightBlue text-white" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item text-center  col-md-12 col-lg-3">
+                            <a class="nav-link linkNavbar bgLightBlue text-white" href="geography.html">Geography</a>
+                        </li>
+                        <li class="nav-item text-center  col-md-12 col-lg-3">
+                            <a class="nav-link linkNavbar bgLightBlue text-white" href="culture.html">Culture</a>
+                        </li>
+                        <li class="nav-item text-center itemSidebar col-md-12 col-lg-3">
+                            <a class="nav-link linkNavbar bgLightBlue text-white" data-bs-toggle="modal" data-bs-target="#myModal" href="">Join us</a>  <!-- the href atribute is written because if not the cursor will not appear as clickable when hovering the item-->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="modal text-white" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header bgCornBlue">
+                        <h3 class="modal-title">We are looking forward to having you!</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
-                </nav>
+
+                    <!-- Modal body -->
+                    <div class="container bgCornBlue">
+                        <h4>Join our email list and discover the latest news about Argentina</h4>
+                        <form action="mailto:@hotmail.es" class="was-validated" id="myForm">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required="">
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Date:</label>
+                                <input type="date" class="form-control" id="date" name="date" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                            <div class="form-group form-check-inline">
+                                <label class="form-check-label" for="radio1">
+                                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" required="">Male
+                                </label>
+                            </div>
+                            <div class="form-check-inline">
+                                <label class="form-check-label" for="radio2">
+                                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" required="">Female
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Suggestions:</label>
+                                <textarea class="form-control" rows="5" id="comment" placeholder="Leave your suggestions here..."></textarea>
+                            </div>
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember" required=""> I have read and accept the <a href="https://www.termsfeed.com/live/750baf27-3d59-4974-b8c8-3243f7d44812" target="_blank" class="text-decoration-none text-black">privacy policy</a>.
+                                </label>
+                                <div class="invalid-feedback">Accept this in order to continue.</div>
+                            </div>
+                            <button type="submit" class="btn bgLinearLightBlueToWhite text-white my-3">Join us!</button>
+                            <button type="reset" value="reset" class="btn bgLinearLightBlueToWhite text-white mr-5 my-3">Clear</button>
+                        </form>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer bgCornBlue">
+                        <button type="button" class="btn bgLinearLightBlueToWhite text-white" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <h1>Division</h1>
-        <p>
-            Argentina is subdivided into twenty-four provinces (Spanish: provincias singular provincia), autonomous city (ciudad autónoma),
-            Buenos Aires, which is the federal capital of the nation (Spanish: Capital Federal) as decided by the Argentine Congress.
-            The provinces and the capital have their own constitutions, but exist under a federal system. <br>
+        <div class="w-100 bgMainPage">
+            <h2 class="text-center"> Geography </h2>
+            <p>
+                Argentina is subdivided into twenty-four provinces (Spanish: provincias singular provincia), autonomous city (ciudad autónoma),
+                Buenos Aires, which is the federal capital of the nation (Spanish: Capital Federal) as decided by the Argentine Congress.
+                The provinces and the capital have their own constitutions, but exist under a federal system. <br>
 
-            During the War of Independence the main cities and their surrounding countrysides became provinces though the intervention of their cabildos.
-            The Anarchy of the Year XX completed this process, shaping the original thirteen provinces. Jujuy seceded from Salta in 1834, and the thirteen provinces became fourteen.
-            After seceding for a decade, Buenos Aires Province accepted the 1853 Constitution of Argentina in 1861, and its capital city was made a federal territory in 1880.
-            A law from 1862 designated as national territories those under federal control but outside the frontiers of the provinces.
-            In 1884 they served as bases for the establishment of the governorates of Misiones, Formosa, Chaco, La Pampa, Neuquén, Río Negro, Chubut, Santa Cruz and Tierra del Fuego.
-            The agreement about a frontier dispute with Chile in 1900 created the National Territory of Los Andes; its lands were incorporated into Jujuy, Salta and Catamarca in 1943.
-            La Pampa and Chaco became provinces in 1951. Misiones did so in 1953, and Formosa, Neuquén, Río Negro, Chubut and Santa Cruz, in 1955.
-            The last national territory, Tierra del Fuego, became the Tierra del Fuego, Antártida e Islas del Atlántico Sur Province in 1990.
-        </p>
+                During the War of Independence the main cities and their surrounding countrysides became provinces though the intervention of their cabildos.
+                The Anarchy of the Year XX completed this process, shaping the original thirteen provinces. Jujuy seceded from Salta in 1834, and the thirteen provinces became fourteen.
+                After seceding for a decade, Buenos Aires Province accepted the 1853 Constitution of Argentina in 1861, and its capital city was made a federal territory in 1880.
+                A law from 1862 designated as national territories those under federal control but outside the frontiers of the provinces.
+                In 1884 they served as bases for the establishment of the governorates of Misiones, Formosa, Chaco, La Pampa, Neuquén, Río Negro, Chubut, Santa Cruz and Tierra del Fuego.
+                The agreement about a frontier dispute with Chile in 1900 created the National Territory of Los Andes; its lands were incorporated into Jujuy, Salta and Catamarca in 1943.
+                La Pampa and Chaco became provinces in 1951. Misiones did so in 1953, and Formosa, Neuquén, Río Negro, Chubut and Santa Cruz, in 1955.
+                The last national territory, Tierra del Fuego, became the Tierra del Fuego, Antártida e Islas del Atlántico Sur Province in 1990.
+            </p>
 
-        <!-- TABLE + IMG -->
-        <div class="w-100" id="geographyMain">
-            <div class="mt-2 row container-fluid" >
-                <div class="col-lg-6">
-                    <table class="table table-info table-striped table-hover text-center border-primary"> <!-- WIDTH-60 -->
-                        <thead>
-                            <tr class="border-1 blackBorder_x">
-                                <th colspan="7">
-                                    <h3>Provinces</h3>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <h4>Nº</h4>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <h4>Name</h4>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <h4>Capital</h4>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <h4>Population</h4>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>1</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="#BuenosAires" class="text-decoration-none text-black">
-                                        <p>Buenos Aires</p>
-                                    </a>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>La Plata</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>15.625.084</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>2</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="#Cordoba" class="text-decoration-none text-black">
-                                        <p>Córdoba</p>
-
-                                    </a>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Córdoba</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>3.308.876</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>3</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                        <p>Santa Fé</p>
-
-                                    </a>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Santa Fé</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>3.194.537</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>4</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                            <p>Ciudad Autónoma de Buenos Aires</p>
-                                    </a>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p> - </p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>2.890.151</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                <p>5</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                    <p>Mendoza</p>
-
-                                    </a>                    </td>
-                                <td class="blackBorder_x" colspan="1">
-                                <p>Mendoza</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                <p>1.738.929</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                <p>6</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                    <p>Tucumán</p>
-
-                                    </a>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                <p>San Miguel de Tucumán</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                <p>1.448.188</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>7</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                        <p>Entre Ríos</p>
-
-                                    </a>                           </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Paraná</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>1.235.994</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>8</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                        <p>Salta</p>
-
-                                    </a>                      </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Salta</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>1.214.441</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
+            <!-- TABLE + IMG -->
+            <div class="w-100" id="geographyMain">
+                <div class="mt-2 row container-fluid" >
+                    <div class="col-lg-6">
+                        <table class="table table-light table-striped table-hover text-center border-info"> <!-- WIDTH-60 -->
+                            <thead>
+                                <tr class="border-1 blackBorder_x">
+                                    <th colspan="7">
+                                        <h3>Provinces</h3>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="blackBorder_x">
                                     <td class="blackBorder_x">
-                                        <p>9</p>
+                                        <h4>#</h4>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <h4>Name</h4>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <h4>Capital</h4>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <h4>Population</h4>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>1</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="#BuenosAires" class="text-decoration-none text-black">
+                                            <p>Buenos Aires</p>
+                                        </a>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>La Plata</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>15.625.084</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>2</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="#Cordoba" class="text-decoration-none text-black">
+                                            <p>Córdoba</p>
+
+                                        </a>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>Córdoba</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>3.308.876</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>3</p>
                                     </td>
                                     <td class="blackBorder_x" colspan="4">
                                         <a href="index.html" class="text-decoration-none text-black">
-                                            <p>Misiones</p>
+                                            <p>Santa Fé</p>
 
-                                        </a>                             </td>
-                                    <td class="blackBorder_x" colspan="1">
-                                        <p>Posadas</p>
+                                        </a>
                                     </td>
                                     <td class="blackBorder_x" colspan="1">
-                                        <p>1.101.593</p>
+                                        <p>Santa Fé</p>
                                     </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>10</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                        <p>Chaco</p>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>3.194.537</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>4</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                                <p>Ciudad Autónoma de Buenos Aires</p>
+                                        </a>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p> - </p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>2.890.151</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                    <p>5</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                        <p>Mendoza</p>
 
-                                    </a>                      </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Resistencia</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>1.055.259</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>11</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
+                                        </a>                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                    <p>Mendoza</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                    <p>1.738.929</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                    <p>6</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                        <p>Tucumán</p>
+
+                                        </a>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                    <p>San Miguel de Tucumán</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                    <p>1.448.188</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>7</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>Entre Ríos</p>
+
+                                        </a>                           </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>Paraná</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>1.235.994</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>8</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>Salta</p>
+
+                                        </a>                      </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>Salta</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>1.214.441</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                        <td class="blackBorder_x">
+                                            <p>9</p>
+                                        </td>
+                                        <td class="blackBorder_x" colspan="4">
+                                            <a href="index.html" class="text-decoration-none text-black">
+                                                <p>Misiones</p>
+
+                                            </a>                             </td>
+                                        <td class="blackBorder_x" colspan="1">
+                                            <p>Posadas</p>
+                                        </td>
+                                        <td class="blackBorder_x" colspan="1">
+                                            <p>1.101.593</p>
+                                        </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>10</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>Chaco</p>
+
+                                        </a>                      </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>Resistencia</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>1.055.259</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>11</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>Corrientes</p>
+
+                                        </a>                           </td>
+                                    <td class="blackBorder_x" colspan="1">
                                         <p>Corrientes</p>
-
-                                    </a>                           </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Corrientes</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>992.595</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>12</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>992.595</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>12</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>Santiago del Estero</p>
+                                        </a>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
                                         <p>Santiago del Estero</p>
-                                    </a>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Santiago del Estero</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>874.006</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>13</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                        <p>Jujuy</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>874.006</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>13</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>Jujuy</p>
 
-                                    </a>                      </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>San Salvador de Jujuy</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>673.307</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>14</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
+                                        </a>                      </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>San Salvador de Jujuy</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>673.307</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>14</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>San Juan</p>
+
+                                        </a>                         </td>
+                                    <td class="blackBorder_x" colspan="1">
                                         <p>San Juan</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>681.055</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x oncl">
+                                    <td class="blackBorder_x">
+                                        <p>15</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>Río Negro</p>
 
-                                    </a>                         </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>San Juan</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>681.055</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x oncl">
-                                <td class="blackBorder_x">
-                                    <p>15</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                        <p>Río Negro</p>
+                                        </a>                          </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>Viedma</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>638.645</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>16</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>Formosa</p>
 
-                                    </a>                          </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Viedma</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>638.645</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>16</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
+                                        </a>                        </td>
+                                    <td class="blackBorder_x" colspan="1">
                                         <p>Formosa</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>530.162</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>17</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>Neuquén</p>
 
-                                    </a>                        </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Formosa</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>530.162</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>17</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
+                                        </a>                        </td>
+                                    <td class="blackBorder_x" colspan="1">
                                         <p>Neuquén</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>561.266</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>18</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>Chubut</p>
 
-                                    </a>                        </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Neuquén</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>561.266</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>18</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                        <p>Chubut</p>
+                                        </a>                       </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>Rawson</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>509.108</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>19</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>San Luis</p>
 
-                                    </a>                       </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Rawson</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>509.108</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>19</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
+                                        </a>                         </td>
+                                    <td class="blackBorder_x" colspan="1">
                                         <p>San Luis</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>432.310</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>20</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>Catamarca</p>
 
-                                    </a>                         </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>San Luis</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>432.310</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>20</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                        <p>Catamarca</p>
+                                        </a>                          </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>San Fernando del Valle de Catamarca</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>367.828</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>21</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>La Rioja</p>
 
-                                    </a>                          </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>San Fernando del Valle de Catamarca</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>367.828</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>21</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
+                                        </a>                         </td>
+                                    <td class="blackBorder_x" colspan="1">
                                         <p>La Rioja</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>333.642</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x clickable-row" data-ref="./index.html">
+                                    <td class="blackBorder_x">
+                                        <p>22</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>La Pampa</p>
+                                        </a>                         </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>Santa Rosa</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>318.951</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>23</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>Santa Cruz</p>
 
-                                    </a>                         </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>La Rioja</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>333.642</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x clickable-row" data-ref="./index.html">
-                                <td class="blackBorder_x">
-                                    <p>22</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                        <p>La Pampa</p>
-                                    </a>                         </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Santa Rosa</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>318.951</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>23</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                        <p>Santa Cruz</p>
-
-                                    </a>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Río Gallegos</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>273.964</p>
-                                </td>
-                            </tr>
-                            <tr class="blackBorder_x">
-                                <td class="blackBorder_x">
-                                    <p>24</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="4">
-                                    <a href="index.html" class="text-decoration-none text-black">
-                                        <p>Tierra del Fuego</p>
-                                    </a>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>Ushuaia</p>
-                                </td>
-                                <td class="blackBorder_x" colspan="1">
-                                    <p>127.205</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                        </a>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>Río Gallegos</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>273.964</p>
+                                    </td>
+                                </tr>
+                                <tr class="blackBorder_x">
+                                    <td class="blackBorder_x">
+                                        <p>24</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="4">
+                                        <a href="index.html" class="text-decoration-none text-black">
+                                            <p>Tierra del Fuego</p>
+                                        </a>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>Ushuaia</p>
+                                    </td>
+                                    <td class="blackBorder_x" colspan="1">
+                                        <p>127.205</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <img src="images/provinces_Argentina.png" alt="Argentina Map" class="col-lg-6 zoom">
                 </div>
-                <img src="images/provinces_Argentina.png" alt="Argentina Map" class="col-lg-6 zoom">
             </div>
-        </div>
 
 
-        <!-- EACH PROVINCE-->
-        <div class="text-center">
+        <!-- BS AS-->
+            <h3 id="BuenosAires" class="mt-4 text-center"> Buenos Aires </h3>
+            <p class="justify-content-center mx-4">
+                Buenos Aires is the largest and most populous Argentine province. It takes its name from the city of Buenos Aires, the capital of the country,
+                which used to be part of the province and the province's capital until it was federalized in 1880.
+                Since then, in spite of bearing the same name, the province does not include Buenos Aires proper, though it does include all other parts
+                of the Greater Buenos Aires metropolitan area. The capital of the province is the city of La Plata, founded in 1882.
+
+                The province has a population of about 15.6 million people, which is 39% of Argentina's total population. Nearly 10 million people live in Greater Buenos Aires.
+                The province covers an area of 307,571 km2 (118,754 sq mi), which is about 11% of Argentina's total area and makes it the country's largest province.
+
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="img-thumbnail">
+                            <a href="./images/geography/bsas/LaPlata.jpg" target="_blank" class="text-decoration-none text-black"> <!--_blank = in a new window  -->
+                                <img src="images/geography/bsas/LaPlata.jpg" alt="La Plata" style="width:100%">
+                                <div class="caption">
+                                    <p>La Plata, the capital, is famous because of its streets' geometry.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img-thumbnail">
+                            <a href="./images/geography/bsas/MarDelPlata.jpg" target="_blank" class="text-decoration-none text-black">
+                                <img src="images/geography/bsas/MarDelPlata.jpg" alt="Mar del Plata" style="width:100%">
+                                <div class="caption">
+                                    <p>Mar del Plata, the city where most of the argentinians spend their holidays.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-1">
+                        <div class="img-thumbnail">
+                            <a href="images/geography/bsas/LujanBasilica.jpg" target="_blank" class="text-decoration-none text-black">
+                                <img src="images/geography/bsas/LujanBasilica.jpg" alt="Lujan Basilica" class="w-100">
+                                <div class="caption">
+                                    <p>The Baislica of our Lady of Luján (the patron saint of Argentina) holds a pilgrimage.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- CABA -->
+            <h3 id="CABA" class="mt-4"> Autonomous City of Buenos Aires </h3>
+            <p>
+                Buenos Aires, officially the Autonomous City of Buenos Aires (Spanish: Ciudad Autónoma de Buenos Aires), is the capital and largest city of Argentina. The city is located on the western shore of the Río de la Plata, on South America's southeastern coast. "Buenos Aires" can be translated as "fair winds" or "good airs", but the former was the meaning intended by the founders in the 16th century, by the use of the original name "Real de Nuestra Señora Santa María del Buen Ayre", named after the Madonna of Bonaria in Sardinia, Italy.
+
+                The city of Buenos Aires is neither part of Buenos Aires Province nor the Province's capital; rather, it is an autonomous district. In 1880, after decades of political infighting, Buenos Aires was federalized and removed from Buenos Aires Province. The city limits were enlarged to include the towns of Belgrano and Flores; both are now neighborhoods of the city. The 1994 constitutional amendment granted the city autonomy, hence its formal name of Autonomous City of Buenos Aires. Its citizens first elected a Chief of Government in 1996; previously, the Mayor was directly appointed by the President of Argentina.
+
+                The Greater Buenos Aires conurbation, which also includes several Buenos Aires Province districts, constitutes the fourth-most populous metropolitan area in the Americas, with a population of around 15.6 million. It is also the second largest city south of the Tropic of Capricorn.
+
+                Buenos Aires is a multicultural city that is home to multiple ethnic and religious groups, contributing to its culture as well as to the dialect spoken in the city and in some other parts of the country. This is because since the 19th century, the city, and the country in general, has been a major recipient of millions of immigrants from all over the world, making it a melting pot where several ethnic groups live together. Thus, Buenos Aires is considered one of the most diverse cities of the Americas.
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="img-thumbnail">
+                            <a href="./images/geography/caba/obelisco.jpg" target="_blank" class="text-decoration-none text-black"> <!--_blank = in a new window  -->
+                                <img src="images/geography/caba/obelisco.jpg" alt="Obelisco" style="width:100%">
+                                <div class="caption">
+                                    <p>The Obelisco is one of the most famous buildigs in Buenos Aires. And it is on the 9 de Julio Avenue, one of the widest in the world.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img-thumbnail">
+                            <a href="./images/geography/caba/casaRosada.jpg" target="_blank" class="text-decoration-none text-black">
+                                <img src="images/geography/caba/casaRosada.jpg" alt="Casa Rosada" style="width:100%">
+                                <div class="caption">
+                                    <p>The Casa Rosada ("Pink House") is the building from which the president of Argentina works.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-1">
+                        <div class="img-thumbnail">
+                            <a href="images/geography/caba/caminito.jpg" target="_blank" class="text-decoration-none text-black">
+                                <img src="images/geography/caba/caminito.jpg" alt="Caminito" class="w-100">
+                                <div class="caption">
+                                    <p>Caminito is part of the famous neighborhood La Boca, and its houses are painted in a particular way.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <h3 id="BuenosAires" class="mt-4"> Buenos Aires </h3>
             <p>
                 Buenos Aires is the largest and most populous Argentine province. It takes its name from the city of Buenos Aires, the capital of the country,
@@ -496,7 +656,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="img-thumbnail">
-                            <a href="./images/geography/bsas/LaPlata.jpg" target="_blank"> <!--_blank = in a new window  -->
+                            <a href="./images/geography/bsas/LaPlata.jpg" target="_blank" class="text-decoration-none text-black"> <!--_blank = in a new window  -->
                                 <img src="images/geography/bsas/LaPlata.jpg" alt="La Plata" style="width:100%">
                                 <div class="caption">
                                     <p>La Plata, the capital, is famous because of its streets' geometry.</p>
@@ -506,7 +666,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="img-thumbnail">
-                            <a href="./images/geography/bsas/MarDelPlata.jpg" target="_blank">
+                            <a href="./images/geography/bsas/MarDelPlata.jpg" target="_blank" class="text-decoration-none text-black">
                                 <img src="images/geography/bsas/MarDelPlata.jpg" alt="Mar del Plata" style="width:100%">
                                 <div class="caption">
                                     <p>Mar del Plata, the city where most of the argentinians spend their holidays.</p>
@@ -516,7 +676,55 @@
                     </div>
                     <div class="col-md-4 mt-1">
                         <div class="img-thumbnail">
-                            <a href="images/geography/bsas/LujanBasilica.jpg" target="_blank">
+                            <a href="images/geography/bsas/LujanBasilica.jpg" target="_blank" class="text-decoration-none text-black">
+                                <img src="images/geography/bsas/LujanBasilica.jpg" alt="Lujan Basilica" class="w-100">
+                                <div class="caption">
+                                    <p>The Baislica of our Lady of Luján (the patron saint of Argentina) holds a pilgrimage.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CABA -->
+            <h3 id="BuenosAires" class="mt-4"> Buenos Aires </h3>
+            <p>
+                Buenos Aires is the largest and most populous Argentine province. It takes its name from the city of Buenos Aires, the capital of the country,
+                which used to be part of the province and the province's capital until it was federalized in 1880.
+                Since then, in spite of bearing the same name, the province does not include Buenos Aires proper, though it does include all other parts
+                of the Greater Buenos Aires metropolitan area. The capital of the province is the city of La Plata, founded in 1882.
+                <br>
+                The province has a population of about 15.6 million people, which is 39% of Argentina's total population. Nearly 10 million people live in Greater Buenos Aires.
+                The province covers an area of 307,571 km2 (118,754 sq mi), which is about 11% of Argentina's total area and makes it the country's largest province.
+
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="img-thumbnail">
+                            <a href="./images/geography/bsas/LaPlata.jpg" target="_blank" class="text-decoration-none text-black"> <!--_blank = in a new window  -->
+                                <img src="images/geography/bsas/LaPlata.jpg" alt="La Plata" style="width:100%">
+                                <div class="caption">
+                                    <p>La Plata, the capital, is famous because of its streets' geometry.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="img-thumbnail">
+                            <a href="./images/geography/bsas/MarDelPlata.jpg" target="_blank" class="text-decoration-none text-black">
+                                <img src="images/geography/bsas/MarDelPlata.jpg" alt="Mar del Plata" style="width:100%">
+                                <div class="caption">
+                                    <p>Mar del Plata, the city where most of the argentinians spend their holidays.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-1">
+                        <div class="img-thumbnail">
+                            <a href="images/geography/bsas/LujanBasilica.jpg" target="_blank" class="text-decoration-none text-black">
                                 <img src="images/geography/bsas/LujanBasilica.jpg" alt="Lujan Basilica" class="w-100">
                                 <div class="caption">
                                     <p>The Baislica of our Lady of Luján (the patron saint of Argentina) holds a pilgrimage.</p>
@@ -541,7 +749,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="img-thumbnail">
-                            <a href="./images/geography/bsas/LaPlata.jpg" target="_blank"> <!--_blank = in a new window  -->
+                            <a href="./images/geography/bsas/LaPlata.jpg" target="_blank" class="text-decoration-none text-black"> <!--_blank = in a new window  -->
                                 <img src="images/geography/bsas/LaPlata.jpg" alt="La Plata" style="width:100%">
                                 <div class="caption">
                                     <p>La Plata, the capital, is famous because of its streets' geometry.</p>
@@ -551,7 +759,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="img-thumbnail">
-                            <a href="./images/geography/bsas/MarDelPlata.jpg" target="_blank">
+                            <a href="./images/geography/bsas/MarDelPlata.jpg" target="_blank" class="text-decoration-none text-black">
                                 <img src="images/geography/bsas/MarDelPlata.jpg" alt="Mar del Plata" style="width:100%">
                                 <div class="caption">
                                     <p>Mar del Plata, the city where most of the argentinians spend their holidays.</p>
@@ -561,7 +769,7 @@
                     </div>
                     <div class="col-md-4 mt-1">
                         <div class="img-thumbnail">
-                            <a href="images/geography/bsas/LujanBasilica.jpg" target="_blank">
+                            <a href="images/geography/bsas/LujanBasilica.jpg" target="_blank" class="text-decoration-none text-black">
                                 <img src="images/geography/bsas/LujanBasilica.jpg" alt="Lujan Basilica" class="w-100">
                                 <div class="caption">
                                     <p>The Baislica of our Lady of Luján (the patron saint of Argentina) holds a pilgrimage.</p>
@@ -586,7 +794,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="img-thumbnail">
-                            <a href="./images/geography/bsas/LaPlata.jpg" target="_blank"> <!--_blank = in a new window  -->
+                            <a href="./images/geography/bsas/LaPlata.jpg" target="_blank" class="text-decoration-none text-black"> <!--_blank = in a new window  -->
                                 <img src="images/geography/bsas/LaPlata.jpg" alt="La Plata" style="width:100%">
                                 <div class="caption">
                                     <p>La Plata, the capital, is famous because of its streets' geometry.</p>
@@ -596,7 +804,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="img-thumbnail">
-                            <a href="./images/geography/bsas/MarDelPlata.jpg" target="_blank">
+                            <a href="./images/geography/bsas/MarDelPlata.jpg" target="_blank" class="text-decoration-none text-black">
                                 <img src="images/geography/bsas/MarDelPlata.jpg" alt="Mar del Plata" style="width:100%">
                                 <div class="caption">
                                     <p>Mar del Plata, the city where most of the argentinians spend their holidays.</p>
@@ -606,142 +814,7 @@
                     </div>
                     <div class="col-md-4 mt-1">
                         <div class="img-thumbnail">
-                            <a href="images/geography/bsas/LujanBasilica.jpg" target="_blank">
-                                <img src="images/geography/bsas/LujanBasilica.jpg" alt="Lujan Basilica" class="w-100">
-                                <div class="caption">
-                                    <p>The Baislica of our Lady of Luján (the patron saint of Argentina) holds a pilgrimage.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h3 id="BuenosAires" class="mt-4"> Buenos Aires </h3>
-            <p>
-                Buenos Aires is the largest and most populous Argentine province. It takes its name from the city of Buenos Aires, the capital of the country,
-                which used to be part of the province and the province's capital until it was federalized in 1880.
-                Since then, in spite of bearing the same name, the province does not include Buenos Aires proper, though it does include all other parts
-                of the Greater Buenos Aires metropolitan area. The capital of the province is the city of La Plata, founded in 1882.
-                <br>
-                The province has a population of about 15.6 million people, which is 39% of Argentina's total population. Nearly 10 million people live in Greater Buenos Aires.
-                The province covers an area of 307,571 km2 (118,754 sq mi), which is about 11% of Argentina's total area and makes it the country's largest province.
-
-            </p>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="img-thumbnail">
-                            <a href="./images/geography/bsas/LaPlata.jpg" target="_blank"> <!--_blank = in a new window  -->
-                                <img src="images/geography/bsas/LaPlata.jpg" alt="La Plata" style="width:100%">
-                                <div class="caption">
-                                    <p>La Plata, the capital, is famous because of its streets' geometry.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="img-thumbnail">
-                            <a href="./images/geography/bsas/MarDelPlata.jpg" target="_blank">
-                                <img src="images/geography/bsas/MarDelPlata.jpg" alt="Mar del Plata" style="width:100%">
-                                <div class="caption">
-                                    <p>Mar del Plata, the city where most of the argentinians spend their holidays.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mt-1">
-                        <div class="img-thumbnail">
-                            <a href="images/geography/bsas/LujanBasilica.jpg" target="_blank">
-                                <img src="images/geography/bsas/LujanBasilica.jpg" alt="Lujan Basilica" class="w-100">
-                                <div class="caption">
-                                    <p>The Baislica of our Lady of Luján (the patron saint of Argentina) holds a pilgrimage.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h3 id="BuenosAires" class="mt-4"> Buenos Aires </h3>
-            <p>
-                Buenos Aires is the largest and most populous Argentine province. It takes its name from the city of Buenos Aires, the capital of the country,
-                which used to be part of the province and the province's capital until it was federalized in 1880.
-                Since then, in spite of bearing the same name, the province does not include Buenos Aires proper, though it does include all other parts
-                of the Greater Buenos Aires metropolitan area. The capital of the province is the city of La Plata, founded in 1882.
-                <br>
-                The province has a population of about 15.6 million people, which is 39% of Argentina's total population. Nearly 10 million people live in Greater Buenos Aires.
-                The province covers an area of 307,571 km2 (118,754 sq mi), which is about 11% of Argentina's total area and makes it the country's largest province.
-
-            </p>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="img-thumbnail">
-                            <a href="./images/geography/bsas/LaPlata.jpg" target="_blank"> <!--_blank = in a new window  -->
-                                <img src="images/geography/bsas/LaPlata.jpg" alt="La Plata" style="width:100%">
-                                <div class="caption">
-                                    <p>La Plata, the capital, is famous because of its streets' geometry.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="img-thumbnail">
-                            <a href="./images/geography/bsas/MarDelPlata.jpg" target="_blank">
-                                <img src="images/geography/bsas/MarDelPlata.jpg" alt="Mar del Plata" style="width:100%">
-                                <div class="caption">
-                                    <p>Mar del Plata, the city where most of the argentinians spend their holidays.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mt-1">
-                        <div class="img-thumbnail">
-                            <a href="images/geography/bsas/LujanBasilica.jpg" target="_blank">
-                                <img src="images/geography/bsas/LujanBasilica.jpg" alt="Lujan Basilica" class="w-100">
-                                <div class="caption">
-                                    <p>The Baislica of our Lady of Luján (the patron saint of Argentina) holds a pilgrimage.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <h3 id="BuenosAires" class="mt-4"> Buenos Aires </h3>
-            <p>
-                Buenos Aires is the largest and most populous Argentine province. It takes its name from the city of Buenos Aires, the capital of the country,
-                which used to be part of the province and the province's capital until it was federalized in 1880.
-                Since then, in spite of bearing the same name, the province does not include Buenos Aires proper, though it does include all other parts
-                of the Greater Buenos Aires metropolitan area. The capital of the province is the city of La Plata, founded in 1882.
-                <br>
-                The province has a population of about 15.6 million people, which is 39% of Argentina's total population. Nearly 10 million people live in Greater Buenos Aires.
-                The province covers an area of 307,571 km2 (118,754 sq mi), which is about 11% of Argentina's total area and makes it the country's largest province.
-
-            </p>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="img-thumbnail">
-                            <a href="./images/geography/bsas/LaPlata.jpg" target="_blank"> <!--_blank = in a new window  -->
-                                <img src="images/geography/bsas/LaPlata.jpg" alt="La Plata" style="width:100%">
-                                <div class="caption">
-                                    <p>La Plata, the capital, is famous because of its streets' geometry.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="img-thumbnail">
-                            <a href="./images/geography/bsas/MarDelPlata.jpg" target="_blank">
-                                <img src="images/geography/bsas/MarDelPlata.jpg" alt="Mar del Plata" style="width:100%">
-                                <div class="caption">
-                                    <p>Mar del Plata, the city where most of the argentinians spend their holidays.</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mt-1">
-                        <div class="img-thumbnail">
-                            <a href="images/geography/bsas/LujanBasilica.jpg" target="_blank">
+                            <a href="images/geography/bsas/LujanBasilica.jpg" target="_blank" class="text-decoration-none text-black">
                                 <img src="images/geography/bsas/LujanBasilica.jpg" alt="Lujan Basilica" class="w-100" data-bs-toggle="tooltip" title="What a beautiful place!">
                                 <div class="caption">
                                     <p>The Baislica of our Lady of Luján (the patron saint of Argentina) holds a pilgrimage.</p>
@@ -752,7 +825,14 @@
                 </div>
             </div>
 
+            <footer class="bgCornBlue text-center text-white mt-1">
+                <img src="./images/logo.png" alt="Page logo"><img src="images/logoIESQuevedo.png" alt="IES Francisco de Quevedo">
+                <p>Tomás Ezequiel Macri | 1ºDAM</p>
+                <p>I.E.S. Francisco de Quevedo | December - 2021</p>
+            </footer>
         </div>
+
+
 
 
     </body>

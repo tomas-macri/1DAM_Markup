@@ -7,7 +7,19 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
     Author     : obama
 */
 
-$primaryColor: rgb(192,210,254);
+$headerBGColor: rgb(192,210,254);
+$mainBGColor: rgb(216,243,254);
+
+@mixin marginX{
+ margin-left: 3%;
+ margin-right: 3%;
+}
+
+div.bgMainPage{
+ @include marginX;
+ background-color: $mainBGColor;
+}
+
 div.bgLightBlue {
- background: $primaryColor;
+ background: $headerBGColor;
 }
