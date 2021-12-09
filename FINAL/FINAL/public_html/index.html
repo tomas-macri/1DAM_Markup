@@ -75,11 +75,13 @@ SASS
     </head>
     <body>
         <header class="container-fluid bgLightBlue">
-            <div>
-                <a id="titleAndImageHeader" class="d-inline-block" href="./index.html#">
-                    <img src="images/logo.png" alt="logo" class="imgHeader">
-                    <h2 id="headerTitle" class="mx-5">Argentina</h2>
-                </a>
+            <div class="container"> <!-- ERRORRRRRRRRRRRRRRRRRRRRRRRRRRRRRR-->
+                <div>
+                    <a id="titleAndImageHeader" class="d-inline-block" href="./index.html#">
+                        <img src="images/logo.png" alt="logo" class="imgHeader">
+                        <h2 id="headerTitle" class="mx-5">Argentina</h2>
+                    </a>
+               </div>
                 <button type="button" class="btn mx-5 h-25 top-0 end-0" data-bs-toggle="collapse" data-bs-target="#myNavbar"><img src="images/moreOptions.png" alt="moreOptions" class="w-25 h-25" ></button>
             </div>
             <div id="myNavbar" class="collapse">
@@ -114,7 +116,7 @@ SASS
 
                         <!-- Modal body -->
                         <div class="container bgCornBlue">
-                            <h4>Join our email list and discover the latest news about Argentina</h4>
+                            <h4 class="text-white">Join our email list and discover the latest news about Argentina</h4>
                             <form action="mailto:@hotmail.es" class="was-validated" id="myForm">
                                 <div class="form-group">
                                     <label for="name">Name:</label>

@@ -78,6 +78,7 @@ header{
 
 }
 
+
 .zoom:hover {
     transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
@@ -159,7 +160,7 @@ header{
 
 
 /* classes to center a text inside an image*/
- .contenedor{
+.contenedor{
      position: relative;
      display: inline-block;
      text-align: center;
@@ -202,7 +203,12 @@ h6.welcome{
  }
 
 
-
+ .flRight{
+     float: right;
+     padding-top:.3rem;
+     padding-bottom:.3rem;
+     margin-right:1rem;
+ }
  .backImageMoonValey{
      background-image: url("../images/MoonValley.jpg");
      /* SE REPITE LA IMAGEN AL HACER ZOOM OUTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT*/
@@ -235,7 +241,7 @@ p{
     font-family: Cambria, sans-serif;
 }
 
-h1, h2, h3, h4, nav{
+h1, h2, h3, h4, nav, h5{
     font-family: Arcane_Nine, sans-serif;
 }
 
@@ -246,6 +252,10 @@ h2{
 
 h3.subtitle{
     font-size: 48px!important;
+}
+
+h5{
+        color: #06357a;
 }
 
 h3{
