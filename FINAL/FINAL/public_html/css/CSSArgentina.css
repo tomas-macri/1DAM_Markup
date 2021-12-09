@@ -6,7 +6,7 @@ header{
     margin-bottom: 0;
     padding: 0;
     border-bottom: 1px solid white;
-    top: 0px;
+    top: 0;
     /*position: fixed;
     height: 100px;*/
  }
@@ -17,7 +17,7 @@ header{
      margin-right:1rem;
      font-size:1.25rem;
      text-decoration:none;
-     white-space:nowrap;                                /*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+     /*white-space:nowrap;                                /*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
  }
 
  .borderRight{
@@ -40,10 +40,6 @@ header{
     float: left;
     width: 40%;
     margin-right: 5%;
-}
-
-#w-100{
-    width: 100%;
 }
 
 /* SIDEBAR */
@@ -79,8 +75,12 @@ header{
 }
 
 
+.zoom{
+    transition: 1s;
+}
+
 .zoom:hover {
-    transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 /* This is what is next to the sidebar */
 .zoomRotation{

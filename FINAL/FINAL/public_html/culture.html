@@ -14,25 +14,25 @@
         <header class="container-fluid bgLightBlue">
         <div>
             <a id="titleAndImageHeader" class="d-inline-block" href="./index.html#">
-                <img src="images/logo.png" alt="logo" class="imgHeader">
-                <h2 id="headerTitle" class="mx-5">Argentina</h2>
+                <img src="images/logo.png" alt="logo" class="imgResponsive float-sm-start">
+                <h2 id="headerTitle" class="text-center d-none d-lg-block float-sm-end">Argentina</h2>
             </a>
-            <button type="button" class="btn mx-5 h-25 top-0 end-0" data-bs-toggle="collapse" data-bs-target="#myNavbar"><img src="images/moreOptions.png" alt="moreOptions" class="w-25 h-25" ></button>
+            <button type="button" class="btn mt-sm-5 float-sm-end h-25 top-0 end-0" data-bs-toggle="collapse" data-bs-target="#myNavbar"><img src="images/moreOptions.png" alt="moreOptions" class="w-25 h-25" ></button>
         </div>
         <div id="myNavbar" class="collapse">
-            <nav class="navbar navbar-expand-md mx-0 mb-0 pb-0 px-0 navbar-dark">
+            <nav class="navbar navbar-expand-lg mx-0 mb-0 pb-0 px-0 navbar-dark">
                 <div class="container-fluid px-0 mx-0 row">
                     <ul class="navbar-nav m-0 p-0 ">
-                        <li class="nav-item text-center col-lg-3">
+                        <li class="nav-item text-center  col-md-12 col-lg-3">
                             <a class="nav-link linkNavbar bgLightBlue text-white" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item text-center col-lg-3">
+                        <li class="nav-item text-center  col-md-12 col-lg-3">
                             <a class="nav-link linkNavbar bgLightBlue text-white" href="geography.html">Geography</a>
                         </li>
-                        <li class="nav-item text-center col-lg-3">
+                        <li class="nav-item text-center  col-md-12 col-lg-3">
                             <a class="nav-link linkNavbar bgLightBlue text-white" href="culture.html">Culture</a>
                         </li>
-                        <li class="nav-item text-center col-lg-3">
+                        <li class="nav-item text-center itemSidebar col-md-12 col-lg-3">
                             <a class="nav-link linkNavbar bgLightBlue text-white" data-bs-toggle="modal" data-bs-target="#myModal" href="">Join us</a>  <!-- the href atribute is written because if not the cursor will not appear as clickable when hovering the item-->
                         </li>
                     </ul>
@@ -52,10 +52,10 @@
                     <!-- Modal body -->
                     <div class="container bgCornBlue">
                         <h4 class="text-white">Join our email list and discover the latest news about Argentina</h4>
-                        <form action="mailto:@hotmail.es" class="was-validated" id="myForm">
+                        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" class="was-validated" method="post" id="myForm">
                             <div class="form-group">
                                 <label for="name">Name:</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required="">
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" required>
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Please fill out this field.</div>
                             </div>
@@ -73,12 +73,12 @@
                             </div>
                             <div class="form-group form-check-inline">
                                 <label class="form-check-label" for="radio1">
-                                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" required="">Male
+                                    <input type="radio" class="form-check-input" id="radio1" name="optradio" value="male" required>Male
                                 </label>
                             </div>
                             <div class="form-check-inline">
                                 <label class="form-check-label" for="radio2">
-                                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" required="">Female
+                                    <input type="radio" class="form-check-input" id="radio2" name="optradio" value="female" required>Female
                                 </label>
                             </div>
                             <div class="form-group">
@@ -87,7 +87,7 @@
                             </div>
                             <div class="form-group form-check">
                                 <label class="form-check-label">
-                                    <input class="form-check-input" type="checkbox" name="remember" required=""> I have read and accept the <a href="https://www.termsfeed.com/live/750baf27-3d59-4974-b8c8-3243f7d44812" target="_blank" class="text-black">privacy policy</a>.
+                                    <input class="form-check-input" type="checkbox" name="remember" required=""> I have read and accept the <a href="https://www.termsfeed.com/live/750baf27-3d59-4974-b8c8-3243f7d44812" target="_blank">privacy policy</a>.
                                 </label>
                                 <div class="invalid-feedback">Accept this in order to continue.</div>
                             </div>
@@ -328,7 +328,7 @@
                 </div>
             </div>
             <footer class="bgCornBlue text-center text-white mt-1">
-                <img src="./images/logo.png" alt="Page logo"><img src="images/logoIESQuevedo.png" alt="IES Francisco de Quevedo">
+                <a href="index.html"> <img src="./images/logo.png" alt="Page logo"></a><img src="images/logoIESQuevedo.png" alt="IES Francisco de Quevedo">
                 <p>Tomás Ezequiel Macri | 1ºDAM</p>
                 <p>I.E.S. Francisco de Quevedo | December - 2021</p>
             </footer>
