@@ -10,9 +10,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit thi
 $headerBGColor: rgb(192,210,254);
 $mainBGColor: rgb(216,243,254);
 
+@mixin marginx{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+
 .marginX{
- margin-left: 3%;
- margin-right: 3%;
+ @include marginx;
+ margin-top: 0;
+ margin-bottom: 0; 
 }
 
 div.bgMainPage{

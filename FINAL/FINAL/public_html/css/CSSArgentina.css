@@ -88,7 +88,7 @@ header{
 }
 
 .zoomRotation:hover{
-    transform: scale(1.25);
+    /*transform: scale(1.25);*/
     transform: rotate(9deg);
 }
 /* function to adjust the sidebar below the header when the width is less than 700px */
