@@ -1,15 +1,10 @@
+/* FONT */
+@font-face {
+    font-family: Arcane_Nine;
+    src:  url('../fonts/Arcane_Nine.otf') format('opentype');
+}
 
-header{
-    width: 100%;
-    float: bottom;
-    margin-right:2%;
-    margin-bottom: 0;
-    padding: 0;
-    border-bottom: 1px solid white;
-    top: 0;
-    /*position: fixed;
-    height: 100px;*/
- }
+/* ID's */
 
  #titleAndImageHeader{
      padding-top:.3rem;
@@ -17,14 +12,7 @@ header{
      margin-right:1rem;
      font-size:1.25rem;
      text-decoration:none;
-     /*white-space:nowrap;                                /*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
  }
-
- .borderRight{
-     border-right: 1px solid white;
- }
-
-/* IMAGEN NP SE AJUSTA NO HACE UNA MIERDA */
 
 
 #headerTitle{
@@ -32,38 +20,24 @@ header{
     text-align: center;
     padding-top: 8%;
     font-size: 48px;
-    height: 100%;                       /* ALINEAR TEXTO EN EL CENTRO DE LA PAG */
-    width: 50%; /* VA A HABER QUE AJUSTARLO CON LA IMAGEN A LA MISMA ALTURA */
-}
-
-.imgHeader{
-    float: left;
-    width: 40%;
-    margin-right: 5%;
-}
-
-/* SIDEBAR */
-
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 10%;
-    position: fixed;
     height: 100%;
-    float: left;
-    /*overflow: auto;
-    display: flow;*/
+    width: 50%;
 }
 
-/* item !selected form the sidebar */
-.sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
+/* this is used to center a text inside an image*/
+#textInImage{
+    position: relative;
+    display: inline-block;
+    text-align: center;
 }
 
-/*when hovered, an item will look like this*/
+
+/* CLASSES */
+
+
+.linkNavbar{
+    border: 1px solid white;
+}
 
 .linkNavbar:hover {
     margin:0;
@@ -71,122 +45,51 @@ header{
     background-color: goldenrod;
     padding: 4%;
     border-radius: 5px;
-
 }
-
 
 .zoom{
     transition: 1s;
 }
 
 .zoom:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.1);
 }
-/* This is what is next to the sidebar */
-.zoomRotation{
+
+.rotation{
     transition: transform 2s;
 }
 
-.zoomRotation:hover{
-    /*transform: scale(1.25);*/
+.rotation:hover{
     transform: rotate(9deg);
 }
-/* function to adjust the sidebar below the header when the width is less than 700px */
-/*@media screen and (max-width: 700px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    .sidebar a {
-        float: left;
-    }
-    header{
-        position: relative;
-    }
-    /*.itemSidebar{
-        width: 25%;
-    #content {
- margin-top: 100px;
- margin-left: 0;
- }
- }
-    }*/
 
-/* function to adjust the sidebar below the header and only one item per row when the width is less than 400px */
-/*@media screen and (max-width: 400px) {
-    .sidebar a {
-        text-align: center;
-        float: none;
-    }
-    .itemSidebar{
-        width: 100%;
-        text-align: center;
-    }
-    header{
-        float: none;
-    }
-
-}
-
-
-
-#sidebarHeader{
-    background-color: lightskyblue;
-    color: white;
-    borde r -radius: 2px;
-    padding-top: 5%;
-    padding-bottom: 2%;
-    text-align: center;
-}
-
-#sidebarTitle{
-    font-family: "Comic Sans MS",sans-serif;
-    font-size: 18px;
-}
- */
-.linkNavbar{
-    border:solid white;
-    border-width:1px 1px 1px 1px;
-}
-
-/* END OF SIDEBAR */
-
-/*.pageHeader{
-    width: 100%;
-    float: left;
-}/*
-
-
-
-/* classes to center a text inside an image*/
-.contenedor{
-     position: relative;
-     display: inline-block;
-     text-align: center;
+/* Different backgrounds of both images and colors */
+ .backImagePeritoMoreno{
+     background-image: url("../images/index/PeritoMorenoBackground.jpg");
  }
 
-
- .centered{
-     background-image: url("../images/PeritoMoreno1.jpg");
-     display: block;
- }
-
-
-/* foto perito moreno cambio tamaño letra
-h2.welcome{
-   font-size: 52px;
+.backImageMoonValey{
+    background-image: url("../images/index/MoonValley.jpg");
+}
+.backImageFitzRoy{
+    background-image: url("../images/index/FitzRoy.jpg");
+}
+.backImageIguazu{
+    background-image: url("../images/index/IguazuFalls.jpg");
 }
 
-h6.welcome{
-    font-size: 24px;
+.bgLinearLightBlueToWhite{
+    background-image: radial-gradient(cornflowerblue, lightcyan);
 }
-*/
+
+.bgCornBlue{
+    background-color: cornflowerblue;
+}
+
 
 
 .titlesHomePage{
     font-size: 72px;
-    /*justify-content: left;*/
     text-decoration: none;
     font-family: Cambria;
     
@@ -203,45 +106,11 @@ h6.welcome{
  }
 
 
- .flRight{
-     float: right;
-     padding-top:.3rem;
-     padding-bottom:.3rem;
-     margin-right:1rem;
- }
- .backImageMoonValey{
-     background-image: url("../images/MoonValley.jpg");
-     /* SE REPITE LA IMAGEN AL HACER ZOOM OUTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT*/
- }
-.backImageFitzRoy{
-    background-image: url("../images/FitzRoy.jpg");
-    /* SE REPITE LA IMAGEN AL HACER ZOOM OUTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT*/
-}
-.backImageIguazu{
-    background-image: url("../images/IguazuFalls.jpg");
-}
-
-.bgLinearLightBlueToWhite{
-    background-image: radial-gradient(cornflowerblue, lightcyan);
-}
-
-.bgCornBlue{
-    background-color: cornflowerblue;
-}
-
-.bgMainPage{
-    background-color: rgb(216,243,254);;
-}
-@font-face {
-    font-family: Arcane_Nine;
-    src:  url('../fonts/Arcane_Nine.otf') format('opentype');
-}
-
 p{
     font-family: Cambria, sans-serif;
 }
 
-h1, h2, h3, h4, nav, h5{
+h1, h2, h3, h4, h5, nav{
     font-family: Arcane_Nine, sans-serif;
 }
 
@@ -254,8 +123,9 @@ h3.subtitle{
     font-size: 48px!important;
 }
 
-h5{
-        color: #06357a;
+h5, #titleProvincesGeography, .tableLink:hover{
+        color: #06357a!important;
+    /* This !important is here due to the tableLink class because the elements that have this class also have the bootstrap text-black class and the text would not change the color if the !important is not written in here */
 }
 
 h3{
@@ -268,36 +138,10 @@ h4{
     color: darkgoldenrod;
 }
 
-.list-group-item{
-    background:transparent!important;
-}
-
-/*.changeOnClick{
-    background-image: url("../images/plus.png");
-}
-
-.visited{
-    background-image: url("../images/MoonValley.jpg");
-}*/
-/* ANOTHER PAGE*/
-
-
-/* GEOGRAPHY
-#geographyMain{
-    background-image: url("../images/BackgroundShapes2.jpg");
-    height: 100%;
-    width: 100%;
-}
-*/
-
-
 .blackBorder_x{
     border-left: 1px solid black;
     border-right: 1px solid black;
-
 }
-
-/* NEWSSSSSSSSSSSSSSSSSSSSSSS*/
 
 
 

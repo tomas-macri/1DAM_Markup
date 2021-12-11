@@ -1,72 +1,9 @@
-<!--
-HTML
-1. The website will have at least 3 web pages linked to each other.
-2. The website will be created with HTML5 and all the pages must be valid. ---------------------------------------------
-3. The layout of the pages created will have at least the following components:
- Header including all the invariable elements at the top of the page (logo, image or
-banner, search box, etc.) ---------------------------------------------
- Main content of the page (section for news, items, products, etc. depending on the
-type of website created).
- Navigation menu
- Footer including all the invariable elements of the bottom of the page (copyright
-notice, privacy policy, terms of use, etc.)
- Sidebar grouping elements in the lateral columns of the page.
-4. At least one page will have links to the same page.
-5. There will be text and image links from external pages to your website.
-6. There will be ordered and unordered lists.
-7. Images, videos, audios will be included. 
-8. There will be at least one table.
-9. There will be at least one form that can send data to a future server you will create. It
-will have at least 5 different controls.
-10. All the pages must have a favicon.
-Templates are not allowed. You can only use them as a learning tool.
-
-
-CSS3
-1. The pages will have the fonts imported.
-2. Use of the opacity property to see different layers overlapping.
-3. Use of the opacity property to make elements fade in or fade out.
-4. Generate menus, boxes, etc. with edges other than squares by using border-radius
-property
-5. Use gradient property for some background or box
-6. Use of the transform, transition, and animation functions to generate dynamic content on
-the webpages:
- A slideshow
- An enlargement or zoom in effect on a set of images
- An enlargement or zoom in effect that also rotates the chosen image 9 degrees
-to the right
- Make the shape of an element change once it is selected.
-2
-
-
-Bootstrap
-Your site will include at least:
- Basic grid system. The layout of the page has to be different depending on the
-size of the device.
- Bootstrap table
- Bootstrap list
- Bootstrap image gallery
- Bootstrap collapse element
- Dropdown menu
- Tabs, pills and/or navbars
- Photo Carousel
- Modal window
- Tooltip/popover
-
-
-SASS
- Variables
- Mixins
-
--->
-
-
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>¡Argentina!</title>
-        <link rel="icon" type="image/png" href="images/argentinaIcon.png">
+        <title>Argentina!</title>
+        <link rel="icon" type="image/png" href="images/general/argentinaIcon.png">
         <link rel="stylesheet" href="css/CSSArgentina.css">
         <link rel="stylesheet" href="css/MyFirstSASS.css">
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -77,11 +14,10 @@ SASS
         <header class="container-fluid bgLightBlue">
             <div>
                 <a id="titleAndImageHeader" class="d-inline-block" href="./index.html#">
-                    <img src="images/logo.png" alt="logo" class="imgResponsive float-sm-start">
-                    <h2 id="headerTitle" class="text-center d-none d-lg-block float-sm-end">Argentina</h2>
+                    <img src="images/general/logo.png" alt="logo" class="float-sm-start">
+                    <h2 id="headerTitle" class="text-center d-none d-lg-block float-end">Argentina</h2>
                 </a>
-                <button type="button" class="btn mt-sm-5 float-sm-end h-25 top-0 end-0" data-bs-toggle="collapse" data-bs-target="#myNavbar"><img src="images/moreOptions.png" alt="moreOptions" class="w-25 h-25" ></button>
-                <!--<input type="text" placeholder="Search..." class="float-end">-->
+                <button type="button" class="btn mt-sm-5 float-sm-end h-25 top-0 end-0" data-bs-toggle="collapse" data-bs-target="#myNavbar"><img src="images/general/moreOptions.png" alt="moreOptions" class="w-25 h-25" ></button>
             </div>
             <div id="myNavbar" class="collapse">
                 <nav class="navbar navbar-expand-lg mx-0 mb-0 pb-0 px-0 navbar-dark">
@@ -91,10 +27,10 @@ SASS
                                 <a class="nav-link linkNavbar bgLightBlue text-white" href="index.html">Home</a>
                             </li>
                             <li class="nav-item text-center  col-md-12 col-lg-3">
-                                <a class="nav-link linkNavbar bgLightBlue text-white" href="geography.html">Geography</a>
+                                <a class="nav-link linkNavbar bgLightBlue text-white" href="otherPages/geography.html">Geography</a>
                             </li>
                             <li class="nav-item text-center  col-md-12 col-lg-3">
-                                <a class="nav-link linkNavbar bgLightBlue text-white" href="culture.html">Culture</a>
+                                <a class="nav-link linkNavbar bgLightBlue text-white" href="otherPages/culture.html">Culture</a>
                             </li>
                             <li class="nav-item text-center itemSidebar col-md-12 col-lg-3">
                                 <a class="nav-link linkNavbar bgLightBlue text-white" data-bs-toggle="modal" data-bs-target="#myModal" href="">Join us</a>  <!-- the href atribute is written because if not the cursor will not appear as clickable when hovering the item-->
@@ -171,23 +107,15 @@ SASS
         </header>
 
         <div class="w-100 bgMainPage">
-            <!--<div class="sidebar bg-white mt-lg-5">
-                <div id="sidebarHeader">
-                    <h3 id="sidebarTitle">MENU</h3>
+            <div class="bg-primary p-5 mb-1 text-center backImagePeritoMoreno">
+                <div id="textInImage">
+                    <h1>Welcome to Argentina!</h1><br>
+                    <p>What do you want to see?</p>
                 </div>
-                <a href="#home" class="itemSidebar" >Home</a>
-                <a href="culture.html" class="itemSidebar">News</a>
-                <a href="#contact" class="itemSidebar">Contact</a>
-                <a href="#about" class="itemSidebar">About</a>
-            </div>-->
-
-            <div class="bg-primary p-5 mb-1 text-center centered">
-                    <h1 class="contenedor">Welcome to Argentina!</h1><br>
-                    <p class="contenedor">What do you want to see?</p>
             </div>
 
             <!-- FIRST ITEM-->
-            <a href="./geography.html" class="text-decoration-none text-black">
+            <a href="otherPages/geography.html" class="text-decoration-none text-black">
                 <div class="bgLightBlue container-fluid">
                     <div class="row">
                         <div class="text-center py-5 col-12 col-md-6 col-lg-4">
@@ -202,7 +130,7 @@ SASS
             </a>
 
             <!-- SECOND ITEM-->
-            <a href="culture.html" class="text-decoration-none text-black">
+            <a href="otherPages/culture.html" class="text-decoration-none text-black">
                 <div class="bg-white container-fluid">
                     <div class="row">
                       
@@ -210,7 +138,7 @@ SASS
                             <p class="fw-bold mt-4">Here you will see some things that argentinians are commonly related to: food and football.</p>
                         </div>
                         <div class="py-5 d-none d-lg-block col-lg-4 backImageFitzRoy titlesFadingPages"></div>
-                        <div class="text-center borderRight py-5 col-12 col-md-6 col-lg-4 ">
+                        <div class="text-center py-5 col-12 col-md-6 col-lg-4 ">
                             <h3 class="titlesHomePage">Culture</h3>
                         </div>                       
                     </div>
@@ -232,13 +160,73 @@ SASS
                 </div>
             </a>
             <footer class="bgCornBlue text-center text-white mt-1">
-                <a href="index.html"> <img src="./images/logo.png" alt="Page logo"></a><img src="images/logoIESQuevedo.png" alt="IES Francisco de Quevedo">
+                <a href="index.html"> <img src="images/general/logo.png" alt="Page logo"></a><img src="images/general/logoIESQuevedo.png" alt="IES Francisco de Quevedo">
                 <p>Tomás Ezequiel Macri | 1ºDAM</p>
                 <p>I.E.S. Francisco de Quevedo | December - 2021</p>
             </footer>
         </div>
-
-
-
     </body>
 </html>
+
+
+<!--
+HTML
+1. The website will have at least 3 web pages linked to each other. - DONE
+2. The website will be created with HTML5 and all the pages must be valid.- DONE
+3. The layout of the pages created will have at least the following components:
+- Header including all the invariable elements at the top of the page (logo, image or
+banner, search box, etc.) - DONE
+- Main content of the page (section for news, items, products, etc. depending on the
+type of website created). - DONE
+- Navigation menu - DONE
+- Footer including all the invariable elements of the bottom of the page (copyright
+notice, privacy policy, terms of use, etc.) - DONE
+- Sidebar grouping elements in the lateral columns of the page.
+4. At least one page will have links to the same page. - DONE
+5. There will be text and image links from external pages to your website. - DONE
+6. There will be ordered and unordered lists.- DONE
+7. Images, videos, audios will be included. - DONE
+8. There will be at least one table. - DONE
+9. There will be at least one form that can send data to a future server you will create. It
+will have at least 5 different controls. - DONE
+10. All the pages must have a favicon. - DONE
+Templates are not allowed. You can only use them as a learning tool.
+
+
+CSS3
+1. The pages will have the fonts imported. - DONE
+2. Use of the opacity property to see different layers overlapping.
+3. Use of the opacity property to make elements fade in or fade out. - DONE
+4. Generate menus, boxes, etc. with edges other than squares by using border-radius
+property - DONE
+5. Use gradient property for some background or box - DONE
+6. Use of the transform, transition, and animation functions to generate dynamic content on
+the webpages:
+- A slideshow - DONE
+- An enlargement or zoom in effect on a set of images - DONE
+- An enlargement or zoom in effect that also rotates the chosen image 9 degrees
+to the right - DONE
+- Make the shape of an element change once it is selected.
+2
+
+
+Bootstrap
+Your site will include at least:
+- Basic grid system. The layout of the page has to be different depending on the
+size of the device. - DONE
+- Bootstrap table
+- Bootstrap list - DONE
+- Bootstrap image gallery - DONE
+- Bootstrap collapse element - DONE
+- Dropdown menu
+- Tabs, pills and/or navbars - DONE
+- Photo Carousel - DONE
+- Modal window - DONE
+- Tooltip/popover - DONE
+
+
+SASS
+- Variables - DONE
+- Mixins  - DONE
+
+-->

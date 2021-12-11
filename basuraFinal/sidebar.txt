@@ -1,0 +1,9 @@
+<!--<div class="sidebar bg-white mt-lg-5">
+                <div id="sidebarHeader">
+                    <h3 id="sidebarTitle">MENU</h3>
+                </div>
+                <a href="#home" class="itemSidebar" >Home</a>
+                <a href="culture.html" class="itemSidebar">News</a>
+                <a href="#contact" class="itemSidebar">Contact</a>
+                <a href="#about" class="itemSidebar">About</a>
+            </div>-->
