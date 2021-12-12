@@ -14,6 +14,9 @@
      text-decoration:none;
  }
 
+.flLeft{
+    float: left ;
+}
 
 #headerTitle{
     color: goldenrod;
@@ -110,7 +113,7 @@ p{
     font-family: Cambria, sans-serif;
 }
 
-h1, h2, h3, h4, h5, nav{
+h1, h2, h3, h4, h5, nav, #searchButton{
     font-family: Arcane_Nine, sans-serif;
 }
 
