@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<letter>
+    <header>
+            <date>
+                <month>
+                    December
+                </month>
+                <day>
+                    11
+                </day>
+                <year>
+                    2002
+                </year>                
+            </date>
+            <receiver>
+                    <name>
+                        <fistName>
+                            Melville
+                        </fistName>
+                        <surname>
+                            Dewey
+                        </surname>
+                    </name>
+                    <university>
+                            Columbia university
+                    </university>
+                    <city>
+                        <name>
+                            New York
+                        </name>
+                        <state>
+                            NY
+                        </state>
+                    </city>
+            </receiver>
+            <greeting>
+                Dear Melville,
+            </greeting>
+    </header>
+    <body>
+        <text>
+            I have been reading your ideas concerning the nature of librarianship, and I find them very intriguing. 
+            I would love the opportunity to discuss with you the role of the card catalog in today's libraries considering the advent to World Wide Web. 
+            Specifically, how are things like Google and Amazon.com changing our patrons' expectations of library services? Mr. Cutter and I will be discussing these ideas at the next Annual Meeting,
+            and we are available at the follow dates/times: 
+        </text>
+        <avaliableDates>
+            <avaliableDate>            
+                <day>
+                    Monday
+                </day>
+                <time>
+                    2-4
+                </time>
+            </avaliableDate>
+            <avaliableDate> 
+                <day>
+                    Tuesday
+                </day>
+                <time>
+                    3-5
+                </time>
+            </avaliableDate> 
+            <avaliableDate> 
+                <day>
+                    Thrusday
+                </day>
+                <time>
+                    1-3
+                </time>
+            </avaliableDate> 
+        </avaliableDates>    
+    </body>
+    <closing>
+        <goodbye>
+            We hope you can join us.
+        </goodbye>
+        <signature>
+            Sincerely, S. R. Ranganathan
+        </signature>
+    </closing>
+</letter>
+    
