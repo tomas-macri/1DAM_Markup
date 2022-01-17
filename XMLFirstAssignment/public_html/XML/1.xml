@@ -103,45 +103,45 @@
                         </classDay>
                     </classDays>
                 </subject>
-                 <subject>
-                    <name>
-                        Markup Languages
-                    </name>
-                    <teacher>
-                        <name>
-                            Lucia
-                        </name>
-                        <surname>
-                            San Miguel
-                        </surname>
-                    </teacher>
-                    <classDays>
-                        <classDay>
-                            <day>
-                                Tuesday
-                            </day>
-                            <time>
-                                10:20
-                            </time>
-                        </classDay>
-                        <classDay>
-                            <day>
-                                Wednesday
-                            </day>
-                            <time>
-                                13:20
-                            </time>
-                        </classDay>
-                        <classDay>
-                            <day>
-                                Friday
-                            </day>
-                            <time>
-                                12:20
-                            </time>
-                        </classDay>
-                    </classDays>
-                </subject>
+                <subject>
+                   <name>
+                       Markup Languages
+                   </name>
+                   <teacher>
+                       <name>
+                           Lucia
+                       </name>
+                       <surname>
+                           San Miguel
+                       </surname>
+                   </teacher>
+                   <classDays>
+                       <classDay>
+                           <day>
+                               Tuesday
+                           </day>
+                           <time>
+                               10:20
+                           </time>
+                       </classDay>
+                       <classDay>
+                           <day>
+                               Wednesday
+                           </day>
+                           <time>
+                               13:20
+                           </time>
+                       </classDay>
+                       <classDay>
+                           <day>
+                               Friday
+                           </day>
+                           <time>
+                               12:20
+                           </time>
+                       </classDay>
+                   </classDays>
+               </subject>
             </subjects>
         </student>
         <student id="002">
