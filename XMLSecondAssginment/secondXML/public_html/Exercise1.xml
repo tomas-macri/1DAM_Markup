@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE CATALOG [
+<!ELEMENT CATALOG (PRODUCT+)>
+<!ELEMENT PRODUCT
+(SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>
+
+<!ATTLIST PRODUCT
+NAME CDATA #IMPLIED
+CATEGORY (HandTool|Table|Shop-Professional) "HandTool"
+PARTNUM CDATA #IMPLIED
+PLANT (Pittsburgh|Milwaukee|Chicago) "Chicago"
+INVENTORY (InStock|Backordered|Discontinued) "InStock">
+
+<!ELEMENT SPECIFICATIONS (#PCDATA)>
+
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIED
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+
+<!ATTLIST OPTIONS
+FINISH (Metal|Polished|Matte) "Matte"
+ADAPTER (Included|Optional|NotApplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShell">
+
+<!ELEMENT PRICE (#PCDATA)>
+
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+]>
+
+<CATALOG> 
+    <PRODUCT NAME="BALL" PARTNUM="125" PLANT="Pittsburgh" INVENTORY="Backordered">
+        <SPECIFICATIONS WEIGHT="150">
+            MY SPECIFICATION 1
+        </SPECIFICATIONS>
+        <SPECIFICATIONS WEIGHT="160" POWER="80">
+            MY SPECIFICATION 2
+        </SPECIFICATIONS>
+        <SPECIFICATIONS>
+            MY SPECIFICATION 3
+        </SPECIFICATIONS>
+        <SPECIFICATIONS POWER="60">
+            MY SPECIFICATION 3
+        </SPECIFICATIONS>
+        <OPTIONS FINISH="Polished" ADAPTER="Optional" CASE="Soft">
+            OPTIONS PRODUCT 1
+        </OPTIONS>
+        <PRICE MSRP="12" WHOLESALE="24" STREET="Gran Via" SHIPPING="12">
+           €12.00
+        </PRICE>
+        <PRICE>
+           €24.50
+        </PRICE>
+        <PRICE MSRP="16" STREET="Gran Via" SHIPPING="12">
+           €12.00
+        </PRICE>
+        <NOTES>
+            THIS IS MY NOTE IN THE PRODUCT NUMBER 1
+        </NOTES>
+    </PRODUCT>
+        <PRODUCT NAME="BALL" PARTNUM="125">
+        <SPECIFICATIONS WEIGHT="100">
+            MY SPECIFICATION 1
+        </SPECIFICATIONS>
+        <SPECIFICATIONS WEIGHT="10" POWER="40">
+            MY SPECIFICATION 2
+        </SPECIFICATIONS>
+        <SPECIFICATIONS>
+            MY SPECIFICATION 3
+        </SPECIFICATIONS>
+        <SPECIFICATIONS POWER="600">
+            MY SPECIFICATION 4
+        </SPECIFICATIONS>
+        <OPTIONS FINISH="Metal">
+            OPTIONS PRODUCT 1
+        </OPTIONS>
+        <PRICE MSRP="12" WHOLESALE="24" STREET="Gran Via" SHIPPING="12">
+           €12.00
+        </PRICE>
+        <PRICE>
+           €24.50
+        </PRICE>
+        <PRICE>
+           €12.00
+        </PRICE>
+    </PRODUCT>
+    <PRODUCT>
+        <SPECIFICATIONS WEIGHT="150">
+            MY SPECIFICATION 1
+        </SPECIFICATIONS>
+        <PRICE MSRP="12" STREET="Gran Via" SHIPPING="12">
+           €12.00
+        </PRICE>
+        <PRICE>
+           €24.50
+        </PRICE>
+        <PRICE MSRP="16" SHIPPING="12">
+           €12.00
+        </PRICE>
+        <NOTES>
+            THIS IS MY NOTE IN THE PRODUCT NUMBER 1
+        </NOTES>
+    </PRODUCT>
+</CATALOG>
+
