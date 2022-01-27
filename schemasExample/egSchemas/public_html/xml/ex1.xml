@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<Song
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='../schemas/ex1.xsd'
+    lang="EN" prod="prod">
+    <Id>001</Id>
+    <Title>Clocks</Title>
+    <Published>1</Published>
+    <DatePub>1998-10-10</DatePub>
+    <Artist>Coldplay</Artist>
+    <Company>ACME</Company>
+
+</Song>
+
