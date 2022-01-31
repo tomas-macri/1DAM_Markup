@@ -14,18 +14,64 @@ Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this te
                 <xs:element name="IDCust">
                       <xs:simpleType>
                           <xs:restriction base="xs:integer">
-                              <xs:minInclusive value=""/>
-                              <xs:maxInclusive value="120"/>
+                              <xs:totalDigits value="5"/>
                           </xs:restriction>
                       </xs:simpleType>
                 </xs:element>
-                <xs:element name="NameCust" type="xs:string"/>
-                <xs:element name="Street" type="xs:string"/>
-                <xs:element name="NumStreet" type="xs:int"/>
-                <xs:element name="PostalCode" type="xs:int"/>
-                <xs:element name="City" type="xs:string"/>
-                <xs:element name="Phone" type="xs:string"/>
+                
+                <xs:element name="NameCust">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="2"/>
+                            <xs:maxLength value="8"/>
+                            <xs:pattern value="([a-zA-Z])*"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                
+                <xs:element name="Street">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:maxLength value="30"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                
+                <xs:element name="NumStreet">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minInclusive value="0"/>
+                            <xs:maxInclusive value="5000"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                
+                <xs:element name="PostalCode">
+                    <xs:simpleType>
+                          <xs:restriction base="xs:integer">
+                            <xs:totalDigits value="5"/>
+                          </xs:restriction>
+                      </xs:simpleType>
+                </xs:element>
+                
+                <xs:element name="City">
+                    <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                              <xs:pattern value="Madrid|Barcelona|Sevilla"/>
+                          </xs:restriction>
+                      </xs:simpleType>
+                </xs:element>
+                
+                <xs:element name="Phone">
+                    <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                              <xs:pattern value="([0-9]{3}-[0-9]{3}-[0-9]{3})"/>
+                          </xs:restriction>
+                      </xs:simpleType>
+                </xs:element>
+                
                 <xs:element name="DateOfBirth" type="xs:date"/>
+                
                 <xs:element name="Discount" type="xs:boolean"/>
             </xs:sequence>
         </xs:complexType>
