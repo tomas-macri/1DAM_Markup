@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<library
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='../schemas/exercise2.xsd'>
+ 
+    <book>
+        <isbn>125</isbn>
+        <title>Harry Potter and the Globet of Fire</title>
+        <author id="A001">
+            <name>J.K Rowling</name>
+            <born>1960-07-09</born>
+            <dead>1960-07-09</dead>
+        </author>
+    </book>
+</library>
+
+
+
+
+
