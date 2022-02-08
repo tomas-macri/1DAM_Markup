@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<books
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='../schemas/exercise3.xsd'>
+    <book id="B001">
+        <author>J.K Rowling</author>
+        <title>Harry Potter and the Globet of Fire</title>
+        <genre>Fantasy</genre>
+        <price>14.99</price>
+        <pub_date>1998-02-08</pub_date>
+        <review>This book is fantasticccccccccccccc.</review>
+    </book>
+     <book id="B002">
+        <author>Julia Navarro</author>
+        <title>De Ninguna Parte</title>
+        <genre>Novel</genre>
+        <price>21.70</price>
+        <pub_date>2021-08-26</pub_date>
+        <review>This book is a great spanish novel.</review>
+    </book>
+   
+    <book id="B003">
+        <author>George RR Martin</author>
+        <title>The Ice Dragon</title>
+        <genre>Comic</genre>
+        <price>18.52</price>
+        <pub_date>1990-07-09</pub_date>
+        <review>This comic is awesome.</review>
+    </book>
+</books>
+

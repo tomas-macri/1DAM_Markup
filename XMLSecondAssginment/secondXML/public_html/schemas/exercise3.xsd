@@ -4,7 +4,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
 -->
 
-?xml version="1.0"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
  <xsd:element name="books" type="BooksForm"/>
     <xsd:complexType name="BooksForm">

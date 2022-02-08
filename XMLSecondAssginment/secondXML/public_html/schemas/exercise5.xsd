@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XmlSchema.xsd to edit this template
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:element name="books">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="book" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    
+    <xs:element name="book">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="title"/>
+                <xs:element ref="edition" minOccurs="0"/>
+                <xs:element ref="author" maxOccurs="unbounded"/>
+                <xs:element ref="publishedDate"/>
+                <xs:element ref="type"/>
+                <xs:element ref="price"/>
+            </xs:sequence>
+            <xs:attribute ref="isbn"/>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    
+    <!--TITLE      ERRO A LA HORA DE RESTICTION DEL ATTRIBUTE-->
+    <xs:element name="title">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="type"/> 
+                    
+                    <!--<xs:restriction>
+                        <xs:pattern value="P|H"/>
+                    </xs:restriction>-->
+                </xs:extension>
+              
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    <!--EDITION-->
+    <xs:element name="edition">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:pattern value="[0-9]"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    
+    
+    
+    <!-- AUTHOR - COMPLEX -->
+    <xs:element name="author">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="first"/>
+                <xs:element ref="middle"  minOccurs="0"/>
+                <xs:element ref="last"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <!-- SIMPLE ELEMENTS - AUTHOR -->
+    <xs:element name="first" type="xs:string"/>
+    <xs:element name="last" type="xs:string"/>
+    
+    
+    <!-- MIDDLE ELEMENT - AUTHOR -->
+    <xs:element name="middle">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[a-zA-z]*"/>
+            </xs:restriction>
+        </xs:simpleType>     
+    </xs:element>
+    
+    
+    <!-- PUBLISHED DATE - COMPLEX -->
+    <xs:element name="publishedDate">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="month"/>
+                <xs:element ref="day"/>
+                <xs:element ref="year"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    
+    
+    
+    <!-- PUBLISHED DATE - ELEMENTS -->
+    
+    <xs:element name="month">
+        <xs:simpleType>
+            <xs:restriction base="xs:unsignedByte">
+                <xs:minInclusive value="1"/>
+                <xs:maxInclusive value="12"/>
+            </xs:restriction>
+        </xs:simpleType>       
+    </xs:element>
+    
+    <xs:element name="day">
+        <xs:simpleType>
+            <xs:restriction base="xs:unsignedByte">
+                <xs:minInclusive value="1"/>
+                <xs:maxInclusive value="31"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    
+    
+    
+    
+   
+    <xs:element name="year" type="xs:gYear"/>
+    
+    
+    
+    <!-- TYPE ELEMENT -->
+   
+    <xs:element name="type">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="nonfiction|fiction"/>
+            </xs:restriction>              
+        </xs:simpleType>
+    </xs:element>
+    
+    
+    
+    <!--PRICE ELEMENT-->
+    <xs:element name="price">
+        <xs:simpleType>
+            <xs:restriction base="xs:decimal">
+                <xs:minExclusive value="0"/>
+                <xs:totalDigits value="5"/>
+                <xs:fractionDigits  value="2"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    
+    
+    
+    <!--ATRIBUTES-->
+    <xs:attribute name="isbn" type="xs:ID"/>
+    
+    <!-- TITLE ATTRIBUTE -->
+    <xs:attribute name="type" type="xs:string"/> 
+    
+    
+    
+    
+    
+</xs:schema>
