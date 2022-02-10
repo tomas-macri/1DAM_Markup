@@ -62,7 +62,7 @@ c. All elements of a book
 
 d. All elements of a chapter that are not in a section
 
-//book[section!=""]
+//book[section!=""] // mallllllll
 
 e. The first author of each book
 
@@ -70,6 +70,7 @@ e. The first author of each book
 
 f. All category attributes
 
+//@category
 
 g. Books with more than one author
 
@@ -77,7 +78,11 @@ g. Books with more than one author
 
 h. Elements containing Potter in their value
 
-
+//*[contains(text(), 'Potter')]
 
 i. Attributes containing io in their name
+
+//@*[contains(text(), 'io')]
+
+
 -->
