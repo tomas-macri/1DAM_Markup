@@ -5,7 +5,7 @@
         <html>
             <head>
                 <link rel="stylesheet" href="../css/xsltCSS.css"/>
-                <title>food_ex2.xsl</title>
+                <title>food_ex5.xsl</title>
             </head>
             <body>
                 <table>

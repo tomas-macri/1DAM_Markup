@@ -5,7 +5,7 @@
         <html>
             <head>
                 <link rel="stylesheet" href="../css/xsltCSS.css"/>
-                <title>food_ex2.xsl</title>
+                <title>books_ex6b</title>
             </head>
             <body>
                 <h1>EVERY SECTION</h1>

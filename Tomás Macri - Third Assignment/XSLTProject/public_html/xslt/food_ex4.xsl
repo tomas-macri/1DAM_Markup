@@ -5,7 +5,7 @@
         <html>
             <head>
                 <link rel="stylesheet" href="../css/xsltCSS.css"/>
-                <title>food_ex2.xsl</title>
+                <title>food_ex4.xsl</title>
             </head>
             <body>
                 <table>
@@ -19,44 +19,65 @@
                     
                     <xsl:for-each select="food_list/food_item">
                         <xsl:sort select="fiber_per_serving" order = "descending"/>
-                        <xsl:if test="@type = 'vegetable'">
-                            <tr class="tbody-back">
-                                <td>
-                                    <xsl:value-of select="name"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="carbs_per_serving"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="fiber_per_serving"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="fat_per_serving"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="kj_per_serving"/>
-                                </td>
-                            </tr>
-                        </xsl:if>     
-                        <xsl:if test="@type = 'fruit'">
-                            <tr class="tbody-backPink">
-                                <td>
-                                    <xsl:value-of select="name"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="carbs_per_serving"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="fiber_per_serving"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="fat_per_serving"/>
-                                </td>
-                                <td>
-                                    <xsl:value-of select="kj_per_serving"/>
-                                </td>
-                            </tr>
-                        </xsl:if>           
+                        <xsl:choose>
+                            <xsl:when test="@type = 'vegetable'">
+                                <tr class="tbody-back">
+                                    <td>
+                                        <xsl:value-of select="name"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="carbs_per_serving"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="fiber_per_serving"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="fat_per_serving"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="kj_per_serving"/>
+                                    </td>
+                                </tr>
+                            </xsl:when>
+                            <xsl:when test="@type = 'fruit'">
+                                <tr class="tbody-backPink">
+                                    <td>
+                                        <xsl:value-of select="name"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="carbs_per_serving"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="fiber_per_serving"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="fat_per_serving"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="kj_per_serving"/>
+                                    </td>
+                                </tr>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <tr>
+                                    <td>
+                                        <xsl:value-of select="name"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="carbs_per_serving"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="fiber_per_serving"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="fat_per_serving"/>
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="kj_per_serving"/>
+                                    </td>
+                                </tr>
+                            </xsl:otherwise>
+                        </xsl:choose>      
                     </xsl:for-each>
                 </table>
             </body>
