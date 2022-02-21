@@ -1,0 +1,57 @@
+{
+    "bib":
+            {
+                "book": [
+                    {
+                        "title": "TCP/IP Illustrated",
+                        "author":
+                                {
+                                    "last": "Stevens",
+                                    "first": "W."
+                                },
+                        "publisher": "Addison-Wesley",
+                        "price": "65.95"
+                    },
+                    {
+                        "title": "Advanced Programming in the Uniix environment",
+                        "author":
+                                {
+                                    "last": "Stevens",
+                                    "first": "W."
+                                },
+                        "publisher": "Addison-Wesley",
+                        "price": "65.95"
+                    },
+                    {
+                        "title": "Data on the Web",
+                        "author":
+                                {
+                                    "last": "Stevens",
+                                    "first": "W."
+                                },
+                        "author":
+                                {
+                                    "last": "Stevens",
+                                    "first": "W."
+                                },
+                        "author":
+                                {
+                                    "last": "Stevens",
+                                    "first": "W."
+                                },
+                        "publisher": "Addison-Wesley",
+                        "price": "65.95"
+                    },
+                    {
+                        "title": "TCP/IP Illustrated",
+                        "author":
+                                {
+                                    "last": "Stevens",
+                                    "first": "W."
+                                },
+                        "publisher": "Addison-Wesley",
+                        "price": "65.95"
+                    }
+                ]
+            }
+}
