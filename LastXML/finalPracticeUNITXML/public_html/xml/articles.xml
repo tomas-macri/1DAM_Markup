@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<articles
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='../xsd/articles.xsd'>
+
+    <!-- SOCKS -->
+    <article>
+        <category>Socks</category>
+        <detail>LEOTARDS</detail>
+        <price>1</price>
+        <order>S</order>
+        <reference>S10</reference>
+    </article>
+    <article>
+        <category>Socks</category>
+        <detail>COTTON SOCKS</detail>
+        <price>2</price>
+        <order>S</order>
+        <reference>S37</reference>
+    </article>
+    <article>
+        <category>Socks</category>
+        <detail>SOCKS PACK</detail>
+        <price>1</price>
+        <order>S</order>
+        <reference>S25</reference>
+    </article>
+    <article>
+        <category>Socks</category>
+        <detail>SPORT SHORT SOCKS</detail>
+        <price>1</price>
+        <order>S</order>
+        <reference>S27</reference>
+    </article>
+    <article>
+        <category>Socks</category>
+        <detail>SPORTS LONG SOCKS</detail>
+        <price>8</price>
+        <order>S</order>
+        <reference>S29</reference>
+    </article>
+    <article>
+        <category>Socks</category>
+        <detail>BIG SOCKS PACK</detail>
+        <price>4</price>
+        <order>S</order>
+        <reference>S45</reference>
+    </article>
+    <article>
+        <category>Socks</category>
+        <detail>LITTLE THREAD SOCKS</detail>
+        <price>15</price>
+        <order>S</order>
+        <reference>S06</reference>
+    </article>
+    <article>
+        <category>Socks</category>
+        <detail>LITTLE NYLON SOCKS</detail>
+        <price>2</price>
+        <order>S</order>
+        <reference>S22</reference>
+    </article>
+    
+    
+    <!-- SWEATERS -->
+    <article>
+        <category>Sweater</category>
+        <detail>MULTI-COLOR SWEATER</detail>
+        <price>10</price>
+        <order>J</order>
+        <reference>J66</reference>
+    </article>
+    <article>
+        <category>Sweater</category>
+        <detail>WOOL SWEATER</detail>
+        <price>15</price>
+        <order>J</order>
+        <reference>J14</reference>
+    </article>
+    <article>
+        <category>Sweater</category>
+        <detail>THREAD SWEATER</detail>
+        <price>10</price>
+        <order>J</order>
+        <reference>J15</reference>
+    </article>
+    <article>
+        <category>Sweater</category>
+        <detail>COTTON SWEATER</detail>
+        <price>5</price>
+        <order>J</order>
+        <reference>J33</reference>
+    </article>
+    
+    
+    <!-- TSHIRTS -->
+    <article>
+        <category>Tshirt</category>
+        <detail>COTTON TSHIRTS PACK</detail>
+        <price>2</price>
+        <order>T</order>
+        <reference>T38</reference>
+    </article>
+    <article>
+        <category>Tshirt</category>
+        <detail>NYLON TSHIRTS PACK</detail>
+        <price>1</price>
+        <order>T</order>
+        <reference>T43</reference>
+    </article>
+    <article>
+        <category>Tshirt</category>
+        <detail>NYLON TSHIRT</detail>
+        <price>2</price>
+        <order>T</order>
+        <reference>T36</reference>
+    </article>
+    <article>
+        <category>Tshirt</category>
+        <detail>COTTON TSHIRT</detail>
+        <price>5</price>
+        <order>T</order>
+        <reference>T18</reference>
+    </article>
+    
+    
+    
+    <!-- COMPLEMENTS -->
+    <article>
+        <category>Complements</category>
+        <detail>WOOL SCARF</detail>
+        <price>20</price>
+        <order>C</order>
+        <reference>C08</reference>
+    </article>
+    <article>
+        <category>Complements</category>
+        <detail>NYLON HAT</detail>
+        <price>4</price>
+        <order>C</order>
+        <reference>C35</reference>
+    </article>
+    <article>
+        <category>Complements</category>
+        <detail>NYLON TAPE</detail>
+        <price>2</price>
+        <order>C</order>
+        <reference>C09</reference>
+    </article>
+    <article>
+        <category>Complements</category>
+        <detail>LUXURY SILK GLOVES</detail>
+        <price>3</price>
+        <order>C</order>
+        <reference>C80</reference>
+    </article>
+    <article>
+        <category>Complements</category>
+        <detail>SCARFS PACK</detail>
+        <price>1</price>
+        <order>C</order>
+        <reference>C17</reference>
+    </article>
+    <article>
+        <category>Complements</category>
+        <detail>WOOL HAT</detail>
+        <price>1</price>
+        <order>C</order>
+        <reference>C11</reference>
+    </article>
+    <article>
+        <category>Complements</category>
+        <detail>THREAD HAT</detail>
+        <price>3</price>
+        <order>C</order>
+        <reference>C12</reference>
+    </article>
+    <article>
+        <category>Complements</category>
+        <detail>EARS COVER</detail>
+        <price>3</price>
+        <order>C</order>
+        <reference>C13</reference>
+    </article>
+</articles>

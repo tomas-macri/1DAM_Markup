@@ -1,0 +1,41 @@
+{
+    "name":
+            {
+                "tomas":
+                        [
+                            {
+                                "prueba": "hola",
+                                "prueba2": {
+                                    "hola2": [
+                                        {
+                                            "bien": "bien",
+                                            "bien2": "bien2"
+                                        },
+                                        {
+                                            "bien": "mal",
+                                            "bien2": "mal2"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "prueba": "hola3",
+                                "prueba2": {
+                                    "hola4": [
+                                        {
+                                            "bien": "bien3",
+                                            "bien2": "bien4"
+                                        },
+                                        {
+                                            "bien": "mal3",
+                                            "bien2": "mal4"
+                                        }
+                                    ]
+                                }
+                            }
+
+
+
+                        ]
+            }
+}

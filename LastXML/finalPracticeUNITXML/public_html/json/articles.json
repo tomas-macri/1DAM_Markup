@@ -1,0 +1,63 @@
+{
+    "articles": 
+            {
+                "article": [
+                    {
+                        "category": "Socks",
+                        "detail": "LEOTARDS",
+                        "price": "1",
+                        "order": "S",
+                        "reference": "S10"
+                    },
+                    {
+                        "category": "Socks",
+                        "detail": "COTTON SOCKS",
+                        "price": "2",
+                        "order": "S",
+                        "reference": "S37"
+                    },
+                    {
+                        "category": "Sweater",
+                        "detail": "MULTI-COLOR SWEATER",
+                        "price": "10",
+                        "order": "J",
+                        "reference": "J66"
+                    },
+                    {
+                        "category": "Sweater",
+                        "detail": "WOOL SWEATER",
+                        "price": "15",
+                        "order": "J",
+                        "reference": "J14"
+                    },
+                    {
+                        "category": "Tshirt",
+                        "detail": "NYLON TSHIRTS PACK",
+                        "price": "1",
+                        "order": "T",
+                        "reference": "T43"
+                    },
+                    {
+                        "category": "Tshirt",
+                        "detail": "NYLON TSHIRT",
+                        "price": "2",
+                        "order": "T",
+                        "reference": "T36"
+                    },
+                    {
+                        "category": "Complements",
+                        "detail": "NYLON HAT",
+                        "price": "4",
+                        "order": "C",
+                        "reference": "C35"
+                    },
+                    {
+                        "category": "Complements",
+                        "detail": "NYLON TAPE",
+                        "price": "2",
+                        "order": "C",
+                        "reference": "C09"
+                    }
+                ]
+            }   
+}
