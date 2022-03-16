@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<provincias>
+  <provincia fuente="IGN" ordenAlf="9" iso_nombre="Misiones" capital="Posadas">
+    <nombre_completo>Provincia de Misiones</nombre_completo>
+    <iso_id>AR-N</iso_id>
+    <nombre>Misiones</nombre>
+    <id>54</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-26.8753965086829</lat>
+      <lon>-54.6516966230371</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="19" iso_nombre="San Luis" capital="San Luis">
+    <nombre_completo>Provincia de San Luis</nombre_completo>
+    <iso_id>AR-D</iso_id>
+    <nombre>San Luis</nombre>
+    <id>74</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-33.7577257449137</lat>
+      <lon>-66.0281298195836</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="14" iso_nombre="San Juan" capital="San Juan">
+    <nombre_completo>Provincia de San Juan</nombre_completo>
+    <iso_id>AR-J</iso_id>
+    <nombre>San Juan</nombre>
+    <id>70</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-30.8653679979618</lat>
+      <lon>-68.8894908486844</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="7" iso_nombre="Entre Ríos" capital="Paraná">
+    <nombre_completo>Provincia de Entre Ríos</nombre_completo>
+    <iso_id>AR-E</iso_id>
+    <nombre>Entre Ríos</nombre>
+    <id>30</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-32.0588735436448</lat>
+      <lon>-59.2014475514635</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="23" iso_nombre="Santa Cruz" capital="Río Gallegos">
+    <nombre_completo>Provincia de Santa Cruz</nombre_completo>
+    <iso_id>AR-Z</iso_id>
+    <nombre>Santa Cruz</nombre>
+    <id>78</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-48.8154851827063</lat>
+      <lon>-69.9557621671973</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="15" iso_nombre="Río Negro" capital="Viedma">
+    <nombre_completo>Provincia de Río Negro</nombre_completo>
+    <iso_id>AR-R</iso_id>
+    <nombre>Río Negro</nombre>
+    <id>62</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-40.4057957178801</lat>
+      <lon>-67.229329893694</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="18" iso_nombre="Rawson">
+    <nombre_completo>Provincia del Chubut</nombre_completo>
+    <iso_id>AR-U</iso_id>
+    <nombre>Chubut</nombre>
+    <id>26</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-43.7886233529878</lat>
+      <lon>-68.5267593943345</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="2" iso_nombre="Córdoba">
+    <nombre_completo>Provincia de Córdoba</nombre_completo>
+    <iso_id>AR-X</iso_id>
+    <nombre>Córdoba</nombre>
+    <id>14</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-32.142932663607</lat>
+      <lon>-63.8017532741662</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="5" iso_nombre="Mendoza" capital="Mendoza">
+    <nombre_completo>Provincia de Mendoza</nombre_completo>
+    <iso_id>AR-M</iso_id>
+    <nombre>Mendoza</nombre>
+    <id>50</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-34.6298873058957</lat>
+      <lon>-68.5831228183798</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="21" iso_nombre="La Rioja" capital="La Rioja">
+    <nombre_completo>Provincia de La Rioja</nombre_completo>
+    <iso_id>AR-F</iso_id>
+    <nombre>La Rioja</nombre>
+    <id>46</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-29.685776298315</lat>
+      <lon>-67.1817359694432</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="20" iso_nombre="Catamarca" capital="San Fernando del Valle de Catamarca">
+    <nombre_completo>Provincia de Catamarca</nombre_completo>
+    <iso_id>AR-K</iso_id>
+    <nombre>Catamarca</nombre>
+    <id>10</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-27.3358332810217</lat>
+      <lon>-66.9476824299928</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="22" iso_nombre="La Pampa" capital="Santa Rosa">
+    <nombre_completo>Provincia de La Pampa</nombre_completo>
+    <iso_id>AR-L</iso_id>
+    <nombre>La Pampa</nombre>
+    <id>42</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-37.1315537735949</lat>
+      <lon>-65.4466546606951</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="12" iso_nombre="Santiago del Estero" capital="Santiago del Estero">
+    <nombre_completo>Provincia de Santiago del Estero</nombre_completo>
+    <iso_id>AR-G</iso_id>
+    <nombre>Santiago del Estero</nombre>
+    <id>86</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-27.7824116550944</lat>
+      <lon>-63.2523866568588</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="11" iso_nombre="Corrientes" capital="Corrientes">
+    <nombre_completo>Provincia de Corrientes</nombre_completo>
+    <iso_id>AR-W</iso_id>
+    <nombre>Corrientes</nombre>
+    <id>18</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-28.7743047046407</lat>
+      <lon>-57.8012191977913</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="3" iso_nombre="Santa Fé" capital="Santa Fé">
+    <nombre_completo>Provincia de Santa Fe</nombre_completo>
+    <iso_id>AR-S</iso_id>
+    <nombre>Santa Fe</nombre>
+    <id>82</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-30.7069271588117</lat>
+      <lon>-60.9498369430241</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="6" iso_nombre="Tucumán" capital="San Miguel de Tucumán">
+    <nombre_completo>Provincia de Tucumán</nombre_completo>
+    <iso_id>AR-T</iso_id>
+    <nombre>Tucumán</nombre>
+    <id>90</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-26.9478001830786</lat>
+      <lon>-65.3647579441481</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="17" iso_nombre="Neuquén" capital="Neuquén">
+    <nombre_completo>Provincia del Neuquén</nombre_completo>
+    <iso_id>AR-Q</iso_id>
+    <nombre>Neuquén</nombre>
+    <id>58</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-38.6417575824599</lat>
+      <lon>-70.1185705180601</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="8" iso_nombre="Salta" capital="Salta">
+    <nombre_completo>Provincia de Salta</nombre_completo>
+    <iso_id>AR-A</iso_id>
+    <nombre>Salta</nombre>
+    <id>66</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-24.2991344492002</lat>
+      <lon>-64.8144629600627</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="10" iso_nombre="Chaco" capital="Resistencia">
+    <nombre_completo>Provincia del Chaco</nombre_completo>
+    <iso_id>AR-H</iso_id>
+    <nombre>Chaco</nombre>
+    <id>22</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-26.3864309061226</lat>
+      <lon>-60.7658307438603</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="16" iso_nombre="Formosa" capital="Formosa">
+    <nombre_completo>Provincia de Formosa</nombre_completo>
+    <iso_id>AR-P</iso_id>
+    <nombre>Formosa</nombre>
+    <id>34</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-24.894972594871</lat>
+      <lon>-59.9324405800872</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="13" iso_nombre="" capital="">
+    <nombre_completo>Provincia de Jujuy</nombre_completo>
+    <iso_id>AR-Y</iso_id>
+    <nombre>Jujuy</nombre>
+    <id>38</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-23.3200784211351</lat>
+      <lon>-65.7642522180337</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="4" iso_nombre="" capital="">
+    <nombre_completo>Ciudad Autónoma de Buenos Aires</nombre_completo>
+    <iso_id>AR-C</iso_id>
+    <nombre>Ciudad Autónoma de Buenos Aires</nombre>
+    <id>02</id>
+    <categoria>Ciudad Autónoma</categoria>
+    <centroide>
+      <lat>-34.6144934119689</lat>
+      <lon>-58.4458563545429</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="1" iso_nombre="" capital="">
+    <nombre_completo>Provincia de Buenos Aires</nombre_completo>
+    <iso_id>AR-B</iso_id>
+    <nombre>Buenos Aires</nombre>
+    <id>06</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-36.6769415180527</lat>
+      <lon>-60.5588319815719</lon>
+    </centroide>
+  </provincia>
+  <provincia fuente="IGN" ordenAlf="24" iso_nombre="" capital="">
+    <nombre_completo>Provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur</nombre_completo>
+    <iso_id>AR-V</iso_id>
+    <nombre>Tierra del Fuego, Antártida e Islas del Atlántico Sur</nombre>
+    <id>94</id>
+    <categoria>Provincia</categoria>
+    <centroide>
+      <lat>-82.52151781221</lat>
+      <lon>-50.7427486049785</lon>
+    </centroide>
+  </provincia>
+  <total>24</total>
+  <cantidad>24</cantidad>
+  <inicio>0</inicio>
+</provincias>
