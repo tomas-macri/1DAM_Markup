@@ -113,7 +113,7 @@ p{
     font-family: Cambria, sans-serif;
 }
 
-h1, h2, h3, h4, h5, nav, #searchButton{
+h1, h2, h3, h4, h5, nav, #searchButton, th{
     font-family: Arcane_Nine, sans-serif;
 }
 
@@ -137,7 +137,7 @@ h3{
     color: #06357a;
 }
 
-h4{
+h4, th{
     color: darkgoldenrod;
 }
 

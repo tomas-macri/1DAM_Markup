@@ -38,7 +38,16 @@
     
 
      <xsl:template match="//article">
-        <xsl:if test="category[text()='Tshirt' or text()='Complements']">
+        <xsl:if test="category='Tshirt'"><!--[text()='Tshirt' or text()='Complements']">-->
+            <tr>
+                <xsl:apply-templates select="category"/>
+                <xsl:apply-templates select="detail"/>
+                <xsl:apply-templates select="price"/>
+                <xsl:apply-templates select="order"/>
+                <xsl:apply-templates select="reference"/>
+            </tr>
+        </xsl:if>
+        <xsl:if test="category='Complements'"><!--[text()='Tshirt' or text()='Complements']">-->
             <tr>
                 <xsl:apply-templates select="category"/>
                 <xsl:apply-templates select="detail"/>

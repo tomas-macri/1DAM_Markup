@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+   <xs:element name="provinces" type="typeProvinces"/>
+    
+    <xs:complexType name="typeProvinces">
+        <xs:sequence>
+            <xs:element name="province" type="typeProvince" minOccurs="24" maxOccurs="24"/>
+            <xs:element name="total" type="xs:integer"/> 
+            <xs:element name="quantity" type="xs:integer"/> 
+            <xs:element name="beginning" type="xs:integer"/> 
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    <xs:complexType name="typeProvince">
+        <xs:sequence>
+            <xs:element name="full_name" type="typeFullName"/>
+            <xs:element name="iso_id" type="typeISO_ID"/>
+            <xs:element name="name" type="typeName"/>
+            <xs:element name="id" type="typeID"/>
+            <xs:element name="category" type="typeCategory"/>
+            <xs:element name="populationWithPoints" type="xs:string"/>
+            <xs:element name="centroid" type="typeCentroid"/>
+        </xs:sequence>
+        <xs:attribute name="source" fixed="IGN"/>
+        <xs:attribute name="population" type="xs:integer"/>
+        <xs:attribute name="alfOrder" type="xs:integer"/>
+        <xs:attribute name="iso_name" type="xs:string"/>
+        <xs:attribute name="capital" type="xs:string"/>
+    </xs:complexType>
+    
+    <xs:simpleType name="typeFullName">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="100"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:simpleType name="typeISO_ID">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="AR-[A-Z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    
+    <xs:simpleType name="typeName">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="80"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    
+    <xs:simpleType name="typeID">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+        </xs:restriction>
+    </xs:simpleType>   
+    
+    <xs:simpleType name="typeCategory">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Provincia"/>
+            <xs:enumeration value="Ciudad Autónoma"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <xs:complexType name="typeCentroid">
+        <xs:sequence>
+            <xs:element name="lat" type="typeLatLon"/>
+            <xs:element name="lon" type="typeLatLon"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:simpleType name="typeLatLon">
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="15"/>
+            <xs:fractionDigits value="13"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    
+    
+</xs:schema>
