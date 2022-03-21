@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-    Document   : provincesWithOver500000Habitants.xsl
-    Created on : 20 de marzo de 2022, 17:34
-    Author     : tomas
+    Document   : provincesToTheEastOfSanLuis.xsl
+    Created on : 21 de marzo de 2022, 14:56
+    Author     : obama
     Description:
         Purpose of transformation follows.
 -->
@@ -17,8 +17,7 @@
     <xsl:template match="/">
         <html>
             <head>
-            
-                <title>Provinces with over 500.000 people</title>
+                <title>Provinces to the east of San Luis</title>
                 <link rel="icon" type="image/png" href="../images/general/argentinaIcon.png"/>
                 <link rel="stylesheet" href="../css/CSSArgentina.css"/>
                 <link rel="stylesheet" href="../css/MyFirstSASS.css"/>
@@ -55,7 +54,7 @@
                                     </li>
                                     <li class="nav-item dropdown text-center col-md-12 col-lg-3">
                                         <a class="nav-link linkNavbar text-white dropdown-toggle" href="#"
-                                               data-bs-toggle="dropdown" data-bs-target="#cultureDropdown">
+                                           data-bs-toggle="dropdown" data-bs-target="#cultureDropdown">
                                             Culture
                                         </a>
                                         <ul class="bgLightBlue dropdown-menu text-white dropdown-menu-end bg-black" id="cultureDropdown">
@@ -131,7 +130,7 @@
                     </div>
                 </header>
                 <div class="bgMainPage">
-                    <h1>Provinces with over 500.000 people</h1>
+                    <h1 class="m-3">Provinces to the east of San Luis province</h1>
                     <br/>
                     <table class="table table-light table-striped table-hover text-center border-info mt-5">
                         <tr class="border-1">
@@ -147,10 +146,17 @@
                                 <h4>NAME</h4>
                             </td>
                             <td class="blackBorder_x">
-                                <h4>POPULATION</h4>
+                                <h4>LATITUDE</h4>
+                            </td>
+                            <td class="blackBorder_x">
+                                <h4>LONGITUDE</h4>
+                            </td>
+                            <td class="blackBorder_x">
+                                <h4>ALF ORDER</h4>
                             </td>
                         </tr>
-                        <xsl:apply-templates select="provinces/province[@population>500000]"/>
+                        <xsl:apply-templates select="provinces/province[centroid/lon = (//province/centroid/lon[../../@alfOrder=19])]"/>
+                        <xsl:apply-templates select="provinces/province[centroid/lon > (//province/centroid/lon[../../@alfOrder=19])]"/>
                     </table>
                 </div>
                 
@@ -165,30 +171,44 @@
             </body>
         </html>
     </xsl:template>
-    
     <xsl:template match="provinces/province">
         <tr>
             <xsl:apply-templates select="full_name"/>
-            <xsl:apply-templates select="@iso_name"/>
-            <xsl:apply-templates select="populationWithPoints"/>
+            <xsl:apply-templates select="name"/>
+            <xsl:apply-templates select="centroid/lat"/>
+            <xsl:apply-templates select="centroid/lon"/>
+            <xsl:apply-templates select="@alfOrder"/>
         </tr>
     </xsl:template>
-    
+
     <xsl:template match="full_name">
         <td class="blackBorder_x">
             <xsl:value-of select="."/>
         </td>
     </xsl:template>
-    
-    <xsl:template match="@iso_name">
+
+    <xsl:template match="name">
+        <td class="blackBorder_x">
+            <xsl:value-of select="."/>
+        </td>
+    </xsl:template>
+
+    <xsl:template match="centroid/lat">
         <td class="blackBorder_x">
             <xsl:value-of select="."/>
         </td>
     </xsl:template>
     
-    <xsl:template match="populationWithPoints">
+    <xsl:template match="centroid/lon">
         <td class="blackBorder_x">
             <xsl:value-of select="."/>
         </td>
     </xsl:template>
+       
+    <xsl:template match="@alfOrder">
+        <td class="blackBorder_x">
+            <xsl:value-of select="."/>
+        </td>
+    </xsl:template>  
 </xsl:stylesheet>
+

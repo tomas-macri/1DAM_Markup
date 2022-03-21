@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-    Document   : provincesWithOver500000Habitants.xsl
-    Created on : 20 de marzo de 2022, 17:34
-    Author     : tomas
+    Document   : provincesGreaterPopulationThanChaco.xsl
+    Created on : 21 de marzo de 2022, 14:13
+    Author     : obama
     Description:
         Purpose of transformation follows.
 -->
@@ -17,8 +17,7 @@
     <xsl:template match="/">
         <html>
             <head>
-            
-                <title>Provinces with over 500.000 people</title>
+                <title>Provinces with greater popultation thn Chaco province</title>
                 <link rel="icon" type="image/png" href="../images/general/argentinaIcon.png"/>
                 <link rel="stylesheet" href="../css/CSSArgentina.css"/>
                 <link rel="stylesheet" href="../css/MyFirstSASS.css"/>
@@ -55,7 +54,7 @@
                                     </li>
                                     <li class="nav-item dropdown text-center col-md-12 col-lg-3">
                                         <a class="nav-link linkNavbar text-white dropdown-toggle" href="#"
-                                               data-bs-toggle="dropdown" data-bs-target="#cultureDropdown">
+                                           data-bs-toggle="dropdown" data-bs-target="#cultureDropdown">
                                             Culture
                                         </a>
                                         <ul class="bgLightBlue dropdown-menu text-white dropdown-menu-end bg-black" id="cultureDropdown">
@@ -131,7 +130,7 @@
                     </div>
                 </header>
                 <div class="bgMainPage">
-                    <h1>Provinces with over 500.000 people</h1>
+                    <h1 class="m-3">Provinces with greater popultation thn Chaco province</h1>
                     <br/>
                     <table class="table table-light table-striped table-hover text-center border-info mt-5">
                         <tr class="border-1">
@@ -149,8 +148,12 @@
                             <td class="blackBorder_x">
                                 <h4>POPULATION</h4>
                             </td>
+                            <td class="blackBorder_x">
+                                <h4>ISO ID</h4>
+                            </td>
                         </tr>
-                        <xsl:apply-templates select="provinces/province[@population>500000]"/>
+                        <xsl:apply-templates select="provinces/province[@population = (//province/@population[../iso_id='AR-H'])]"/>
+                        <xsl:apply-templates select="provinces/province[@population > (//province/@population[../iso_id='AR-H'])]"/>
                     </table>
                 </div>
                 
@@ -165,30 +168,36 @@
             </body>
         </html>
     </xsl:template>
-    
     <xsl:template match="provinces/province">
         <tr>
             <xsl:apply-templates select="full_name"/>
-            <xsl:apply-templates select="@iso_name"/>
+            <xsl:apply-templates select="name"/>
             <xsl:apply-templates select="populationWithPoints"/>
+            <xsl:apply-templates select="iso_id"/>
         </tr>
     </xsl:template>
-    
+
     <xsl:template match="full_name">
         <td class="blackBorder_x">
             <xsl:value-of select="."/>
         </td>
     </xsl:template>
-    
-    <xsl:template match="@iso_name">
+
+    <xsl:template match="name">
         <td class="blackBorder_x">
             <xsl:value-of select="."/>
         </td>
     </xsl:template>
-    
+
     <xsl:template match="populationWithPoints">
         <td class="blackBorder_x">
             <xsl:value-of select="."/>
         </td>
-    </xsl:template>
+    </xsl:template>    
+    
+    <xsl:template match="iso_id">
+        <td class="blackBorder_x">
+            <xsl:value-of select="."/>
+        </td>
+    </xsl:template>  
 </xsl:stylesheet>

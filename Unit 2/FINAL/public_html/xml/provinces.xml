@@ -177,7 +177,7 @@ and open the template in the editor.
       <lon>-57.8012191977913</lon>
     </centroid>
   </province>
-  <province source="IGN" population="3194537" alfOrder="3" iso_name="Santa Fé" capital="Santa Fé">
+  <province source="IGN" population="3194537" alfOrder="3" iso_name="Santa Fe" capital="Santa Fe">
     <full_name>Provincia de Santa Fe</full_name>
     <iso_id>AR-S</iso_id>
     <name>Santa Fe</name>

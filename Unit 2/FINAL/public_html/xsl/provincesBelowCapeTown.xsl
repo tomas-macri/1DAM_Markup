@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-    Document   : provincesWithOver500000Habitants.xsl
-    Created on : 20 de marzo de 2022, 17:34
-    Author     : tomas
+    Document   : ProvincesBelowCapeCity.xsl
+    Created on : 21 de marzo de 2022, 13:09
+    Author     : obama
     Description:
         Purpose of transformation follows.
 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
+<!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 --><!-- CAPE TOWN LATITUDE IS -34 -->
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html"/>
-
-    <!-- TODO customize transformation rules 
-         syntax recommendation http://www.w3.org/TR/xslt 
-    -->
     <xsl:template match="/">
         <html>
             <head>
             
-                <title>Provinces with over 500.000 people</title>
+                <title>Provinces below Cape Town (South Africa)</title>
                 <link rel="icon" type="image/png" href="../images/general/argentinaIcon.png"/>
                 <link rel="stylesheet" href="../css/CSSArgentina.css"/>
                 <link rel="stylesheet" href="../css/MyFirstSASS.css"/>
@@ -131,7 +143,7 @@
                     </div>
                 </header>
                 <div class="bgMainPage">
-                    <h1>Provinces with over 500.000 people</h1>
+                    <h1 class="m-3">Provinces below Cape Town (South Africa)</h1>
                     <br/>
                     <table class="table table-light table-striped table-hover text-center border-info mt-5">
                         <tr class="border-1">
@@ -147,13 +159,15 @@
                                 <h4>NAME</h4>
                             </td>
                             <td class="blackBorder_x">
-                                <h4>POPULATION</h4>
+                                <h4>LATITUDE</h4>
+                            </td>
+                            <td class="blackBorder_x">
+                                <h4>LONGITUDE</h4>
                             </td>
                         </tr>
-                        <xsl:apply-templates select="provinces/province[@population>500000]"/>
+                        <xsl:apply-templates select="provinces/province/centroid[-34>lat]"/>
                     </table>
                 </div>
-                
                 <footer class="bgCornBlue text-center text-white mt-1">
                     <a href="index.html"> 
                         <img src="../images/general/logo.png" alt="Page logo"/>
@@ -166,11 +180,12 @@
         </html>
     </xsl:template>
     
-    <xsl:template match="provinces/province">
+    <xsl:template match="provinces/province/centroid">
         <tr>
-            <xsl:apply-templates select="full_name"/>
-            <xsl:apply-templates select="@iso_name"/>
-            <xsl:apply-templates select="populationWithPoints"/>
+            <xsl:apply-templates select="../full_name"/>
+            <xsl:apply-templates select="../@iso_name"/>
+            <xsl:apply-templates select="lat"/>
+            <xsl:apply-templates select="lon"/>
         </tr>
     </xsl:template>
     
@@ -186,9 +201,16 @@
         </td>
     </xsl:template>
     
-    <xsl:template match="populationWithPoints">
+    <xsl:template match="lat">
         <td class="blackBorder_x">
             <xsl:value-of select="."/>
         </td>
     </xsl:template>
+    
+    <xsl:template match="lon">
+        <td class="blackBorder_x">
+            <xsl:value-of select="."/>
+        </td>
+    </xsl:template>
+    
 </xsl:stylesheet>
