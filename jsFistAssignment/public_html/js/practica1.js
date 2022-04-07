@@ -87,8 +87,22 @@ function misterio3(op, num1, num2) {
 }
 
 
-function misterio4() {
-    return true;
+function misterio4(dni, letter) {
+    var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 
+'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T']; 
+letter = letter.toUpperCase();
+    let resultado = "El número no es válido"
+    if (typeof (dni) == "number" && dni >= 0 && dni <= 999999999){
+        posiLetraCorrecta = dni%23
+       
+        if(letras[posiLetraCorrecta] == letter){
+            resultado = "El DNI es correcto"
+        }
+        else{
+            resultado = "La letra o el número proporcionados no son correctos" 
+        }
+    }
+    return resultado;
 }
 function misterio5() {
     return true;
