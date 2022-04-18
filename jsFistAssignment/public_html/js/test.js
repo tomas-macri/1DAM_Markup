@@ -237,10 +237,10 @@ describe('Practica1', function () {
   });
   describe('Ejercicio19', function () {
     it('Ejercicio misterio19', function () {
-      assert.equal(practica1.misterio19({"nombre":"pablo","apellido1":"perez","apellido2":"martinez"}),"pablo perez martinez.");
-      assert.equal(practica1.misterio19({"nombre":"pablo","apellido2":"perez","apellido1":"martinez"}),"pablo martinez perez.");
-      assert.equal(practica1.misterio19({"nombre":"javier","apellido1":"perez","apellido2":"martinez"}),"javier perez martinez.");
-      assert.equal(practica1.misterio19({"nombre":"ejemplo","apellido1":"ejemplo2","apellido2":"martinez"}),"ejemplo ejemplo2 martinez.");
+      assert.equal(practica1.misterio19('{"nombre":"pablo","apellido1":"perez","apellido2":"martinez"}'),"pablo perez martinez.");
+      assert.equal(practica1.misterio19('{"nombre":"pablo","apellido2":"perez","apellido1":"martinez"}'),"pablo martinez perez.");
+      assert.equal(practica1.misterio19('{"nombre":"javier","apellido1":"perez","apellido2":"martinez"}'),"javier perez martinez.");
+      assert.equal(practica1.misterio19('{"nombre":"ejemplo","apellido1":"ejemplo2","apellido2":"martinez"}'),"ejemplo ejemplo2 martinez.");
     });
   });
   describe('Ejercicio20', function () {
