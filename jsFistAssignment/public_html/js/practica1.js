@@ -1,4 +1,4 @@
-console.log(misterio20([23],0));
+//console.log(misterio19({"nombre":"pablo","apellido1":"perez","apellido2":"martinez"}));
 const CODIGO = 25;
 
 function misterio1(edad) {
@@ -260,7 +260,7 @@ function misterio15(name, sur1, sur2) {
         resultado = "Alguno no es string";
     }
     else{
-        resultado={firstname: name, lastname1: sur1, lastname2: sur2}; 
+        resultado={nombre: name, apellido1: sur1, apellido2: sur2}; 
         resultado = JSON.stringify(resultado);
     }
     return resultado;
@@ -293,12 +293,13 @@ function misterio18(arrayNum) {
 }
 function misterio19(code) {
     code = JSON.stringify(code);
-    code = JSON.parse(code);
-    return code.nombre + " " + code.apellido1 + " " + code.apellido2 + "." ;
+    parsedCode = JSON.parse(code);
+    return parsedCode.nombre + " " + parsedCode.apellido1 + " " + parsedCode.apellido2 + "." ;
+    //return parsedCode;
 }
 function misterio20(arrayNum, index) {
     let resultado = "No es posible";;
-    if(typeof index === "number" && Array.isArray(arrayNum) && index < arrayNum.length){
+    if(typeof index === "number" && Array.isArray(arrayNum) && index >=0 && index < arrayNum.length){
         resultado={resultado: arrayNum[index]};
         resultado = JSON.stringify(resultado);
     }
