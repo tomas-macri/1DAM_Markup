@@ -1,4 +1,4 @@
-console.log(misterio19('{"nombre":"pablo","apellido2":"perez","apellido1":"martinez"}'));
+console.log(misterio20([23],0));
 const CODIGO = 25;
 
 function misterio1(edad) {
@@ -140,12 +140,41 @@ function misterio6(letter) {
     return resultado;
 }
                                                                    
-function misterio7() {
-    
-    return true;
+function misterio7(number) {
+    number = parseInt(number);
+    let resultado;
+    if (Number.isNaN(number) || number < 0){
+        resultado = "Introduce un número positivo";
+    }
+    else{
+        let i=1;
+        numberAdded = number;
+        while (numberAdded < 100){
+            i++;
+            numberAdded+=number;
+        }
+        resultado = i;
+    }
+    return resultado;
 }
-function misterio8() {
-    return true;
+function misterio8(number) {
+    number = parseInt(number);
+    let resultado="";
+    if (Number.isNaN(number) || number < 1 || number > 9){
+        resultado = "Introduce un número de 1 a 9";
+    }
+    else{
+        for (i=1;i<=9;i++){
+            resultado+=i + "x" + number + "=" + i*number;
+            if (i===9){
+                resultado+=".";
+            }
+            else{
+                resultado+=",";
+            }
+        }
+    }
+    return resultado;
 }
 
 function misterio9(rows, columns) {
@@ -199,13 +228,21 @@ function misterio12(word) {
     }
     return resultado;
 }
-function misterio13() {
-    return true;
+function misterio13(word) {
+     let resultado;
+    if (typeof word !== "string")
+    {
+        resultado="Mete un string";
+    }
+    else{
+        resultado=word.toString().toUpperCase();
+    }
+    return resultado;
 }
 function misterio14(sentence) {
     if (typeof sentence !== "string")
     {
-        return"Mete un string";
+        return "Mete un string";
     }
     else {
         if (sentence.includes("DAM")){
@@ -216,25 +253,56 @@ function misterio14(sentence) {
         }
     }
 }
-function misterio15() {
+function misterio15(name, sur1, sur2) {
+    let resultado="";
+    if (typeof name !== "string" || typeof sur1 !== "string" || typeof sur2 !== "string")
+    {
+        resultado = "Alguno no es string";
+    }
+    else{
+        resultado={firstname: name, lastname1: sur1, lastname2: sur2}; 
+        resultado = JSON.stringify(resultado);
+    }
+    return resultado;
+}
+function misterio16(sentence) {
+    if (typeof sentence !== "string")
+    {
+        return "Mete un string";
+    }
+    else {
+        return sentence.replace("suspender", "aprobar");
+    }
     return true;
 }
-function misterio16() {
-    return true;
+function misterio17(arrayNum) {
+    let resultado="<ul>";
+    for (i=0; i<arrayNum.length; i++){
+        resultado+="<li>" + arrayNum[i] + "</li>";
+    }
+    resultado+="</ul>";
+    return resultado;
 }
-function misterio17() {
-    return true;
-}
-function misterio18() {
-    return true;
+function misterio18(arrayNum) {
+   let resultado="<ol>";
+    for (i=arrayNum.length-1; i>=0; i--){
+        resultado+="<li>" + arrayNum[i] + "</li>";
+    }
+    resultado+="</ol>";
+    return resultado;
 }
 function misterio19(code) {
-    //jsonCode = "'" + code + "'";
-    parsedCode = JSON.parse(code);
-    return parsedCode.nombre + " " + parsedCode.apellido1 + " " + parsedCode.apellido2 + "." ;
+    code = JSON.stringify(code);
+    code = JSON.parse(code);
+    return code.nombre + " " + code.apellido1 + " " + code.apellido2 + "." ;
 }
-function misterio20() {
-    return true;
+function misterio20(arrayNum, index) {
+    let resultado = "No es posible";;
+    if(typeof index === "number" && Array.isArray(arrayNum) && index < arrayNum.length){
+        resultado={resultado: arrayNum[index]};
+        resultado = JSON.stringify(resultado);
+    }
+    return resultado;
 }
 
 
