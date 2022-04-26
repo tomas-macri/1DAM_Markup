@@ -87,8 +87,14 @@ function misterio9(domDocument){
     }
 }
 
-function misterio10(){
-    return true;
+function misterio10(domDocument, newTag, newID, newColor, newBgColor, text){
+    let element = domDocument.createElement(newTag);
+    element.id = newID;
+    element.style.color = newColor;
+    element.style.backgroundColor = newBgColor;
+    let textNode = domDocument.createTextNode(text);
+    element.appendChild(textNode); 
+    domDocument.body.appendChild(element);
 }
 function misterio11(domDocument, idReplace){
     let element = domDocument.getElementById(idReplace);
@@ -100,8 +106,13 @@ function misterio11(domDocument, idReplace){
     }
     return true;
 }
-function misterio12(){
-    return true;
+function misterio12(domDocument, selectedID){
+    let element = domDocument.getElementById(selectedID);
+    if (element === null)
+    {
+        return 0;
+    }
+      return domDocument.getElementById(selectedID).childElementCount+1;
 }
 function misterio13(domDocument, newTitle){
     domDocument.title = newTitle;
