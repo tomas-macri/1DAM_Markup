@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="text" name="txt1" id="inputTextBox1">
+        <input type="text" name="txt2" id="inputTextBox2">
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", assignEvents);
+            
+            function assignEvents(){
+                document.getElementById("inputTextBox1").addEventListener("input", updateText2);
+            }
+            
+            function updateText2(){
+                let text = document.getElementById("inputTextBox1").value;
+                document.getElementById("inputTextBox2").value = text;
+            }
+        
+        
+        
+        
+        
+        
+        </script>
+    </body>
+</html>
