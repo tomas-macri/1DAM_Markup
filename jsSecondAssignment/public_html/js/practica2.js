@@ -1,5 +1,5 @@
 const CODIGO=25;
-
+//console.log(misterio14('gola', 'clase'));
 function misterio1(domDocument,id){
     if(domDocument.getElementById(id)){
         return domDocument.getElementById(id).innerHTML;
@@ -99,7 +99,7 @@ function misterio10(domDocument, newTag, newID, newColor, newBgColor, text){
 function misterio11(domDocument, idReplace){
     let element = domDocument.getElementById(idReplace);
     if (element !== null){
-        element.className = "clase";
+        element.classList = "clase";
     }
     else{
         return "No existe ese id";
@@ -117,8 +117,17 @@ function misterio12(domDocument, selectedID){
 function misterio13(domDocument, newTitle){
     domDocument.title = newTitle;
 }
-function misterio14(){
-    return true;
+function misterio14(domDocument, classToDelete){
+    let classElements = domDocument.getElementsByClassName(classToDelete);
+    let cant = classElements.length;
+    for (let i = 0; i < cant; i++){
+        console.log(classElements.length);
+        let parent = classElements[0].parentElement;
+        parent.removeChild(classElements[0]);
+    }
+    return "Eliminados:" + cant;
+    
+    //return document.getElementsByClassName(classToDelete).length;
 }
 
 
