@@ -9,7 +9,8 @@ function assignEvents(){
     }
 }
 
-function clickNumber(){
-
+function clickNumber(event){
+    alert(event.id);
+        
 }
 
