@@ -21,7 +21,7 @@ function assignEvents(){
 
 function clickNumber(event){
     inputText = document.getElementById("txtCuenta");
-    if(inputText.value === "0"){
+    if(inputText.value === '0'){
         inputText.value="";
     }
     document.getElementById("txtCuenta").value += event.target.value;
@@ -31,16 +31,16 @@ function clickOp(event){
     inputText = document.getElementById("txtCuenta");
     op = event.target.value;
     if (isNaN(num1)){
-        num1 = parseInt(inputText.value);
+        num1 = inputText.value;
     }
     else if (isNaN(num2))
     {
-        num2 = parseInt(inputText.value);
+        num2 = inputText.value;
     }
     else{
         showResult();
     }
-    inputText.value = "0";      
+    inputText.value = '0';      
 }
 
 function showResult(){
@@ -52,12 +52,12 @@ function showResult(){
     if (isNaN(num2)){
         num2 = inputText.value;
         }
-    if(num2 === 0){
+    if(num2 === '0' && op === '/'){
         alert("You can not divide by 0");
         result = num1;
     }
     else {
-          result = eval(num1+op+num2);
+        result = eval(num1+op+num2);
     }
     inputText.value = result;
     num1=undefined;

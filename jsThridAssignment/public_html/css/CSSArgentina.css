@@ -1,0 +1,157 @@
+/* FONT */
+@font-face {
+    font-family: Arcane_Nine;
+    src:  url('../fonts/Arcane_Nine.otf') format('opentype');
+}
+
+/* ID's */
+
+ #titleAndImageHeader{
+     padding-top:.3rem;
+     padding-bottom:.3rem;
+     margin-right:1rem;
+     font-size:1.25rem;
+     text-decoration:none;
+ }
+
+.flLeft{
+    float: left ;
+}
+
+#headerTitle{
+    color: goldenrod;
+    text-align: center;
+    padding-top: 8%;
+    font-size: 48px;
+    height: 100%;
+    width: 50%;
+}
+
+/* this is used to center a text inside an image*/
+#textInImage{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* CLASSES */
+
+
+.linkNavbar{
+    border: 1px solid white;
+}
+
+.linkNavbar:hover {
+    margin:0;
+    border: 0;
+    background-color: goldenrod;
+    padding: 4%;
+    border-radius: 5px;
+}
+
+.zoom{
+    transition: 1s;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.rotation{
+    transition: transform 2s;
+}
+
+.rotation:hover{
+    transform: rotate(9deg);
+}
+
+/* Different backgrounds of both images and colors */
+ .backImagePeritoMoreno{
+     background-image: url("../images/index/PeritoMorenoBackground.jpg");
+ }
+
+.backImageMoonValey{
+    background-image: url("../images/index/MoonValley.jpg");
+}
+.backImageFitzRoy{
+    background-image: url("../images/index/FitzRoy.jpg");
+}
+.backImageIguazu{
+    background-image: url("../images/index/IguazuFalls.jpg");
+}
+
+.bgLinearLightBlueToWhite{
+    background-image: radial-gradient(cornflowerblue, lightcyan);
+}
+
+.bgCornBlue{
+    background-color: cornflowerblue;
+}
+
+
+
+.titlesHomePage{
+    font-size: 72px;
+    text-decoration: none;
+    font-family: Cambria;
+    
+}
+
+ /* FADE IN */
+ .titlesFadingPages:hover {
+     opacity: 0;
+     animation: fade 5s linear;
+ }
+ @keyframes fade {
+     0% { opacity: 0 }
+     100% { opacity: 1 }
+ }
+
+
+p{
+    font-family: Cambria, sans-serif;
+}
+
+h1, h2, h3, h4, h5, nav, #searchButton, th, li{
+    font-family: Arcane_Nine, sans-serif;
+}
+
+
+h2{
+    font-size: 82px!important; /*the !important is used to override the value given by the browser*/
+}
+
+h3.subtitle{
+    font-size: 48px!important;
+}
+
+h5, #titleProvincesGeography, .tableLink:hover{
+        color: #06357a!important;
+    /* This !important is here due to the tableLink class because the elements that have this class also have the bootstrap text-black class and the text would not change the color if the !important is not written in here */
+}
+
+h3{
+    text-align: center;
+    font-size: 52px;
+    color: #06357a;
+}
+
+h4, th{
+    color: darkgoldenrod;
+}
+
+.blackBorder_x{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.decorationNone{
+    text-decoration: none;
+}
+
+
+
+
+
+
