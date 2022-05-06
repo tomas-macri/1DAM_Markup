@@ -29,59 +29,35 @@ function clickNumber(event){
 
 function clickOp(event){
     inputText = document.getElementById("txtCuenta");
-    
-        // infinite sumas
-    
-//    else{
-       op = event.target.value;
-       if (isNaN(num1)){
-           num1 = parseInt(inputText.value);
-       }
-       else if (isNaN(num2))
-       {
-           num2 = parseInt(inputText.value);
-       }
-       else{
-           showResult();
-       }
-       inputText.value = "0";      
-  //  }
-
+    op = event.target.value;
+    if (isNaN(num1)){
+        num1 = parseInt(inputText.value);
+    }
+    else if (isNaN(num2))
+    {
+        num2 = parseInt(inputText.value);
+    }
+    else{
+        showResult();
+    }
+    inputText.value = "0";      
 }
 
 function showResult(){
     inputText = document.getElementById("txtCuenta");
     let result;
     if (isNaN(num1)){
-        num1 = parseInt(inputText.value);
+        num1 = inputText.value;
     }
     if (isNaN(num2)){
-        num2 = parseInt(inputText.value);
+        num2 = inputText.value;
         }
-    
-    console.log(op);
-    switch(op){
-        case '+':
-            result = num1 + num2;
-            break;
-        case '-':
-            result = num1 - num2;
-            break;
-        case '*':
-            result = num1 * num2;
-            break;
-        case '/':
-            if (num2!== 0){
-                result = num1 / num2;
-            }
-            else{
-                alert("You can not divide by 0");
-                result=num1;
-            }
-            break;
-        default:
-            result = num1;
-            break;
+    if(num2 === 0){
+        alert("You can not divide by 0");
+        result = num1;
+    }
+    else {
+          result = eval(num1+op+num2);
     }
     inputText.value = result;
     num1=undefined;
