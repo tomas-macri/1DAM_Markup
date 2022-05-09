@@ -7,6 +7,11 @@ and open the template in the editor.
     Created on : 08-may-2022, 16:47:13
     Author     : tomas
 */
+
+*{
+    font-family: sans-serif;
+}
+
 #mainTitle {
     color: blue;
     text-align: center;
@@ -22,10 +27,14 @@ and open the template in the editor.
     height: 50px;
 }
 
-
 #message{
     display: none;
+    font-size: 20px;
     font-weight: bold;
+}
+
+#counters{
+    font-size: 20px;
 }
 
 #crono {
