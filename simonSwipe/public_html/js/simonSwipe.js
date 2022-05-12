@@ -26,10 +26,6 @@ function startGame() {
     
 }
 
-function generateSequence(x, y, level){
-    
-}
-
 function displayBlockMessageAndCounters(){
     document.getElementById("message").style.display = "block";
     document.getElementById("crono").style.display = "block";
@@ -56,7 +52,7 @@ function drawField(myWidth, myHeight) {
     enableEventsField();
 }
 
-function createButtons(i, myWidth, j){
+function createButton(i, myWidth, j){
     let keys = document.createElement("button");
     let newId = j + "_" + i;
 
@@ -81,5 +77,69 @@ function check(event) {
     messageElement.innerHTML = text;
 }
 
+function generateSequence(myWidth, myHeight, myLevel) {
+   let coordArray = Array();
+    for(let i=0; i<10; i++){
+       
+        coordArray.push({x: Math.floor(Math.random() * (myWidth)), y: Math.floor(Math.random() * (myHeight))});
+        console.log("x: " + coordArray[i].x);    
+    }
+   
+    /*for (let i = 0; i < coordArray.length; i++) {
+        var x = coordArray[i].x;
+        var y = coordArray[i].y;
+    }*/
+    
+    let roundGames = playGame(myWidth, myHeight);
+    let playerRounds = 1;
+    //while (playerRounds <= roundGames){
+        showElements(coordArray, playerRounds);
+    //}
+}
+
+function playGame(myWidth, myHeight){
+    let roundNr = 1;
+    for (let i = 0; i<10; i++){
+        roundNr++;
+    }  
+    return roundNr;
+}
 
 
+function showElements(coordArray, playerRounds){
+    //for(let i=0; i<10; i++) {
+    let cont = 0;    
+    let previousColor;
+    console.log(cont);
+    setInterval(paintButton, 1000, coordArray, playerRounds, previousColor);
+    //document.getElementById(btnSequenceId).style.backgroundColor = previousColor;
+    
+
+    //}
+  
+
+
+
+function paintButton(coordArray, max, prevCol){
+    console.log(cont);
+    if (cont === 0){
+        let btnSequenceId = coordArray[cont].x + "_" + coordArray[cont].y;
+        console.log(btnSequenceId);
+        prevCol = document.getElementById(btnSequenceId).style.backgroundColor;
+        document.getElementById(btnSequenceId).style.backgroundColor = "red";    
+    }
+    else if (cont !== max){
+        let previousBtnId = coordArray[cont-1].x + "_" + coordArray[cont-1].y;
+        document.getElementById(previousBtnId).style.backgroundColor = prevCol; 
+        
+        
+        let btnSequenceId = coordArray[cont].x + "_" + coordArray[cont].y;
+        console.log(btnSequenceId);
+        previousColor = document.getElementById(btnSequenceId).style.backgroundColor;
+        document.getElementById(btnSequenceId).style.backgroundColor = "red";    
+    }
+    cont++;
+//    document.getElementById(btnSequenceId).style.backgroundColor = previousColor;
+
+    }
+}
