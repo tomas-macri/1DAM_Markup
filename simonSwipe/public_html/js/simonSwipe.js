@@ -109,18 +109,15 @@ function playGame(myWidth, myHeight){
 function showElements(coordArray, playerRounds){
     //for(let i=0; i<10; i++) {
     let cont = 0;    
-    let previousColor;
+    let prevCol;
     console.log(cont);
-    setInterval(paintButton, 1000, coordArray, playerRounds, previousColor);
+    setInterval(paintButton, 1000, coordArray, 10);
     //document.getElementById(btnSequenceId).style.backgroundColor = previousColor;
     
 
     //}
   
-
-
-
-function paintButton(coordArray, max, prevCol){
+function paintButton(coordArray, max){
     console.log(cont);
     if (cont === 0){
         let btnSequenceId = coordArray[cont].x + "_" + coordArray[cont].y;
@@ -128,18 +125,26 @@ function paintButton(coordArray, max, prevCol){
         prevCol = document.getElementById(btnSequenceId).style.backgroundColor;
         document.getElementById(btnSequenceId).style.backgroundColor = "red";    
     }
-    else if (cont !== max){
+    else if (cont < max){
         let previousBtnId = coordArray[cont-1].x + "_" + coordArray[cont-1].y;
+        console.log("ANTES: " + previousBtnId);
+        console.log("Previous color: " + prevCol)
         document.getElementById(previousBtnId).style.backgroundColor = prevCol; 
         
         
         let btnSequenceId = coordArray[cont].x + "_" + coordArray[cont].y;
-        console.log(btnSequenceId);
-        previousColor = document.getElementById(btnSequenceId).style.backgroundColor;
+        console.log("AHORA:" + btnSequenceId);
+        prevCol = document.getElementById(btnSequenceId).style.backgroundColor;
         document.getElementById(btnSequenceId).style.backgroundColor = "red";    
+    }
+    else{
+        clearInterval();
     }
     cont++;
 //    document.getElementById(btnSequenceId).style.backgroundColor = previousColor;
 
     }
+
+
+
 }
