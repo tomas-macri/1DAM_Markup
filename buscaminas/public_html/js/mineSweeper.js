@@ -19,6 +19,8 @@ let coordArray = Array();
 //maximum number of rounds that can be played
 let totalMines;
 
+let totalFields;
+
 // this will tell us on what round is the user playing. It always begins in 1.
 let roundPl = 1;
 
@@ -35,7 +37,7 @@ function startGame() {
     let myWidth = document.getElementById("columns").value;
     let myHeight = document.getElementById("rows").value;
     let myLevel = document.getElementById("level").value;
-
+    totalFields = myWidth * myHeight;
     disableBeginButtons();
     displayBlockMessageAndCounters();
     drawField(myWidth, myHeight);
@@ -135,8 +137,48 @@ function check(event) {
     let messageElement = document.getElementById("playing");
     let coordinates = event.target.id.split('_');
     
+    
+    let btnClicked = event.target;
+    console.log("click pn " + event.button);
+    
+    //check click right button
+    if (event.button === 2){
+        if (btnClicked.style.backgroundColor === "orange"){
+            // turn back to grey
+            btnClicked.style.backgroundColor = "lightgrey";
+        }
+        else{
+            //it is grey, turn red
+            btnClicked.style.backgroundColor = "orange";
+        }
+    }
+    else if (event.button === 0)
+    {
+        //it was clicked, we confirm that is safe
+        if (isItSafe(btnClicked.id)){
+            btnClicked.style.backgroundColor = "green";
+            btnClicked.removeEventListener("mousedown", check);
+            clicksPl++;
+            if (clicksPl + totalMines === totalFields){
+                console.log("WONNNN");
+            }
+        }
+        else{
+            btnClicked.style.backgroundColor = "red";
+            disableEventsField();
+            paintMines();
+        }
+        
+        
+    }
+    
+    
+    
+    
+    
     let found = false;
     let text = "It's safe here";
+    
     for (let i = 0; i < coordArray.length && !found; i++){
         if (parseInt(coordinates[0]) === coordArray[i].x && parseInt(coordinates[1]) === coordArray[i].y){
             found = true;
@@ -164,6 +206,20 @@ function check(event) {
     } else {
         clickIncorrect(messageElement);
     }*/
+}
+
+
+
+function paintMines(){
+        console.log(coordArray);
+        let j =0;
+    for (; j < coordArray.length; j++)
+    {
+        console.log(j + " es i");
+        console.log(coordArray[j]);
+        document.getElementById((coordArray[j].x) + "_" + coordArray[j].y).style.backgroundColor = "red";
+    }
+
 }
 
 function clickCorrect(messageElement) {
@@ -216,6 +272,21 @@ function coordExist(code){
         }
     }
     return exists;
+}
+
+function isItSafe(id){
+    let coordinates = id.split('_');
+    let safe = true;
+    let text = "It's safe here";
+    
+    for (let i = 0; i < coordArray.length && true; i++){
+        if (parseInt(coordinates[0]) === coordArray[i].x && parseInt(coordinates[1]) === coordArray[i].y){
+            safe = false;
+            console.log(coordArray[i].x + "" + coordArray[i].y);
+            text = "You found a mine in " + coordinates;
+        }
+    }
+    return safe;
 }
 
 function playGame() {
