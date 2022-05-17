@@ -40,7 +40,7 @@ function startGame() {
     displayBlockMessageAndCounters();
     drawField(myWidth, myHeight);
 
-    let coordArray = generateSequence(myWidth, myHeight, myLevel);
+    generateSequence(myWidth, myHeight, myLevel);
     let contSeconds = 0;
     cronoInterval = setInterval(addTime, 1000);
     function addTime() {
@@ -55,7 +55,6 @@ function startGame() {
 
 function getTime(level) {
     let result;
-    console.log("level: " + level);
     switch (level) {
         case "1":
             result = 1000;
@@ -67,7 +66,6 @@ function getTime(level) {
             result = 500;
             break;
     }
-    console.log("Rewsult: " + result);
     return result;
 }
 
@@ -181,7 +179,6 @@ function generateSequence(myWidth, myHeight, myLevel) {
     for (let i = 0; i < roundNr; i++) {
 
         coordArray.push({x: Math.floor(Math.random() * (myWidth)), y: Math.floor(Math.random() * (myHeight))});
-        console.log("x: " + coordArray[i].x);
     }
 }
 
@@ -192,14 +189,10 @@ function playGame() {
     let prevCol;
     //delete buttons click event
     disableEventsField();
-    console.log("tune" + timeBetweenElements);
     const sequenceInterval = setInterval(showElement, timeBetweenElements);
 
     function showElement() {
-        console.log("masx" + roundPl);
-        if (roundPl === 0) {
-            prevCol = roundPlis0(cont, prevCol, sequenceInterval);
-        } else if (cont === 0) {
+        if (cont === 0) {
             prevCol = roundPlnot0Cont0(cont, prevCol);
         } else if (cont < roundPl) {
             prevCol = contLessRoundPl(cont, prevCol);
@@ -214,7 +207,6 @@ function playGame() {
 
 function roundPlis0(cont, prevCol, sequenceInterval) {
         let btnSequenceId = coordArray[cont].x + "_" + coordArray[cont].y;
-        console.log(btnSequenceId);
         prevCol = document.getElementById(btnSequenceId).style.backgroundColor;
         document.getElementById(btnSequenceId).style.backgroundColor = "red";
         setInterval(function () {
@@ -228,7 +220,6 @@ function roundPlis0(cont, prevCol, sequenceInterval) {
 
     function roundPlnot0Cont0(cont, prevCol) {
         let btnSequenceId = coordArray[cont].x + "_" + coordArray[cont].y;
-        console.log(btnSequenceId);
         prevCol = document.getElementById(btnSequenceId).style.backgroundColor;
         document.getElementById(btnSequenceId).style.backgroundColor = "red";
         return prevCol;
@@ -236,13 +227,10 @@ function roundPlis0(cont, prevCol, sequenceInterval) {
 
     function contLessRoundPl(cont, prevCol) {
         let previousBtnId = coordArray[cont - 1].x + "_" + coordArray[cont - 1].y;
-        console.log("ANTES: " + previousBtnId);
-        console.log("Previous color: " + prevCol);
         document.getElementById(previousBtnId).style.backgroundColor = prevCol;
 
 
         let btnSequenceId = coordArray[cont].x + "_" + coordArray[cont].y;
-        console.log("AHORA:" + btnSequenceId);
         prevCol = document.getElementById(btnSequenceId).style.backgroundColor;
         //a time out so there is a moment where every button has it color
         setTimeout(function () {
@@ -253,8 +241,6 @@ function roundPlis0(cont, prevCol, sequenceInterval) {
 
     function contEqualsRoundPl(cont, prevCol, sequenceInterval) {
         let previousBtnId = coordArray[cont - 1].x + "_" + coordArray[cont - 1].y;
-        console.log("ANTES: " + previousBtnId);
-        console.log("Previous color: " + prevCol);
         document.getElementById(previousBtnId).style.backgroundColor = prevCol;
         clearInterval(sequenceInterval);
         //after showing the sequence to be followed, we enable de mousedown events
