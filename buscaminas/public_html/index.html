@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/mineSweeper.css">
+        <script src="js/mineSweeper.js"></script>
+    </head>
+    <body>
+        <h1 id="mainTitle">Simon Swipe game</h1>
+        <fieldset>
+            <legend>Field dimensions</legend>
+            <label for="rows">Rows:</label>
+            <input type="number" id="rows" min="2" max="5" value="3" name="rows">
+            <label for="columns">Columns:</label>
+            <input type="number" id="columns" min="2" max="5" value="3" name="columns">
+            <label for="level">Level</label>
+            <input type="range" id="level" min="1" max="3" value="2" step="1" name="level">
+            <input type="button" id="btnCreateField" value="Create field">
+        </fieldset>
+        <div class="game" id="message">
+            <p id="playing">PLAYING . . .</p>
+        </div>
+        <div id="counters">
+            <div id="crono">
+                <p id="cronoP">Seconds: 0</p>
+            </div>
+            <div id="score">
+                <p id="scoreP">Score: 0</p>
+            </div>
+        </div>
+        <div class="game" id="field">
+        </div>
+    </body>
+</html>

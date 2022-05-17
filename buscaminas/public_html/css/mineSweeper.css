@@ -1,0 +1,44 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 17-may-2022, 19:52:44
+    Author     : tomas
+*/
+*{
+    font-family: sans-serif;
+}
+
+#mainTitle {
+    color: blue;
+    text-align: center;
+    
+}
+
+.game{
+    text-align: center;
+}
+
+.btnField{
+    width: 50px;
+    height: 50px;
+}
+
+#message{
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#counters{
+    font-size: 20px;
+}
+
+#crono {
+    display: none;
+}
+
+#score {
+    display: none;
+}
