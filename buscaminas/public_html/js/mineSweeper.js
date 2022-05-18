@@ -7,12 +7,12 @@ document.addEventListener("DOMContentLoaded", assignEvents);
 function assignEvents() {
     document.getElementById("btnCreateField").addEventListener("click", startGame);
 }
-const colorArray = ['#66664D', '#991AFF', '#E666FF', '#4DB3FF', '#1AB399',
+/*const colorArray = ['#66664D', '#991AFF', '#E666FF', '#4DB3FF', '#1AB399',
     '#E666B3', '#33991A', '#CC9999', '#B3B31A', '#00E680',
     '#4D8066', '#809980', '#E6FF80', '#1AFF33', '#999933',
     '#FF3380', '#CCCC00', '#66E64D', '#4D80CC', '#9900B3',
     '#E64D66', '#4DB380', '#FF4D4D', '#99E6E6', '#6666FF'];
-
+*/
 //the array of coordinates
 let coordArray = Array();
 
@@ -25,7 +25,7 @@ let totalFields;
 let roundPl = 1;
 
 //this will tell us how many times has the user clicked during the current round
-let clicksPl;
+let clicksPl=0;
 
 //crono interval so it can be accesed when the player ends the game
 let cronoInterval;
@@ -55,7 +55,7 @@ function startGame() {
 }
 
 
-function getTime(level) {
+/*function getTime(level) {
     let result;
     switch (level) {
         case "1":
@@ -69,7 +69,7 @@ function getTime(level) {
             break;
     }
     return result;
-}
+}*/
 
 
 function displayBlockMessageAndCounters() {
@@ -126,18 +126,18 @@ function disableEventsField() {
     }
 }
 
-let previousColorBtnClicked;
+/*let previousColorBtnClicked;
 
 function rePaintButton(event) {
     document.getElementById(event.target.id).style.backgroundColor = previousColorBtnClicked;
-}
+}*/
 
 function check(event) {
     console.log("click on " + event.target.id);
     let messageElement = document.getElementById("playing");
     let coordinates = event.target.id.split('_');
     
-    
+    let text = "MYSTERY";
     let btnClicked = event.target;
     console.log("click pn " + event.button);
     
@@ -148,7 +148,7 @@ function check(event) {
             btnClicked.style.backgroundColor = "lightgrey";
         }
         else{
-            //it is grey, turn red
+            //it is grey, turn orange
             btnClicked.style.backgroundColor = "orange";
         }
     }
@@ -156,27 +156,34 @@ function check(event) {
     {
         //it was clicked, we confirm that is safe
         if (isItSafe(btnClicked.id)){
+            text = "SAFE";
             btnClicked.style.backgroundColor = "green";
             btnClicked.removeEventListener("mousedown", check);
             clicksPl++;
+            console.log("clicks: " + clicksPl + " mines: " + totalMines);
+            let text;
+            console.log("totalF: " + totalFields);
             if (clicksPl + totalMines === totalFields){
-                console.log("WONNNN");
+                text = "YOU WON";
+                for (let i = 0; i < coordArray.length; i++){
+                    document.getElementById(coordArray[i].x + '_' + coordArray[i].y).style.backgroundColor = "yellow";
+                    disableEventsField();
+                }
             }
         }
         else{
             btnClicked.style.backgroundColor = "red";
             disableEventsField();
             paintMines();
+            text = "BOOM!";
         }
-        
-        
     }
     
     
     
     
-    
-    let found = false;
+   // TEST DE COMPROBAR SI ES SEGURO - FUNCIONA 
+/*   let found = false;
     let text = "It's safe here";
     
     for (let i = 0; i < coordArray.length && !found; i++){
@@ -185,7 +192,7 @@ function check(event) {
             console.log(coordArray[i].x + "" + coordArray[i].y);
             text = "You found a mine in " + coordinates;
         }
-    }
+    }*/
     messageElement.innerText = text;
     
     
@@ -212,8 +219,8 @@ function check(event) {
 
 function paintMines(){
         console.log(coordArray);
-        let j =0;
-    for (; j < coordArray.length; j++)
+        
+    for (let j =0; j < coordArray.length; j++)
     {
         console.log(j + " es i");
         console.log(coordArray[j]);
@@ -266,8 +273,10 @@ function generateSequence(myWidth, myHeight, myLevel) {
 
 function coordExist(code){
     exists = false;
+    console.log(code);
     for (let i = 0; i < coordArray.length && !exists; i++){
-        if (code === coordArray[i].x + coordArray[i].y + ""){
+        console.log(coordArray[i].x + coordArray[i].y + " original");
+        if (code === coordArray[i].x + "" + coordArray[i].y){
             exists = true;
         }
     }
@@ -288,7 +297,7 @@ function isItSafe(id){
     }
     return safe;
 }
-
+/*
 function playGame() {
    
     let cont = 0;
@@ -298,7 +307,7 @@ function playGame() {
     disableEventsField();
     const sequenceInterval = setInterval(showElement, timeBetweenElements);
 
-}
+}*/
 
 
 
